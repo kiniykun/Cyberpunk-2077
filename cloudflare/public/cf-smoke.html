@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CP2077 CF smoke</title>
+<style>body{background:#111;color:#ddd;font:13px/1.4 monospace;margin:16px}.f{color:#f66}.p{color:#6f6}</style>
+</head>
+<body>
+<pre id="out"></pre>
+<script>
+// Delivery smoke test for the Cloudflare Worker (no engine start). Console lines:
+//   CP2077 cfTest: PASS|FAIL <name> <detail>   ...   CP2077 cfTest: DONE pass=N fail=M
+// ?wasm=0 skips the 248 MB wasm download+hash; ?blocks=N limits archive probes (default all).
+(async () => {
+  const q = new URLSearchParams(location.search), out = document.getElementById('out');
+  let pass = 0, fail = 0;
+  const log = (ok, name, detail) => {
+    ok ? ++pass : ++fail;
+    const line = `CP2077 cfTest: ${ok ? 'PASS' : 'FAIL'} ${name} ${detail || ''}`;
+    (ok ? console.log : console.error)(line);
+    out.insertAdjacentHTML('beforeend', `<span class="${ok ? 'p' : 'f'}"></span>\n`);
+    out.lastElementChild.textContent = line;
+  };
+  const hex = buf => [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
+  const step = async (name, fn) => { const t = performance.now(); try { const d = await fn(); log(true, name, `${d || ''} ${Math.round(performance.now() - t)}ms`); } catch (e) { log(false, name, String(e && e.message || e)); } };
+
+  await step('crossOriginIsolated', () => { if (!crossOriginIsolated) throw Error('COOP/COEP missing'); return 'SharedArrayBuffer=' + (typeof SharedArrayBuffer); });
+  let manifest = null, hash = null;
+  await step('manifest', async () => {
+    const r = await fetch('/runtime/game-files.json', {cache: 'no-store'});
+    if (!r.ok) throw Error('status ' + r.status);
+    manifest = await r.json();
+    if (manifest.version !== 1 || !manifest.files.length) throw Error('bad manifest');
+    return manifest.files.length + ' files ' + (manifest.files.reduce((a, e) => a + e.size, 0) / 1e9).toFixed(2) + ' GB';
+  });
+  await step('page bundle hash', async () => {
+    const text = await (await fetch('/native-browser.html', {cache: 'no-store'})).text();
+    hash = /engine-versions\/([0-9a-f]{64})\//.exec(text)?.[1];
+    if (!hash) throw Error('no engine-versions hash in page');
+    return hash.slice(0, 12);
+  });
+  if (manifest) {
+    const files = manifest.files.slice(0, Number(q.get('blocks')) || manifest.files.length);
+    for (const e of files) await step('sync block ' + e.path.split('/').pop(), () => {
+      // Same request shape as the runtime's resource filesystem (sync text XHR, Range + If-Match).
+      const B = 1048576, n = Math.floor(Math.max(0, e.size - 1) / B / 2), start = n * B, end = Math.min(start + B, e.size) - 1;
+      const x = new XMLHttpRequest();
+      x.open('GET', e.path.split('/').map(encodeURIComponent).join('/'), false);
+      x.overrideMimeType('text/plain; charset=x-user-defined');
+      x.setRequestHeader('Range', `bytes=${start}-${end}`);
+      x.setRequestHeader('If-Match', e.etag);
+      x.send(null);
+      if (x.status !== 206) throw Error('status ' + x.status);
+      if (x.getResponseHeader('ETag') !== e.etag) throw Error('etag ' + x.getResponseHeader('ETag') + ' != ' + e.etag);
+      if (x.getResponseHeader('Content-Range') !== `bytes ${start}-${end}/${e.size}`) throw Error('content-range ' + x.getResponseHeader('Content-Range'));
+      if (x.responseText.length !== end - start + 1) throw Error('length ' + x.responseText.length);
+      return `block ${n}`;
+    });
+    const e = manifest.files[0];
+    await step('If-Match mismatch -> 412', async () => {
+      const r = await fetch(e.path, {headers: {Range: 'bytes=0-15', 'If-Match': '"wrong"'}, cache: 'no-store'});
+      if (r.status !== 412) throw Error('status ' + r.status); });
+    await step('bad range -> 416', async () => {
+      const r = await fetch(e.path, {headers: {Range: `bytes=${e.size + 10}-`}, cache: 'no-store'});
+      if (r.status !== 416) throw Error('status ' + r.status); });
+  }
+  if (hash) {
+    const bundle = await (await fetch(`/runtime/engine-versions/${hash}/bundle.json`)).json().catch(() => null);
+    for (const name of ['cp2077.js', 'cp2077.data', ...(q.get('wasm') === '0' ? [] : ['cp2077.wasm'])]) await step('gzip ' + name, async () => {
+      const r = await fetch(`/runtime/engine-versions/${hash}/${name}`, {cache: 'no-store'});
+      if (!r.ok) throw Error('status ' + r.status);
+      if (name.endsWith('.wasm') && r.headers.get('Content-Type') !== 'application/wasm') throw Error('content-type ' + r.headers.get('Content-Type'));
+      const buf = await r.arrayBuffer(), sha = hex(await crypto.subtle.digest('SHA-256', buf));
+      if (bundle && bundle.Files[name] !== sha) throw Error('sha mismatch ' + sha.slice(0, 12));
+      return `${(buf.byteLength / 1048576).toFixed(1)} MiB sha ok`;
+    });
+  }
+  await step('bink sdk', async () => {
+    const r = await fetch('/sdk/bink2w64.dll');
+    if (!r.ok) throw Error('status ' + r.status);
+    const sha = hex(await crypto.subtle.digest('SHA-256', await r.arrayBuffer()));
+    if (sha !== '4f60fb1acd3cc03da501fadc378b093f5ec99f5c99a7bb9d1013603fb8e74334') throw Error('sha ' + sha.slice(0, 12));
+  });
+  await step('codec module', async () => { const r = await fetch('/runtime/codec/oodle-decoder-pool.mjs'); if (!r.ok) throw Error('status ' + r.status); });
+  const line = `CP2077 cfTest: DONE pass=${pass} fail=${fail}`;
+  (fail ? console.error : console.log)(line);
+  out.insertAdjacentText('beforeend', line + '\n');
+})();
+</script>
+</body>
+</html>

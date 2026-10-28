@@ -1,0 +1,10 @@
+{
+  "name": "wgpu-trace",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test analyzer/critical_path.test.js analyzer/counters.test.js analyzer/generations.test.js runtime/wgtrace_main.test.js",
+    "analyze": "node analyzer/critical_path.js"
+  }
+}

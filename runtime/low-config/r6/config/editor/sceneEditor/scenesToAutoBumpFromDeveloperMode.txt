@@ -1,0 +1,11 @@
+base\media
+base\open_world
+base\quest\demos
+base\quest\holocalls
+base\quest\main_quests
+base\quest\minor_quests
+base\quest\side_quests
+base\quest\primary_characters\default_dialogues
+base\quest\secondary_characters\default_dialogues
+base\quest\tertiary_characters\default_dialogues
+base\quest\test

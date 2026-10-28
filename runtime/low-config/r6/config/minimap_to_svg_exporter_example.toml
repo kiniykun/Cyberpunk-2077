@@ -1,0 +1,35 @@
+## README PLEASE
+#  Before you use this exporter, make sure that in minimap_config.json you have "includeOutlinePoints" set to 1
+#  AND that you've rebuild minimap prefabs the world with it. 
+
+[global_options]
+output_path = "Z:/test/image.svg" #Every sample's output will be named like this with an additional number.
+gather_roads = false
+gather_walls = true
+radius = 80.0 #radius around world_position that shapes will be gathered from
+walls_height = 2.0 #height of the box used to gather walls nodes; 2.0 is default
+roads_height = 20.0 #same as above but for roads nodes; 20.0 is default
+stroke_width = 0.2
+interior = true
+exterior = false
+
+#Samples have one mandatory option: world_position. Rest is optional and overrides global_options.
+#You need to provide output_path
+#samples without output_path will use previous sample's path and increment its last number by 1.
+
+[[example_sample]]
+world_position = {position={X=-1168.032471,Y=1486.488892,Z=18.365608},rotation={Pitch=0.000000,Yaw=85.062286,Roll=0.000000}}
+output_path = "Z:/im.svg" #absolute path to output svg file. Overrides [global_options] entry for this single sample
+radius = 180.0 #same here
+
+[[sample]]
+#output_path = "Z:/test/image0.svg" #no need to write this, will be created automatically like this thanks to [global_options]
+world_position = {position={X=-1168.032471,Y=1486.488892,Z=18.365608},rotation={Pitch=0.000000,Yaw=85.062286,Roll=0.000000}}
+
+[[sample]]
+#output_path = "Z:/test/image1.svg" 
+world_position = {position={X=-1268.032471,Y=1486.488892,Z=18.365608},rotation={Pitch=0.000000,Yaw=85.062286,Roll=0.000000}}
+
+[[sample]]
+#output_path = "Z:/test/image2.svg" 
+world_position = {position={X=-1368.032471,Y=1486.488892,Z=18.365608},rotation={Pitch=0.000000,Yaw=85.062286,Roll=0.000000}}

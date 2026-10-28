@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<bindings>
+
+	<context name="Empty" >
+	</context>
+
+	<context name="Debug_Empty_State" >
+	<!--!!!!!!!!! DO NOT REMOVE THIS !!!!!!!!-->
+	</context>
+
+	<context name="FreeCamera" >
+        <!-- game free camera mapped to F3 so it doesn't collide with the raw engine free camera  -->
+        <action name="EnableFreeCamera" map="ActivateFreeCam" />
+		<action name="SwitchFreeCameraControl" map="SwitchFreeCamControl" />
+		
+		<action name="CameraMovementX" map="LeftX_Axis" priority="-100" />
+        <action name="CameraMovementY" map="LeftY_Axis" priority="-100" />
+		<action name="CameraMovementZ" map="UpDown_Axis" priority="-100" />
+		<action name="CameraRotationX" map="RightX_Axis" priority="-100" />
+        <action name="CameraRotationY" map="RightY_Axis" priority="-100" />
+		<action name="CameraRotationMouseX" map="MouseX" priority="-100" />
+        <action name="CameraRotationMouseY" map="MouseY" priority="-100" />
+		<action name="CameraMultSpeed" map="CameraMultSpeed" priority="-100" />
+		<action name="CameraReduceSpeed" map="CameraReduceSpeed" priority="-100" />
+		<action name="CameraClipboardC" map="CameraClipboardC" priority="-100" />
+		<action name="CameraClipboardV" map="CameraClipboardV" priority="-100" />
+		<action name="CameraToggleStep" map="CameraToggleStep" priority="-100" />
+		<action name="CameraResetPitch" map="CameraResetPitch" priority="-100" />
+		<action name="CameraStepForward" map="CameraStepForward" priority="-100" />
+		<action name="CameraStepBack" map="CameraStepBack" priority="-100" />
+		<action name="CameraStepLeft" map="CameraStepLeft" priority="-100" />
+		<action name="CameraStepRight" map="CameraStepRight" priority="-100" />
+		<action name="CameraStepUp" map="CameraStepUp" priority="-100" />
+		<action name="CameraStepDown" map="CameraStepDown" priority="-100" />
+		<action name="CameraStepPitchUp" map="CameraStepPitchUp" priority="-100" />
+		<action name="CameraStepPitchDown" map="CameraStepPitchDown" priority="-100" />
+		<action name="CameraStepYawLeft" map="CameraStepYawLeft" priority="-100" />
+		<action name="CameraStepYawRight" map="CameraStepYawRight" priority="-100" />
+		<action name="CameraIncreaseFOV" map="CameraIncreaseFOV" priority="-100" />
+		<action name="CameraDecreaseFOV" map="CameraDecreaseFOV" priority="-100" />
+		<action name="CameraDebugStepFrame" map="CameraDebugStepFrame" priority="-100" />
+		<action name="CameraDebugStepTrack" map="CameraDebugStepTrack" priority="-100" />
+		<action name="CameraDebugToggleRewindMode" map="CameraDebugToggleRewindMode" priority="-100" />
+		<action name="CameraDebugJumpToSelected" map="CameraDebugJumpToSelected" priority="-100" />
+    </context>
+
+    <context name="Multiplayer" >
+        <action name="ToggleShowInGameStats" map="Tab_Button" />
+    </context>
+
+	<context name="Shortcuts" >
+		<action name="F1" map="F1" />
+		<action name="F2" map="F2" />
+		<action name="F3" map="F3" />
+		<action name="F4" map="F4" />
+		<action name="F5" map="F5" />
+		<action name="F6" map="F6" />
+		<action name="F7" map="F7" />
+		<action name="F8" map="F8" />
+		<action name="F9" map="F9" />
+		<action name="F10" map="F10" />
+		<action name="F11" map="F11" />
+		<action name="F12" map="F12" />
+		<action name="0" map="IK_0" />
+		<action name="1" map="IK_1" />
+		<action name="2" map="IK_2" />
+		<action name="3" map="IK_3" />
+		<action name="4" map="IK_4" />
+		<action name="5" map="IK_5" />
+		<action name="6" map="IK_6" />
+		<action name="7" map="IK_7" />
+		<action name="8" map="IK_8" />
+		<action name="9" map="IK_9" />
+	</context>
+	
+	<context name="ScenesDevMode">
+		<action name="DevMode_Toggle" map="DevMode_Toggle" priority="100"/>
+		<action name="DevMode_Resume" map="DevMode_Resume"/>
+	</context>
+	
+    <context name="DEBUG" >
+        <include name="FreeCamera" />
+        <include name="Multiplayer" />
+		<include name="Shortcuts" />
+		<include name="ScenesDevMode" />
+    </context>
+
+	
+	<hold action="EnableFreeCamera" timeout="1.0" />
+	<hold action="DevMode_Toggle" timeout="1.0" />
+	
+</bindings>

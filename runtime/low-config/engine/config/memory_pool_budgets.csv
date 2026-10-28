@@ -1,0 +1,18 @@
+;;;
+; ^[1-9][0-9]*(B|KB|MB|GB) - Pool budget
+; -1 - Pool does not exist on the current platform
+; 0 - Budget will be computed dynamically at runtime
+
+                                ;       PC        ;        Durango     ;        Orbis
+PoolRoot                        ;                 ;                    ;
+PoolCPU                         ;       1536MB    ;        1536MB      ;        1536MB
+PoolGPU                         ;       3GB       ;        3GB         ;        3GB
+PoolFlexible                    ;       -1        ;        -1          ;        0
+PoolDefault                     ;       1KB       ;        1KB         ;        1KB
+PoolLegacyOperator              ;       1MB       ;        1MB         ;        1MB
+PoolFrame                       ;       32MB      ;        32MB        ;        32MB
+PoolDoubleBufferedFrame         ;       32MB      ;        32MB        ;        32MB
+PoolEngine                      ;       432MB     ;        432MB       ;        432MB
+PoolRefCount                    ;       16MB      ;        16MB        ;        16MB
+PoolDebug                       ;       512MB     ;        512MB       ;        512MB
+PoolBacked                      ;       512MB     ;        512MB       ;        512MB

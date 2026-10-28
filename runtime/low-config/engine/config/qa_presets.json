@@ -1,0 +1,173 @@
+[
+	{
+		"name": "None",
+		"description": "",
+		"emm": "EMM_None",
+		"true_debug_filters" : [],
+		"false_debug_filters": []
+	},
+	
+	{
+		"name": "AI: Workspots Movement",
+		"description": "",
+		"emm": "EMM_None",
+		"true_debug_filters" : [
+		"AI",
+		"AI/Spots",
+		"Nodes",
+		"Nodes/Sockets"
+		],
+		"false_debug_filters": []
+	},
+	
+	{
+		"name": "AI: NPC Locomotion",
+		"description": "",
+		"emm": "EMM_None",
+		"true_debug_filters" : [
+		"Entity",
+		"Entity/Puppet",
+		"Entity/Puppet/Movement",
+		"Entity/Puppet/Movement/Locomotion"
+		],
+		"false_debug_filters": []
+	},
+	
+	{
+		"name": "AI: Vehicle MoveTo",
+		"description": "",
+		"emm": "EMM_None",
+		"true_debug_filters" : [
+		"Entity",
+		"Entity/Puppet",
+		"Entity/Puppet/AI",
+		"Entity/Puppet/AI/Actions",
+		"Entity/Puppet/Movement",
+		"Entity/Puppet/Movement/Locomotion",
+		"Entity/Puppet/Movement/Locomotion/DriveController",
+		"Entity/Puppet/Movement/Locomotion/DriveController/Box",
+		"Entity/Puppet/Movement/Locomotion/DriveController/Targets",
+		"Entity/Puppet/Movement/Locomotion/TrafficMoveController"
+		],
+		"false_debug_filters": [
+		"AI",
+		"AimAssist",
+		"Audio",
+		"Blacboards",
+		"CameraSystem",
+		"CombatQueriesSystem",
+		"Components",
+		"ConsoleCommando",
+		"Damage",
+		"Dismemberment",
+		"Editor",
+		"Ink",
+		"Localization",
+		"Log",
+		"Multiplayer",
+		"MuppetResimulationWarning",
+		"Nodes",
+		"RuntimeSystem",
+		"Traffic"
+		]
+	},
+	
+	{
+		"name": "AI: Vehicle Locomotion",
+		"description": "",
+		"emm": "EMM_None",
+		"true_debug_filters" : [
+		"Entity",
+		"Entity/Puppet",
+		"Entity/Puppet/Movement",
+		"Entity/Puppet/Movement/Locomotion",
+		"Entity/Puppet/Movement/Locomotion/DriveController",
+		"Entity/Puppet/Movement/Locomotion/DriveController/Box",
+		"Entity/Puppet/Movement/Locomotion/DriveController/NavMeshPath",
+		"Entity/Puppet/Movement/Locomotion/MovementPlan",
+		"Entity/Puppet/Movement/Locomotion/Pathfinding",
+		"Traffic",
+		"Traffic/ParkingSpaces",
+		"Traffic/Lanes",
+		"Traffic/Lanes/Debug",
+		"Traffic/Lanes/Debug/Lights",
+		"Traffic/Lanes/Debug/Outline",
+		"Traffic/Lanes/Slots"
+		],
+		"false_debug_filters": []
+	},
+	
+	{
+		"name": "AI: Traffic Locomotion",
+		"description": "",
+		"emm": "EMM_None",
+		"true_debug_filters" : [
+		"Traffic",
+		"Traffic/ParkingSpaces",
+		"Traffic/Lanes",
+		"Traffic/Lanes/Debug",
+		"Traffic/Lanes/Debug/Lights",
+		"Traffic/Lanes/Debug/Outline",
+		"Traffic/Lanes/Slots"
+		],
+		"false_debug_filters": []
+	},
+	
+	{
+		"name": "Enviro: Global Illumination",
+		"description": "",
+		"emm": "EMM_GlobalIllumination",
+		"true_debug_filters" : [
+		"Rendering/Debug/GI/Probes",
+		"Rendering/Debug/GI/Sectors",
+		"Rendering/Debug/GI/Surfels",
+		"Rendering/Debug/GI/Tetrahedron"
+		],
+		"false_debug_filters": []
+	},
+	
+	{
+		"name": "Enviro: Triangles on screen",
+		"description": "",
+		"emm": "EMM_WireframeSolid",
+		"true_debug_filters" : [
+		"Overlay/Stats/TriangleCount"
+		],
+		"false_debug_filters": []
+	},
+		{
+		"name": "Enviro: Navmesh",
+		"description": "",
+		"emm": "EMM_None",
+		"true_debug_filters" : [
+		"Navigation",
+		"Navigation/Navmesh",
+		"Navigation/MeshImpact",
+		"Navigation/MeshImpact/WireBox"
+		],
+		"false_debug_filters": []
+	},
+	
+	{
+		"name": "Enviro: Occluders",
+		"description": "",
+		"emm": "EMM_None",
+		"true_debug_filters" : [
+		"Components/AreaShapes/Types",
+		"Components/AreaShapes/Types/OcclusionCompilationArea",
+		"Components/Occlusion",
+		"Rendering/Visibility/CameraShowOcclusionBuffer"
+		],
+		"false_debug_filters": []
+	},
+
+	{
+		"name": "IO Queues",
+		"description": "",
+		"emm": "EMM_None",
+		"true_debug_filters" : [
+		"Overlay/Stats/IOMetrics"
+		],
+		"false_debug_filters": []
+	}
+]

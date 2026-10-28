@@ -1,0 +1,16 @@
+{
+  "name": "cp2077-cloudflare",
+  "private": true,
+  "type": "module",
+  "description": "Cloudflare Worker + R2 delivery for the CP2077 browser port (gated; local wrangler dev first).",
+  "scripts": {
+    "manifest": "node scripts/build-manifest.mjs",
+    "list": "node scripts/build-upload-list.mjs",
+    "seed-local": "node scripts/upload.mjs --target local --max-mb 300 --execute",
+    "dev": "wrangler dev --env dev --ip 127.0.0.1 --port 8787",
+    "trace-to-ranges": "node scripts/trace-to-ranges.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "4.147.0"
+  }
+}

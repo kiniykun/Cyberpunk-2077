@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+
+
+<!--
+
+Order of execution of commands per shortcut is top down.
+
+Shortcuts names:
+	START - executed when game starts / on launch
+	F5 - F8 mapped to appropriate keyboard keys
+
+Example:
+	
+	<debug>
+	
+		<shortcut name="START" >
+			<command name="GameDebug.SpawnEnemy()" />
+		</shortcut>
+		
+		<shortcut name="F5" >
+			<command name="GameDebug.SpawnEnemy()" />
+			<command name="GameDebug.SpawnEnemy()" />
+			<command name="GameDebug.SpawnEnemy()" />
+		</shortcut>
+		
+		<shortcut name="F6" >
+			<command name="GameDebug.KillLastSpawned()" />
+		</shortcut>
+
+		<shortcut name="F7" >
+		</shortcut>
+	
+		<shortcut name="F8" >
+		</shortcut>
+		
+	</debug>
+	
+	
+	
+	<command name="exec(God)" />
+	<command name="exec(God2)" />
+	
+	GameDebug.SpawnChRec(Character.scavenger_ma_generic_ranged_rifle)
+	<command name="GameDebug.SpawnChRec(Character.exo, 0.f, 5.f, 180.f)" />
+-->
+
+<debug>
+	
+    <shortcut name="START" >
+		
+    </shortcut>
+	
+	<shortcut name="F5" >
+		<command name="Game.Data.TweakDB.Reload()" />
+    </shortcut>
+	
+	<shortcut name="F6" >
+		<command name="GameDebug.SpawnChRec(Character.exo, 0.f, 5.f, 180.f)" />
+	</shortcut>
+	
+	<shortcut name="F7" >
+		<command name="exec(God2)" />
+	</shortcut>
+	
+	<shortcut name="F8" >
+	</shortcut>
+
+</debug>

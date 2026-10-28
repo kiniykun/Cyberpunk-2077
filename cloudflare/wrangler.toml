@@ -1,0 +1,39 @@
+# CP2077 browser port: one origin serving page + engine bundle + game files from R2.
+# Production (top level) is fail-closed: needs `wrangler secret put ACCESS_TOKEN`.
+# Local dev: `npx wrangler dev --env dev --ip 127.0.0.1 --port 8787` (see README.md).
+name = "cp2077-port"
+main = "src/worker.js"
+compatibility_date = "2025-09-01"
+# Set to false once a custom domain with Cloudflare Access is in front (README "Access").
+workers_dev = true
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "cp2077-assets"
+
+[vars]
+TRACE_LOG = "0"
+EDGE_BLOCK_CACHE = "1"
+PARTIAL_BLOCK_BYTES = "1048576"
+# Plan B: the page at cyberpunk2077.lol/game loads assets cross-origin from here (/k/<token>/...).
+CORS_ORIGINS = "https://cyberpunk2077.lol"
+
+# ---------------------------------------------------------------- local dev only
+[env.dev]
+name = "cp2077-port-dev"
+
+[[env.dev.r2_buckets]]
+binding = "BUCKET"
+bucket_name = "cp2077-assets"
+
+[env.dev.vars]
+DEV_MODE = "1"
+# Objects missing from local R2 are proxied from the existing local asset server.
+DEV_ORIGIN = "http://127.0.0.1:8078"
+# Local-only gate token (not a secret). Production refuses this value.
+ACCESS_TOKEN = "local-dev-gate"
+# Simulated WAN round trip added to every response (ms); ?netDelay=ms on the page overrides.
+NET_DELAY_MS = "0"
+TRACE_LOG = "1"
+EDGE_BLOCK_CACHE = "0"
+PARTIAL_BLOCK_BYTES = "1048576"

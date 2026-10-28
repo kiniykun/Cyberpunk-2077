@@ -1,0 +1,1266 @@
+<?xml version="1.0"?>
+<bindings>
+
+
+	<context name="Dead" >
+		<include name="Debug" />
+		<include name="CameraMovement" />
+		<action name="OpenChatBox" map="OpenChatBox_Button" />
+	</context>
+	
+    <context name="Camera" >
+        <include name="CameraMovement" />
+		<action name="CameraAim"		 	map="Hit2_Button" 		replicated="true" />
+		<action name="CycleZoom" 		 	map="CycleZoom_Button" 	replicated="true" />
+		<action name="Zoom" 			 	map="MouseWheel" 		replicated="true" />
+    </context>
+	
+	<context name="PhotoMode" >
+		<action name="TogglePhotoMode" 					map="TogglePhotoModeButton" 	priority="-1" />
+	</context>
+	
+	<context name="PhotoModeUI" >
+		<action name="TakeScreenshot"					map="PhotoModeTakeScreenshot" />
+		<action name="TakeScreenshot_HiRes"				map="PhotoModeTakeScreenshot_HiRes" />
+
+		<action name="TogglePhotoMode" 					map="TogglePhotoModeButton"		priority="-1" />
+		
+		<action name="PhotoMode_CraneUp"				map="PhotoMode_CraneUp_Axis" />
+		<action name="PhotoMode_CraneDown"				map="PhotoMode_CraneDown_Axis" />
+		<action name="PhotoMode_CameraMovementX" 		map="left_stick_x" 				priority="-1" />
+        <action name="PhotoMode_CameraMovementY" 		map="left_stick_y" 				priority="-1" />
+		<action name="PhotoMode_CameraRotationX" 		map="right_stick_x" 			priority="-1" />
+        <action name="PhotoMode_CameraRotationY" 		map="right_stick_y" 			priority="-1" />
+		<action name="PhotoMode_CameraMouseX"			map="MouseX" 					priority="-1" />
+        <action name="PhotoMode_CameraMouseY"			map="MouseY" 					priority="-1" />
+		<action name="PhotoMode_CameraMouseWheel"		map="MouseWheel" 				priority="-1" />
+		<action name="PhotoMode_CameraMouseZoom"		map="PhotoMode_MouseZoom" 		priority="-1" />
+		<action name="PhotoMode_CameraMouseRotation"	map="PhotoMode_MouseRotation" 	priority="-1" />
+		<action name="PhotoMode_CameraMouseMove"		map="PhotoMode_MouseMove" 		priority="-1" />
+		
+		<action name="PhotoMode_Left_Button"			map="left_button"				priority="-1" />
+		<action name="PhotoMode_Right_Button"			map="right_button"				priority="-1" />
+		<action name="up_button"						map="up_button"					priority="-1" />
+		<action name="down_button"						map="down_button"				priority="-1" />
+		<action name="PhotoMode_Next_Menu"				map="PhotoMode_Next_Menu"		priority="-1" />
+		<action name="PhotoMode_Prior_Menu"				map="PhotoMode_Prior_Menu"		priority="-1" />
+		<action name="click"							map="menu_click"				priority="-1" />
+		
+		<action name="debug_preset"						map="Keyboard_1"				priority="-1" />
+    </context>
+	
+	<context name="CameraMovement" >
+        <action name="CameraX" 			 	map="RightX_Axis"	replicated="true"  priority="-99"/>
+        <action name="CameraY" 			 	map="RightY_Axis"	replicated="true"  priority="-99"/>
+		<action name="CameraMouseX"		 	map="MouseX" 		replicated="true" />
+        <action name="CameraMouseY"		 	map="MouseY" 		replicated="true" />
+    </context>
+	
+    <context name="Move" >
+        <action name="MoveX" 				map="LeftX_Axis"		replicated="true" />
+        <action name="MoveY" 				map="LeftY_Axis" 		replicated="true" />
+        <action name="Forward"				map="Forward_Button" 	replicated="true" />
+        <action name="Right" 				map="Right_Button" 		replicated="true" />
+        <action name="Back"					map="Back_Button" 		replicated="true" />
+        <action name="Left" 				map="Left_Button" 		replicated="true" />
+    </context>
+		
+	<context name="Locomotion" >
+		<include name="Move" />
+        <action name="Jump"					map="Jump_Button" 			replicated="true" />
+        <action name="Sprint"				map="Sprint_Button" 		replicated="true" />
+        <action name="ToggleSprint"			map="ToggleSprint_Button" 	replicated="true" />
+		<action name="Crouch"				map="Crouch_Button" 		replicated="true" />
+		<action name="ToggleCrouch"			map="ToggleCrouch_Button" 	replicated="true" />
+		<action name="Dodge"				map="Dodge_Button" 		replicated="true" />
+		<action name="DodgeForward"			map="DodgeForward_Button" 	replicated="true" />
+		<action name="DodgeRight"			map="DodgeRight_Button" 	replicated="true" />
+		<action name="DodgeBack"			map="DodgeBack_Button" 		replicated="true" />
+		<action name="DodgeLeft"			map="DodgeLeft_Button" 		replicated="true" />
+		<action name="Stand"				map="Stand_Button" 			replicated="true" />
+        <action name="Climb"				map="Climb_Button" 			replicated="true" />
+		<action name="Cover"				map="Cover_Button" 			replicated="true" />
+		<action name="ToggleLean"			map="LeanToggle_Button" 	replicated="true" />
+		<action name="LeanAxis"				map="Lean_Axis" 			replicated="true" />
+    </context>
+
+	<context name="Interaction">
+		<include name="Debug" /> 		<!-- tempshit debug context -->
+		<include name ="Braindance" />
+		<include name="CPO" />
+		<!-- include name="Items" /--> <!-- tempshit: we don't want to change weapons in interaction context, as same binds on KB are used to switch weapons -->
+		<action name="Interaction"		 	map="Interaction" 					replicated="true" />
+		<action name="Choice1" 				map="Choice1" priority="-1"			replicated="true" />
+		<action name="Choice1_Release"   	map="Choice1" priority ="-1" 		replicated="true" />
+		<action name="Choice2" 			 	map="Choice2" priority="-1" 		replicated="true" />
+		<action name="Choice1_Hold" 	 	map="Choice1" priority="-1" 		replicated="true" />
+		<action name="Choice2_Hold" 	 	map="Choice2" priority="-1" 		replicated="true" />
+		<action name="Choice1_Hold_Short"	map="Choice1" priority="-1" 		replicated="true" />
+		<action name="Choice1_Hold_Medium"	map="Choice1" priority="-1" 		replicated="true" />
+		<action name="Choice1_Hold_Long" 	map="Choice1" priority="-1" 		replicated="true" />
+		<action name="Choice1_Hold_VeryLong" 	map="Choice1" priority="-1" 		replicated="true" />
+		<action name="Choice3"			    map="Choice3" priority="-1" 		replicated="true" />
+		<action name="Choice4" 			 	map="Choice4" priority="-1" 		replicated="true" />
+		<action name="ChoiceScrollUp"    	map="UI_MoveUp" priority="-1" /> 
+		<action name="ChoiceScrollDown"  	map="UI_MoveDown" priority="-1" /> 
+		<action name="ChoiceApply"		 	map="DialogConfirm" priority="-2" /> <!-- Priority -2 to not lose to ChoiceRight -->
+		<action name="Choice_MoveY_Axis"    map="UI_MoveY_Axis" priority="-1" />
+		<action name="UI_Apply" 		 	map="Apply_Button" priority="-1" />
+		<action name="UI_Cancel" 		 	map="Cancel_Button" priority="-1" />
+		<action name="PickUpBody" 		 	map="PickUpBody_Button" />
+		<action name="FastForward_Hold"		map="FastForward_Hold_Button" />
+		<action name="FastForward"			map="FastForward_Button" />
+		<action name="SceneFastForward"		map="SceneFastForward_Button" />	
+		<action name="Takedown" 		 	map="Takedown_Button" priority="-1" />
+		<action name="Takedown_Hold"	 	map="Takedown_Button" priority="-2" />
+		<action name="TagButton"		 	map="Tag_Button" />
+		<action name="InteractionWheel"		map="InteractionWheel_Button" />
+
+		<!-- cpo interaction -->
+		<action name="OpenChatBox" 						map="OpenChatBox_Button" />
+		<action name="CPO_Choice1_Hold" 				map="Choice1" priority="-1"			replicated="true" />
+		<action name="CPO_Choice2_Hold" 				map="Choice2" priority="-1"			replicated="true" />
+		<action name="CPO_Choice3_Hold" 				map="Choice3" priority="-1"			replicated="true" />
+		<action name="CPO_Choice4_Hold" 				map="Choice4" priority="-1"			replicated="true" />
+
+	</context>
+	
+	<context name="ItemsMW" >
+		<action name="SwitchItemMW"			map="SwitchItemMW_Button" />
+	</context>
+
+	<context name="ItemsQuickSlots" >
+		<action name="QuickSlot1"			map="Keyboard_1" />
+		<action name="QuickSlot2"			map="Keyboard_2" />
+		<action name="QuickSlot3"			map="Keyboard_3" />
+		<action name="QuickSlot4"			map="Keyboard_4" />
+	</context>
+
+	<context name="Items" >
+		<include name="ItemsMW" />
+		<include name="Combat" />
+		<action name="SwitchItem"			map="SwitchItem_Button" />
+		<action name="CPO_SwitchItem"		map="SwitchItem_Button" />
+		<action name="CPO_SwitchItem_Hold"	map="SwitchItem_Button" />
+		<action name="EmptyHands"			map="EmptyHands_Button" />
+		<!--<action name="HolsterUnholster"		map="HolsterUnholster_Button" /> We dont want to holster anything for now in MP -->
+		<action name="DrawMeleeWeapon"		map="QuickMelee_Button" />
+		<action name="CycleInventorySlot" 	map="MouseWheel" />
+	</context>
+
+	<context name="ItemsFull" >
+		<include name="Items" />
+		<include name="ItemsQuickSlots" />
+	</context>
+	
+	<context name="Combat">
+		<action name="RangedAttack"				map="RangedAttack_Button" 		replicated="true" />
+		<action name="RangedADS"				map="RangedADS_Button" 			replicated="true" />
+		<action name="QuickMelee"				map="QuickMelee_Button" 		replicated="true" />
+		<action name="Reload"					map="Reload_Button" 			replicated="true" />
+		<action name="MeleeAttack"				map="MeleeAttack_Button" 		replicated="true" />
+		<action name="MeleeLightAttack"			map="MeleeLightAttack_Button" 	replicated="true" />
+		<action name="MeleeStrongAttack"		map="MeleeStrongAttack_Button" 	replicated="true" />
+		<action name="MeleeBlock"				map="MeleeBlock_Button" 		replicated="true" />
+		<action name="CancelChargingCG" 		map="CancelCharging_Button" 	replicated="true" />
+		<action name="UseCombatGadget"			map="CombatGadget_Button" 		replicated="true" />
+		<action name="UseConsumable"			map="UseConsumable_Button" 		replicated="true" />
+		<action name="UseCyberware"				map="UseCyberware_Button" 		replicated="true" />
+		<action name="CyberwareAttack"			map="CyberwareAttack_Button" 	replicated="true" />
+		<action name="DropCarriedObject" 		map="BodyDrop_Button" 			replicated="true" />
+		<action name="WeaponWheel"				map="WeaponWheel_Button"/>
+	</context>
+
+	<context name="CombatInteraction"> <!-- So far only Reload collides, remove actions from here if they collide with any interaction -->
+		<action name="RangedAttack"				map="RangedAttack_Button" 		replicated="true" />
+		<action name="RangedADS"				map="RangedADS_Button" 			replicated="true" />
+		<action name="QuickMelee"				map="QuickMelee_Button" 		replicated="true" />
+		<action name="MeleeAttack"				map="MeleeAttack_Button" 		replicated="true" />
+		<action name="MeleeLightAttack"			map="MeleeLightAttack_Button" 	replicated="true" />
+		<action name="MeleeStrongAttack"		map="MeleeStrongAttack_Button" 	replicated="true" />
+		<action name="MeleeBlock"				map="MeleeBlock_Button" 		replicated="true" />
+		<action name="UseCombatGadget"			map="CombatGadget_Button" 		replicated="true" />
+		<action name="UseConsumable"			map="UseConsumable_Button" 		replicated="true" />
+		<action name="UseCyberware"				map="UseCyberware_Button" 		replicated="true" />
+		<action name="CyberwareAttack"			map="CyberwareAttack_Button" 	replicated="true" />
+		<action name="DropCarriedObject" 		map="BodyDrop_Button" 			replicated="true" />
+	</context>
+
+	<context name="Abilities" >
+		<action name="LeftCyberware"		map="LeftCyberware_Button" />
+		<action name="IconicCyberware"	    map="IconicCyberware_Button" />
+		<action name="ShoulderButtonA"		map="LeftShoulder_Button" />
+		<action name="ShoulderButtonB"		map="RightShoulder_Button" />		
+		<action name="QuickMelee"			map="QuickMelee_Button" 		replicated="true" />
+		<action name="QuickMeleeRPG"		map="QuickMeleeRPG_Button" 		replicated="true" />
+	</context>
+		
+	<context name="Vision" >
+		<action name="VisionToggle"			map="Vision_Toggle_Button" 		replicated="true" />
+		<action name="VisionPush"			map="Vision_Push_Button" 		replicated="true" />
+	</context>
+		
+	<context name="ExplorationSimple" >
+        <include name="Camera" />
+        <include name="Locomotion" />
+		<include name="Interaction" />
+		<include name="Vision" />
+		<include name="UIExploration" />
+		<include name="Combat" />
+    </context>
+
+	<context name="Crawling" >
+		<action name="MoveY" map="CrawlingLeftY_Axis" replicated="true" />
+        <include name="CameraMovement" />
+		<include name="Interaction" />
+		<include name="UIExploration" />
+    </context>
+	
+	<context name="UI_DPad" >
+		<action name="GadgetWheel"						map="GadgetWheel_Button"/>
+		<action name="ConsumableWheel"					map="ConsumableWheel_Button"/>
+		<action name="CallVehicle"						map="CallVehicle_Button"/>
+		<action name="VehicleWheel"						map="VehicleWheel_Button"/>
+		<action name="VehicleInsideWheel"				map="VehicleInsideWheel_Button"/>
+		<action name="OpenPhone"						map="OpenPhone_Button"/>
+		<action name="CycleObjectives"					map="CycleObjectives_Button"/>
+		<action name="UI_DPadLeft"						map="UI_DPadLeft"/>
+		<action name="UI_DPadRight"						map="UI_DPadRight"/>
+		<action name="UI_DPadUp"						map="UI_DPadUp"/>
+		<action name="UI_DPadDown"						map="UI_DPadDown"/>
+		<action name="UI_DPadWeapons"					map="UI_Y_Triangle"/>
+	</context>
+	
+	<!-- EXPLORATION -->
+	
+    <!-- To keep this file clean please ensure that exploration context ONLY includes other context -->
+    <context name="Exploration" >
+        <include name="ExplorationSimple" />
+        <include name="Combat"/>
+		<include name="UIPanels" />
+		<include name="UI_DPad" />
+		<include name="UI_Keyboard_Numbers" />
+		<include name="ItemsFull" />
+		<include name="Abilities" />
+		<include name="Vision" />
+		<include name="CPO" />
+		<include name="PhotoMode" />
+		<include name="Debug" /> <!-- tempshit debug context -->
+		<action name="InteractionWheel"		map="InteractionWheel_Button" />
+    </context>
+	
+	<!-- AIM -->
+	
+	<context name="Aiming" >
+		<include name="Exploration" />
+		<exclude name="UI_DPad" />
+		<exclude name ="ItemsMW" />
+		<action name="ZoomIn"				map="ZoomIn_Button"		replicated="true" />
+		<action name="ZoomOut"				map="ZoomOut_Button"	replicated="true" />
+		<action name="TagButton"			map="Tag_Button" 		replicated="true" />
+		<action name="LeanLeft"				map="LeanLeft_Button" 	replicated="true" />
+		<action name="LeanRight"			map="LeanRight_Button" 	replicated="true" />
+	</context>
+   
+	<!--  INSPECTION -->
+   
+	<context name="Inspection" >
+		<include name="Vision" />
+		
+        <action name="RotateObjectX"			map="RightX_Axis" />
+        <action name="RotateObjectY"			map="RightY_Axis" />
+        <action name="RotateObjectX_Mouse"		map="MouseX" />
+        <action name="RotateObjectY_Mouse"		map="MouseY" />
+		
+		<action name="InspectionClose"			map="InspectionEnd" />
+		<action name="InspectionTake"			map="InspectionTake" />
+		<action name="InspectionZoom"			map="InspectionZoom" />
+		<action name="InspectionScan"			map="InspectionScan" />
+    </context>
+
+	<!-- DEVICE -->
+	
+	<context name="DeviceControl" >
+		<include name="Camera" />
+        <include name="Interaction" />
+        <include name="Vision" />
+		<include name="UI_DPad_Wheel" />
+		
+		<action name="InteractionWheel"	map="InteractionWheel_Button" />
+		
+		<action name="DeviceAttack" 			map="Hit_Button" />
+        <action name="SwitchDeviceNext"			map="Debug_DPadRight" />
+		<action name="SwitchDevicePrevious"		map="Debug_DPadLeft" />
+		
+		
+		<action name="ZoomIn"					map="ZoomIn_Button"/>
+		<action name="ZoomOut"					map="ZoomOut_Button"/>
+		<action name="RangedADS"			map="RangedADS_Button" />
+		<action name="TagButton"				map="Tag_Button" />
+		
+    </context>
+	
+	<!-- CPO -->
+	
+	<context name="CPO" >
+		<action name="MP_TriggerPing"				map="MP_TriggerPing" />		
+		<action name="MP_PlayerReady"			map="MP_PlayerReady" />
+    </context>
+	
+	
+	<!--  DEBUG -->
+	
+	<context name="FreeCamera" >		
+        <!-- game free camera mapped to F3 so it doesn't collide with the raw engine free camera  -->
+        <action name="EnableFreeCamera" map="ActivateFreeCam" />
+		<action name="SwitchFreeCameraControl" map="SwitchFreeCamControl" />
+		
+		<action name="CameraMovementX" map="LeftX_Axis" priority="-100" />
+        <action name="CameraMovementY" map="LeftY_Axis" priority="-100" />
+		<action name="CameraMovementZ" map="FreeCam_UpDown_Axis" priority="-100" />
+		<action name="CameraRotationX" map="FreeCam_RightX_Axis" priority="-100" />
+        <action name="CameraRotationY" map="FreeCam_RightY_Axis" priority="-100" />
+		<action name="CameraRotationMouseX" map="MouseX" priority="-100" />
+        <action name="CameraRotationMouseY" map="MouseY" priority="-100" />
+		<action name="CameraMultSpeed" map="CameraMultSpeed" priority="-100" />
+		<action name="CameraReduceSpeed" map="CameraReduceSpeed" priority="-100" />
+		<action name="CameraClipboardC" map="CameraClipboardC" priority="-100" />
+		<action name="CameraClipboardV" map="CameraClipboardV" priority="-100" />
+		<action name="CameraToggleStep" map="CameraToggleStep" priority="-100" />
+		<action name="CameraResetPitch" map="CameraResetPitch" priority="-100" />
+		<action name="CameraStepForward" map="CameraStepForward" priority="-100" />
+		<action name="CameraStepBack" map="CameraStepBack" priority="-100" />
+		<action name="CameraStepLeft" map="CameraStepLeft" priority="-100" />
+		<action name="CameraStepRight" map="CameraStepRight" priority="-100" />
+		<action name="CameraStepUp" map="CameraStepUp" priority="-100" />
+		<action name="CameraStepDown" map="CameraStepDown" priority="-100" />
+		<action name="CameraStepPitchUp" map="CameraStepPitchUp" priority="-100" />
+		<action name="CameraStepPitchDown" map="CameraStepPitchDown" priority="-100" />
+		<action name="CameraStepYawLeft" map="CameraStepYawLeft" priority="-100" />
+		<action name="CameraStepYawRight" map="CameraStepYawRight" priority="-100" />
+		<action name="CameraIncreaseFOV" map="CameraIncreaseFOV" priority="-100" />
+		<action name="CameraDecreaseFOV" map="CameraDecreaseFOV" priority="-100" />
+		<action name="CameraDebugStepFrame" map="CameraDebugStepFrame" priority="-100" />
+		<action name="CameraDebugStepTrack" map="CameraDebugStepTrack" priority="-100" />
+		<action name="CameraDebugToggleRewindMode" map="CameraDebugToggleRewindMode" priority="-100" />
+		<action name="CameraDebugJumpToSelected" map="CameraDebugJumpToSelected" priority="-100" />
+		<action name="CameraMouseRoll" map="MouseWheel" />
+		<action name="FreeCam_Control" map="FreeCam_Control" priority="-100" />
+		<action name="FreeCam_FOV_Control" map="FreeCam_FOV_Control" priority="-100" />
+    </context>
+	
+	<context name="Debug_Empty_State" >
+	<include name="FreeCamera" />
+	</context>
+	
+	<context name="Debug" >
+		<include name="FreeCamera" />
+		<action name="TweakDBReload"					map="TweakDBReload_Button" />
+		<action name="Debug_KillAll"					map="Debug_KillAll" replicated="true" />
+		<action name="Debug_Kill"						map="Debug_Kill" replicated="true" />
+		<action name="SelectPuppet"						map="SelectPuppet_Button" />
+		<action name="SelectVehicle"					map="SelectVehicle_Button" />
+		<action name="SelectSoundDebug"					map="SelectSoundDebug_Button" />
+		<action name="RaycastDistanceAndMaterial"		map="RaycastDistanceAndMaterial_Button" />
+		<action name="SelectPuppetAnimation"			map="SelectPuppetAnimation_Button" priority="0" />
+		<action name="SelectPlayerAnimation"			map="SelectPlayerAnimation_Button" priority="-1" />
+		<action name="SelectFacialAnimationDebugCamera"	map="SelectFacialAnimationDebugCamera_Button" />
+		<action name="SelectPuppetWorkspots"			map="SelectPuppetWorkspots_Button" />
+		<action name="AlternativeWorkspotModeDebug"		map="SelectPuppetWorkspots_Button" />
+		<action name="SelfWorkspotDebugMode"			map="SelfWorkspotDebugMode_Button" />		
+		<action name="SendSlowExitSignalWorkspotDebug"	map="SendExitSignalWorkspots_Button" />		
+		<action name="SendFastExitSignalWorkspotDebug"	map="SendExitSignalWorkspots_Button" />		
+		<action name="Debug_ToggleFocusMode"			map="Debug_ToggleFocusMode" />
+		<action name="Debug_ToggleScanMode"				map="Debug_ToggleScanMode" />
+		<action name="A"								map="Debug_A" />
+		<action name="B"								map="Debug_B" />
+		<action name="X"								map="Debug_X" />
+		<action name="Y"								map="Debug_Y" />
+		<action name="LS"								map="Debug_LeftThumb" />
+		<action name="RS"								map="Debug_RightThumb" />
+		<action name="LT"								map="Debug_LeftTrigger" />
+		<action name="RT"								map="Debug_RightTrigger" />
+		<action name="LB"								map="Debug_LeftShoulder" />
+		<action name="RB"								map="Debug_RightShoulder" />
+		<action name="DPadLeft"							map="Debug_DPadLeft" />
+		<action name="DPadRight"						map="Debug_DPadRight" />
+		<action name="DPadUp"							map="Debug_DPadUp" />
+		<action name="DPadDown"							map="Debug_DPadDown" />	
+		<!--
+		<action name="KeyRight" 						map="Right_Button" />						
+        <action name="KeyLeft" 							map="Left_Button" />
+        <action name="KeyEnter" 						map="Apply_Button" />
+		-->		
+		<action name="UI_Esc_B_Circle"					map="UI_Esc_B_Circle" priority="-1" />
+		<action name="Open_Craft" 						map="Open_Craft" priority="-1" />
+		<action name="Open_SubChar" 					map="Open_SubChar" priority="-1" />
+		<action name="Quick_Craft" 						map="Quick_Craft" priority="-1" />
+		<action name="Quick_Craft_Hold" 				map="Quick_Craft" priority="-1" />
+    </context>
+
+	<!-- VEHICLE ACTIONS -->
+	
+	<context name="VehiclePassenger" >
+		<include name="Debug" /> <!-- tempshit debug context -->
+		<include name="CameraMovement" />
+		<include name="Vision" />
+		<include name="UI_DPad" />
+		<include name="PhotoMode" />
+		<action name="WeaponWheel"			map="WeaponWheel_Button"/>
+        <action name="Exit" 				map="ExitVehicle_Button" />
+		<action name="TagButton"		 	map="Tag_Button" /> <!-- HACK FOR VS -->
+		<action name="ToggleCamera" 		map="VehicleCameraToggle" />
+		<action name="ZoomIn"				map="ZoomIn_Button"/>
+		<action name="ZoomOut"				map="ZoomOut_Button"/>
+		<action name="SwitchSeats"			map="Vehicle_SwitchSeats_Button"/>
+	</context>
+	
+    <context name="VehicleDrive" >
+		<include name="Debug" /> <!-- tempshit debug context -->
+		<include name="CameraMovement" />
+		<include name="Vision" />
+		<include name="UI_DPad" />
+		<include name="UIShared" />
+		<include name="PhotoMode" />
+		<action name="WeaponWheel"			map="WeaponWheel_Button"/>
+        <action name="Accelerate" 			map="Acceleration_Axis" />
+        <action name="Decelerate"			map="Deceleration_Axis" />
+		<action name="TurnX" 				map="LeftX_Axis_Vehicle" />
+		<action name="LeanFB" 				map="LeftY_Axis_Vehicle" />
+		<action name="ToggleCamera" 		map="VehicleCameraToggle" />
+		<action name="ToggleAutopilot" 		map="ToggleAutopilot_Button" />
+        <action name="Exit"				    map="ExitVehicle_Button" />
+		<action name="StrafeX" 				map="LeftX_Axis_Vehicle" />
+		<action name="StrafeY" 				map="LeftY_Axis_Vehicle" />
+		<action name="Horn" 				map="Vehicle_Horn" />
+		<action name="ShootPrimary" 		map="Vehicle_Shoot_Primary" />
+		<action name="ShootSecondary" 		map="Vehicle_Shoot_Secondary" />
+		<action name="ShootTertiary" 		map="Vehicle_Shoot_Tertiary" />
+		<action name="CycleLights"			map="Vehicle_CycleLights" />
+		<action name="Handbrake"			map="Vehicle_Handbrake" />
+		<action name="ZoomIn"				map="ZoomIn_Button"/>
+		<action name="ZoomOut"				map="ZoomOut_Button"/>
+		<action name="SwitchSeats"			map="Vehicle_SwitchSeats_Button"/>
+	</context>
+
+	<context name="VehicleDriverCombat" >
+		<include name="Debug" /> <!-- tempshit debug context -->
+		<include name="CameraMovement" />
+		<include name="Vision" />
+		<include name="UIToggles" />
+		<include name="UI_DPad" />
+		<include name="PhotoMode" />
+		<action name="WeaponWheel"			map="WeaponWheel_Button"/>
+        <action name="Accelerate" 			map="Acceleration_Axis" />
+        <action name="Decelerate"			map="Deceleration_Axis" />
+		<action name="TurnX" 				map="LeftX_Axis_Vehicle" />
+		<action name="LeanFB" 				map="LeftY_Axis_Vehicle" />
+		<action name="ToggleAutopilot" 		map="ToggleAutopilot_Button" />
+        <action name="Exit"				    map="ExitVehicle_Button" />
+		<action name="Horn" 				map="Vehicle_Horn" />
+		<action name="ExitDrive" 			map="Exit_Drive" />
+		<action name="CycleLights"			map="Vehicle_CycleLights" />
+		<action name="Handbrake"			map="Vehicle_Handbrake" />
+		<action name="RangedAttack"			map="VehicleDriverCombatRangedAttack_Button" />
+		<action name="Reload"				map="Reload_Button" />
+	</context>
+
+	<context name="VehicleDriveInteractions" >
+		<include name="Debug" /> <!-- temp debug context -->
+		<include name="Interaction" />
+		<include name="VehicleDrive" />
+    </context>
+	
+	<context name="VehicleCombat" >
+		<include name="Debug" /> <!-- tempshit debug context -->
+		<include name="Camera" />
+		<include name="ItemsFull" />
+		<include name="UI_DPad" />
+		<include name="Abilities" />
+		<include name="Vision" />
+		<include name="Combat" />
+		<include name="PhotoMode" />
+        <action name="Exit" 				map="ExitVehicle_Button" />
+		<action name="StrafeX" 				map="LeftX_Axis_Vehicle" />
+		<action name="StrafeY" 				map="LeftY_Axis_Vehicle" />
+		<action name="ZoomIn"				map="ZoomIn_Button"/>
+		<action name="ZoomOut"				map="ZoomOut_Button"/>
+		<action name="WeaponWheel"			map="WeaponWheel_Button"/>
+	</context>
+
+	<context name="VehicleCombatInteractions" >
+		<include name="Debug" /> <!-- temp debug context -->
+		<include name="Interaction" />
+		<include name="VehicleCombat" />
+    </context>
+
+	<context name="VehicleDriverCombatInteractions" >
+		<include name="Debug" /> <!-- temp debug context -->
+		<include name="Interaction" />
+		<include name="VehicleDriverCombat" />
+    </context>
+	
+	<context name="VehicleTurret" >
+		<include name="Debug" /> <!-- tempshit debug context -->
+		<include name="Camera" />
+		<include name="Abilities" />
+		<include name="Vision" />
+		<include name="PhotoMode" />
+        <action name="Exit" 				map="ExitVehicle_Button" />
+		<action name="AttackA"				map="Hit_Button" />
+		<action name="WeaponAim"			map="Hit2_Button" />
+	</context>
+
+	<context name="Braindance" >
+		<action name="Pause"					map="BraindancePause_Button" />
+		<action name="PlayForward"				map="BraindancePlayForward_Button" />
+		<action name="PlayBackward"				map="BraindancePlayBackward_Button" />
+		<action name="Restart"					map="BraindanceRestart_Button" />
+		<action name="SwitchLayer"				map="BraindanceSwitchLayer_Button" />
+		<action name="BdCameraToggle"			map="BraindanceCameraToggle_Button" />
+	</context>
+	
+	<context name="InputBlocked" >
+		<include name="Debug" /> <!-- tempshit debug context -->
+		<action name="Exit" 				map="ExitVehicle_Button" />
+	</context>
+  
+	<!-- UI -->  
+
+	<context name="UI_Keyboard_Numbers">
+		<action name="Keyboard_1"	map="Keyboard_1" />
+		<action name="Keyboard_2"	map="Keyboard_2" />
+		<action name="Keyboard_3"	map="Keyboard_3" />
+		<action name="Keyboard_4"	map="Keyboard_4" />
+		<action name="Keyboard_5"	map="Keyboard_5" />
+		<action name="Keyboard_6"	map="Keyboard_6" />
+		<action name="Keyboard_7"	map="Keyboard_7" />
+		<action name="Keyboard_8"	map="Keyboard_8" />
+		<action name="Keyboard_9"	map="Keyboard_9" />
+		<action name="Keyboard_0"	map="Keyboard_0" />
+	</context>
+	
+    <transition action="ToggleMenu">
+    	<blend from="__ANY__" to="__ANY__" event="NONE" />
+	</transition>
+
+	<context name="UIPanels" >        
+		<action name="CharacterPanel"			map="CharacterPanel_Button" />
+		<action name="CycleTrackedQuestEntry"	map="UI_CycleTrackedQuestEntry_Button" />
+		<action name="OpenChatBox" map="OpenChatBox_Button" />
+	</context>
+
+  <context name="ChatBox" >
+    <action name="EnterChat" map="EnterChat_Button" />
+    <action name="UI_Cancel" 			map="UI_Esc_B_Circle" priority="-1" />
+  </context>
+
+	<context name="UI_DPad_Wheel" >
+		<include name="UI_DPad" />
+		<action name="UI_MoveX_Axis" 		map="UI_MoveX_Axis" priority="-1" />
+        <action name="UI_MoveY_Axis" 		map="UI_MoveY_Axis" priority="-1" />
+		<action name="UI_LookX_Axis" 		map="UI_LookX_Axis" priority="-1" />
+		<action name="UI_LookY_Axis" 		map="UI_LookY_Axis" priority="-1" />
+		<action name="UI_Cancel" 			map="Cancel_Button" priority="-1" />
+		<action name="WeaponWheel"						map="WeaponWheel_Button"/>
+   		<action name="UI_PreviousAbility" 			map="LeftShoulder_Button" priority="-1" />
+		<action name="UI_NextAbility" 			map="RightShoulder_Button" priority="-1" />
+    	<action name="InteractionWheel"			map="InteractionWheel_Button" />
+    	<action name="CameraAim"		 		map="Hit2_Button" />
+	</context>
+	
+	<context name="UI_Storekeeper" >
+		<action name="UI_Store_DPadLeft"	map="UI_DPadLeft" priority="-1"/>
+		<action name="UI_Store_DPadRight"	map="UI_DPadRight" priority="-1"/>
+		<action name="UI_Store_DPadUp"		map="UI_DPadUp" priority="-1"/>
+		<action name="UI_Store_DPadDown"	map="UI_DPadDown" priority="-1"/>
+		<action name="UI_Apply" 			map="Apply_Button" priority="-1" />
+		<action name="UI_Cancel" 			map="Cancel_Button" priority="-1" />
+		<action name="UI_A_Cross"			map="UI_A_Cross" priority="-1" />
+		<action name="UI_Y_Triangle"		map="UI_Y_Triangle" priority="-1" />
+		<action name="UI_MoveX_Axis" 		map="UI_MoveX_Axis" priority="-1" />
+        <action name="UI_MoveY_Axis" 		map="UI_MoveY_Axis" priority="-1" />
+	</context>
+	
+	<context name="UI_Phone" >
+		<action name="UI_MoveUp" 			map="UI_MoveUp" priority="-1" />
+        <action name="UI_MoveDown" 			map="UI_MoveDown" priority="-1" />
+		<action name="UI_MoveLeft" 			map="UI_MoveLeft" priority="-1" />
+        <action name="UI_MoveRight" 		map="UI_MoveRight" priority="-1" />
+		<action name="UI_Apply" 			map="Apply_Button" priority="-1" />
+		<action name="UI_Cancel" 			map="Cancel_Button" priority="-1" />
+	</context>
+	
+	<context name="UIBase" >
+		<include name="UIToggles" />
+	</context>
+	
+	<context name="UIToggles">
+		<action name="OpenHubMenu" map="OpenHubMenu_Button" />
+		<action name="OpenPauseMenu" map="OpenPauseMenu_Button" />
+		<action name="PhoneInteract" map="PhoneInteract_Button" />
+    </context>
+
+	<context name="UI">
+		<action name="UI_LookX_Axis" 		map="UI_LookX_Axis" priority="-1" />
+		<action name="UI_LookY_Axis" 		map="UI_LookY_Axis" priority="-1" />
+		<action name="UI_MoveX_Axis" 		map="UI_MoveX_Axis" priority="-1" />
+        <action name="UI_MoveY_Axis" 		map="UI_MoveY_Axis" priority="-1" />
+		<action name="UI_MoveUp" 			map="UI_MoveUp" priority="-1" />
+        <action name="UI_MoveDown" 			map="UI_MoveDown" priority="-1" />
+		<action name="UI_MoveLeft" 			map="UI_MoveLeft" priority="-1" />
+        <action name="UI_MoveRight" 		map="UI_MoveRight" priority="-1" />
+		<action name="UI_Apply" 			map="Apply_Button" priority="-1" />
+		<action name="UI_Cancel" 			map="Cancel_Button" priority="-1" />
+		<action name="UI_PrintDebug" 		map="UI_PrintDebug" priority="-1" />
+		<action name="UI_Drop" 				map="UI_Drop" priority="-1" />
+		<action name="UI_Unequip" 			map="UI_Unequip" priority="-1" />
+	</context>
+	
+	<context name="UIShared">
+		<include name="UI" />
+		<action name="back"											map="back"										priority="-1" />
+		<action name="left_button"									map="left_button"								priority="-1" />
+		<action name="up_button"									map="up_button"									priority="-1" />
+		<action name="right_button"									map="right_button"								priority="-1" />
+		<action name="down_button"									map="down_button"								priority="-1" />
+		<action name="next_menu"									map="next_menu"									priority="-1" />
+		<action name="prior_menu"									map="prior_menu"								priority="-1" />
+		<action name="next_sub_menu"								map="next_sub_menu"								priority="-1" />
+		<action name="prior_sub_menu"								map="prior_sub_menu"							priority="-1" />
+		<action name="dpad_left"									map="dpad_left"									priority="-1" />
+		<action name="dpad_up"										map="dpad_up"									priority="-1" />
+		<action name="dpad_down"									map="dpad_down"									priority="-1" />
+		<action name="dpad_right"									map="dpad_right"								priority="-1" />
+		<action name="left_stick_x"									map="left_stick_x"								priority="-1" />
+		<action name="left_stick_y"									map="left_stick_y"								priority="-1" />
+		<action name="right_stick_x"								map="right_stick_x"								priority="-1" />
+		<action name="right_stick_y"								map="right_stick_y"								priority="-1" />
+		<action name="left_trigger"									map="left_trigger"								priority="-1" />
+		<action name="right_trigger"								map="right_trigger"								priority="-1" />
+		<action name="vendor_checkout"								map="vendor_checkout"							priority="-1" />
+		<action name="pause_menu_quicksave"							map="pause_menu_quicksave"						priority="-1" />
+		<action name="world_map_menu_cycle_camera_mode"				map="world_map_menu_cycle_camera_mode"			priority="-1" />
+		<action name="world_map_menu_jump_to_player"				map="world_map_menu_jump_to_player"				priority="-1" />
+		<action name="world_map_menu_toggle_floorplan"				map="world_map_menu_toggle_floorplan"			priority="-1" />
+		<action name="world_map_menu_toggle_legend"					map="world_map_menu_toggle_legend"				priority="-1" />
+		<action name="world_map_menu_time_skip"						map="world_map_menu_time_skip"					priority="-1" />
+		<action name="world_map_menu_cycle_filter_prev"				map="world_map_menu_cycle_filter_prev"			priority="-1" />
+		<action name="world_map_menu_cycle_filter_fake"				map="world_map_menu_cycle_filter_fake"			priority="-1" />
+		<action name="world_map_menu_cycle_filter_next"				map="world_map_menu_cycle_filter_next"			priority="-1" />
+		<action name="world_map_menu_interact"						map="world_map_menu_interact"					priority="-1" />
+		<action name="world_map_menu_track_mappin"					map="world_map_menu_track_mappin"				priority="-1" />
+		<action name="NotificationOpen"							    map="Notification_Button"				        priority="-1" />
+	</context>
+
+	<context name="UIExploration">
+		<include name="UIShared" />
+		<action name="click"										map="device_click"								priority="-1" />
+	</context>
+
+	<context name="UIMenu">
+		<include name="UIShared" />
+		<action name="click"										map="menu_click"								priority="-1" />
+		<action name="disassemble_item"								map="disassemble_item"							priority="-1" />
+    <action name="craft_item"								map="craft_item"							priority="-1" />		
+		<action name="drop_item"									map="drop_item"									priority="-1" />
+		<action name="equip_item"									map="equip_item"								priority="-1" />
+		<action name="unequip_item"									map="unequip_item"								priority="-1" />
+		<action name="use_item"										map="use_item"									priority="-1" />
+		<action name="select"										map="select"									priority="-1" />
+	</context>
+
+	<context name="UINotifications">
+		<action name="click"										map="menu_click"								priority="-1" />
+		<action name="back"											map="back"								priority="-1" />
+		<action name="popup_action"									map="popup_action"								priority="-1" />
+		<action name="popup_goto"								    map="popup_goto"								priority="-1" />
+	</context>
+
+	<context name="RELEASE_ALL" >
+	</context>
+
+	<!-- HOLD ACTIONS -->
+	<hold action="Takedown_Hold"				timeout="0.3" />
+	<hold action="FastForward_Hold"				timeout="0.5" />
+	<hold action="EnableFreeCamera"				timeout="1.0" />
+	<hold action="Quick_Craft_Hold"				timeout="2.0" />
+	<hold action="Choice1_Hold"					timeout="0.3" />
+	<hold action="Choice2_Hold"					timeout="0.3" />
+	<hold action="Choice1_Hold_Short"			timeout="1.0" />
+	<hold action="Choice1_Hold_Medium"			timeout="2.0" />
+	<hold action="Choice1_Hold_Long"			timeout="5.0" />	
+	<hold action="Choice1_Hold_VeryLong"		timeout="10.0" />	
+	
+	<hold action="UseConsumable"				timeout="0.2"/> <!-- Using consumable - E3 demo hack -->
+	<hold action="PickUpBody"					timeout="0.3" />
+	<hold action="PhoneInteract"				timeout="0.5" />
+	<hold action="ShoulderButtonA"				timeout="0.3" />
+	<hold action="RangedAttack"					timeout="0.3" />
+	<hold action="RangedADS"					timeout="0.3" />
+	<hold action="QuickMelee"					timeout="0.2" />
+	<hold action="DrawMeleeWeapon"				timeout="0.2" />
+	<hold action="MeleeLightAttack" 			timeout="0.3" />
+	<hold action="MeleeStrongAttack"			timeout="0.3" />
+	<hold action="MeleeBlock"					timeout="0.3" />
+	<hold action="UseCombatGadget"				timeout="0.3" />
+	<hold action="UseCyberware"					timeout="0.3" />
+	<hold action="GadgetWheel"					timeout="0.3" />
+	<hold action="ConsumableWheel"				timeout="0.3" />
+	<hold action="VehicleWheel"					timeout="0.3" />
+	<hold action="VehicleInsideWheel"			timeout="0.3" />
+	<hold action="WeaponWheel"					timeout="0.3" />
+	<hold action="IconicCyberware"				timeout="0.3" />
+	<hold action="InteractionWheel"				timeout="0.2" />
+	<hold action="NotificationOpen" 			timeout="0.5" />
+
+	<hold action="CPO_Choice1_Hold"				timeout="1.0f" />
+	<hold action="CPO_Choice2_Hold"				timeout="1.0f" />
+	<hold action="CPO_Choice3_Hold"				timeout="1.0f" />
+	<hold action="CPO_Choice4_Hold"				timeout="1.0f" />
+
+	<hold action="CPO_SwitchItem_Hold"			timeout="0.3" />
+
+	<hold action="click"						timeout="0.5" />
+	<hold action="back"							timeout="0.5" />
+	<hold action="left_button"					timeout="0.5" />
+	<hold action="up_button"					timeout="0.5" />
+	<hold action="right_button"					timeout="0.5" />
+	<hold action="down_button"					timeout="0.5" />
+	<hold action="dpad_left"					timeout="0.5" />
+	<hold action="dpad_up"						timeout="0.5" />
+	<hold action="dpad_down"					timeout="0.5" />
+	<hold action="dpad_right"					timeout="0.5" />
+
+	<hold action="disassemble_item"				timeout="1.2" />
+  	<hold action="craft_item"			  	timeout="1.2" />
+	<hold action="use_item"						timeout="1.2" />
+	
+	<hold action="PhotoMode_Left_Button"		timeout="10.0" />
+	<hold action="PhotoMode_Right_Button"		timeout="10.0" />
+	<hold action="PhotoMode_CameraMouseMove"	timeout="10.0" />
+	<hold action="PhotoMode_CameraMouseRotation"	timeout="10.0" />
+	
+	<hold action="EmptyHands" 					timeout="0.2" />
+	
+	<hold action="Exit" 						timeout="0.4" />
+
+	<!-- Prototype -->
+	<hold action="AlternativeWorkspotModeDebug"	timeout="0.8"/>
+	<hold action="SendSlowExitSignalWorkspotDebug"	timeout="0.5"/>
+	<hold action="UI_DPadLeft"					timeout="0.25"/>
+	<hold action="UI_DPadRight"					timeout="0.25"/>
+	<hold action="UI_DPadUp"					timeout="0.25"/>
+	<hold action="UI_DPadDown"					timeout="0.25"/>
+	<hold action="UI_DPadWeapons"				timeout="0.25"/>
+
+
+	<!-- MULTITAP ACTIONS -->
+	
+	<multitap action="Dodge" 			count="2" uptime="0.2" downtime="0.2" /> <!-- Kerenzikov Dodge -->
+	<multitap action="DodgeForward"	count="2" uptime="0.2" downtime="0.2"		cancels="Right;Back;Left" /> 
+	<multitap action="DodgeRight" 		count="2" uptime="0.2" downtime="0.2" 	cancels="Forward;Back;Left" /> 
+	<multitap action="DodgeBack" 		count="2" uptime="0.2" downtime="0.2"	cancels="Right;Forward;Left" /> 
+	<multitap action="DodgeLeft" 		count="2" uptime="0.2" downtime="0.2"	cancels="Right;Back;Forward" />
+	<multitap action="SendFastExitSignalWorkspotDebug" 			count="2" uptime="0.2" downtime="0.2" />
+	<multitap action="SwitchItem" 	count="2" uptime="0.2" downtime="0.2" /> 
+	
+	<!-- Prototype -->
+	<multitap action="UI_DPadLeft" 	count="2" uptime="0.17" downtime="0.17" />
+	<multitap action="UI_DPadRight" count="2" uptime="0.17" downtime="0.17" />
+	<multitap action="UI_DPadUp" 	count="2" uptime="0.17" downtime="0.17" />
+	<multitap action="UI_DPadDown"  count="2" uptime="0.17" downtime="0.17" />
+	
+	<!-- TOGGLE ACTIONS -->
+	
+	<toggle action="Interaction" />
+
+	<!-- EVENTS -->
+	<acceptedEvents action="Takedown" >
+        <event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+	
+	<acceptedEvents action="Quick_Craft_Hold" >
+        <event name="BUTTON_HOLD_COMPLETE" />
+    </acceptedEvents>
+	
+	<acceptedEvents action="Takedown_Hold" >
+        <event name="BUTTON_HOLD_COMPLETE" />
+    </acceptedEvents>
+		
+	<acceptedEvents action="DrawMeleeWeapon" >
+        <event name="BUTTON_HOLD_COMPLETE" />
+    </acceptedEvents>
+	<acceptedEvents action="PickUpBody" >
+        <event name="BUTTON_HOLD_COMPLETE" />
+    </acceptedEvents>
+	
+	 <acceptedEvents action="Choice1" >
+        <event name="BUTTON_PRESSED" />
+	</acceptedEvents>
+	
+	<acceptedEvents action="Choice1_Release" >
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+	
+	<acceptedEvents action="Choice1_Hold" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="Choice1_Hold_Short" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="Choice1_Hold_Medium" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+	
+	<acceptedEvents action="Choice1_Hold_Long" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+	
+	<acceptedEvents action="Choice1_Hold_VeryLong" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="ShoulderButtonA" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="FastForward_Hold" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	 <acceptedEvents action="Choice2" >
+		<event name="BUTTON_PRESSED" />
+	</acceptedEvents>
+	
+	 <acceptedEvents action="Choice3" >
+		<event name="BUTTON_PRESSED" />
+	</acceptedEvents>
+	
+	 <acceptedEvents action="Choice4" >
+		<event name="BUTTON_PRESSED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="CPO_Choice1_Hold" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="CPO_Choice2_Hold" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="CPO_Choice3_Hold" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="CPO_Choice4_Hold" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="CPO_SwitchItem" >
+        <event name="BUTTON_PRESSED" />
+        <event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="CPO_SwitchItem_Hold" >
+        <event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+	
+	<acceptedEvents action="ChoiceScrollUp" >
+		<event name="BUTTON_PRESSED" />
+	</acceptedEvents>
+	
+	 <acceptedEvents action="ChoiceScrollDown" >
+		<event name="BUTTON_PRESSED" />
+	</acceptedEvents>
+	
+	 <acceptedEvents action="ChoiceApply" >
+        <event name="BUTTON_PRESSED" />
+    </acceptedEvents>
+	
+	 <acceptedEvents action="UI_Apply" >
+        <event name="BUTTON_PRESSED" />
+    </acceptedEvents>
+	
+	 <acceptedEvents action="UI_Cancel" >
+        <event name="BUTTON_PRESSED" />
+        <event name="BUTTON_RELEASED" />
+    </acceptedEvents>	
+	
+	<acceptedEvents action="UI_DPadUp" >
+        <event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+    </acceptedEvents>
+	
+	<acceptedEvents action="UI_DPadDown" >
+        <event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+    </acceptedEvents>
+	
+	<acceptedEvents action="UI_DPadLeft" >
+        <event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+    </acceptedEvents>
+	
+	<acceptedEvents action="UI_DPadRight" >
+        <event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+    </acceptedEvents>
+	
+	<acceptedEvents action="UI_DPadWeapons" >
+        <event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+    </acceptedEvents>
+	
+	<acceptedEvents action="Keyboard_1" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+    </acceptedEvents>
+	
+	<acceptedEvents action="Keyboard_2" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+    </acceptedEvents>
+	
+	<acceptedEvents action="Keyboard_3" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+    </acceptedEvents>
+	
+	<acceptedEvents action="Keyboard_4" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+    </acceptedEvents>
+	
+	<acceptedEvents action="Keyboard_5" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+    </acceptedEvents>
+	
+	<acceptedEvents action="Keyboard_6" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+    </acceptedEvents>
+	
+	<acceptedEvents action="Keyboard_7" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+    </acceptedEvents>
+	
+	<acceptedEvents action="Keyboard_8" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+    </acceptedEvents>
+	
+	<acceptedEvents action="PhoneInteract" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />		
+	</acceptedEvents>
+
+	<acceptedEvents action="IconicCyberware" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />		
+	</acceptedEvents>	
+
+	<acceptedEvents action="RangedAttack" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="RangedADS" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>		
+
+	<acceptedEvents action="QuickMelee" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="MeleeLightAttack" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="MeleeStrongAttack" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="MeleeBlock" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="UseCombatGadget" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="UseCyberware" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="GadgetWheel" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="ConsumableWheel" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>	
+
+	<acceptedEvents action="InteractionWheel" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>	
+
+	<acceptedEvents action="WeaponWheel" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+
+	<acceptedEvents action="click" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="back" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="left_button" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="up_button" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="right_button" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="down_button" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="next_menu" >
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="prior_menu" >
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="next_sub_menu" >
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="prior_sub_menu" >
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="dpad_left" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="dpad_up" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="dpad_down" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="NotificationOpen" >
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="dpad_right" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="vendor_checkout" >
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="pause_menu_quicksave" >
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="world_map_menu_cycle_camera_mode" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="world_map_menu_jump_to_player" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="world_map_menu_toggle_floorplan" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="world_map_menu_toggle_legend" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="world_map_menu_time_skip" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="world_map_menu_cycle_filter_prev" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="world_map_menu_cycle_filter_fake" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="world_map_menu_cycle_filter_next" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="world_map_menu_interact" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="disassemble_item" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="craft_item" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="drop_item" >
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="equip_item" >
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="unequip_item" >
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+
+	<acceptedEvents action="use_item" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+		<event name="BUTTON_HOLD_COMPLETE" />
+	</acceptedEvents>
+
+	<acceptedEvents action="select" >
+		<event name="BUTTON_RELEASED" />
+	</acceptedEvents>
+	
+	<acceptedEvents action="PhotoMode_Left_Button" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+	</acceptedEvents>
+	
+	<acceptedEvents action="PhotoMode_Right_Button" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+	</acceptedEvents>
+
+	<acceptedEvents action="PhotoMode_CameraMouseMove" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+	</acceptedEvents>
+	
+	<acceptedEvents action="PhotoMode_CameraMouseRotation" >
+		<event name="BUTTON_PRESSED" />
+		<event name="BUTTON_RELEASED" />
+		<event name="BUTTON_HOLD_PROGRESS" />
+	</acceptedEvents>
+	
+	<blend from="__ANY__" to="__ANY__" event="BUTTON_RELEASE_IF_TO_DOESNT_CONTAIN" />
+	<blend from="__ANY__" to="UI" event="AXIS_RESET_TO_ZERO" />
+	<blend from="__ANY__" to="RELEASE_ALL" event="AXIS_RESET_TO_ZERO" />
+	<blend from="__ANY__" to="RELEASE_ALL" event="BUTTON_RELEASE_IF_TO_DOESNT_CONTAIN" />
+
+	<blend from="__ANY__" to="ChatBox" event="AXIS_RESET_TO_ZERO" />
+	<blend from="__ANY__" to="ChatBox" event="BUTTON_RELEASE_IF_TO_DOESNT_CONTAIN" />
+
+	<blend from="__ANY__" to="UI_Phone" event="AXIS_RESET_TO_ZERO" />
+	<blend from="__ANY__" to="UI_DPad_Wheel" event="AXIS_RESET_TO_ZERO" />
+	<blend from="__ANY__" to="UI_DPad_Wheel" event="BUTTON_RELEASE_IF_TO_DOESNT_CONTAIN" />
+</bindings>

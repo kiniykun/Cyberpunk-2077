@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CP2077 native browser port</title>
+  <style>
+    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
+    body{display:flex;align-items:center;justify-content:center}
+    canvas{display:block;width:min(100vw,177.777778vh);height:min(100vh,56.25vw)}
+  </style>
+</head>
+<body>
+  <!-- Only the original engine renders into this canvas; no HTML menu UI. -->
+  <canvas id="cp2077-canvas" tabindex="0"></canvas>
+  <script>globalThis.cp2077AsyncPresentDefault = 1; // [opt] async present on by default; ?asyncPresent=0 turns it off</script>
+  <script>if(/[?&]assetTrace=1(&|$)/.test(location.search))document.write('<script src="/runtime/asset-trace.js"><\/script>'); // [cloudflare] opt-in asset request trace</script>
+  <script>if(/[?&](blockFetch|prefetch)=/.test(location.search))document.write('<script src="/runtime/block-fetch.js"><\/script>'); // [cloudflare] opt-in widened block reads / boot prefetch</script>
+  <script src="/runtime/gpu-upload-telemetry.js"></script>
+  <script src="/runtime/performance-overlay.js"></script>
+  <script src="/runtime/cp2077-jump.js"></script>
+  <script src="/runtime/live-telemetry.js"></script>
+  <script src="/runtime/engine-versions/2942ad1a30a3f73351868818010eab00d57d051ef956081c609a3e24134dfaea/cp2077.js"></script>
+  <script>
+    (async () => {
+      if (!globalThis.isSecureContext || !globalThis.crossOriginIsolated) {
+        throw new Error('Native engine needs a secure origin and COOP/COEP headers for its worker threads.');
+      }
+      if (typeof createCP2077 !== 'function') {
+        throw new Error('Native engine build is missing: build/game/cp2077.js has not linked successfully.');
+      }
+      const canvas = document.getElementById('cp2077-canvas');
+      const nativeGpuDiagnostics = [];
+      const nativeOMStateDiagnostics=[];
+      const nativeBufferDiagnostics = [];
+      const mappedUploadDiagnostics=[];
+      const nativeTextureFormatDiagnostics = [];
+      const nativeGameStateDiagnostics = [];
+      const nativeLocalizationDiagnostics=[];
+      const nativeSessionMenuDiagnostics = [];
+      const nativeGraphicsResourceDiagnostics = [];
+      const nativeGpuRetirementDiagnostics = [];
+      const nativeLoadingStageDiagnostics = [];
+      const nativeMultilayerDemandDiagnostics = [];
+      const nativeEnvironmentStartupDiagnostics = [];
+      const nativeHandleDiagnostics = [];
+      const nativeComputeDiagnostics = [];
+      const nativeDepthBindingDiagnostics = [];
+      const nativeScriptBindingDiagnostics = [];
+      const nativeShaderDiagnostics = [];
+      const nativeMaterialShaderDiagnostics=[];
+      const nativeMaterialShaderMessages=new Set();
+      const nativeShadowShaderDiagnostics = [];
+      const nativeShaderMessages = new Set();
+      const nativeWebGpuErrors = [];
+      const nativeWebGpuErrorMessages = new Set();
+      const initializationJobs = {};
+      const allocatorMemoryDiagnostics = [];
+      const engineFramePhaseDiagnostics = [];
+      const renderWorkerDiagnostics = [];
+      const gpuHandoffDelayDiagnostics=[];
+      const originalReadbackChecks=[];
+      const browserSchedulingDiagnostics={timerSamples:0,maxTimerLagMs:0,slowTimers:[],longTasks:[]};
+      let browserProbeExpected=performance.now()+100;
+      const browserProbeTimer=setInterval(()=>{
+        const now=performance.now(),lag=Math.max(0,now-browserProbeExpected);
+        browserProbeExpected=now+100;
+        ++browserSchedulingDiagnostics.timerSamples;
+        browserSchedulingDiagnostics.maxTimerLagMs=Math.max(browserSchedulingDiagnostics.maxTimerLagMs,lag);
+        if(lag>=20){const rows=browserSchedulingDiagnostics.slowTimers;if(rows.length>=64)rows.shift();rows.push({at:now,lagMs:lag});}
+      },100);
+      if(globalThis.PerformanceObserver && PerformanceObserver.supportedEntryTypes.includes('longtask')){
+        new PerformanceObserver(list=>{for(const entry of list.getEntries()){
+          const rows=browserSchedulingDiagnostics.longTasks;if(rows.length>=64)rows.shift();
+          rows.push({startMs:entry.startTime,durationMs:entry.duration,name:entry.name});
+        }}).observe({type:'longtask',buffered:true});
+      }
+      const module = await createCP2077({
+        canvas,
+        arguments:['-qualityLevel=Low','-texQualityLevel=Low',
+          ...((q=>q.has('skipStartScreen')||q.get('start')==='nomadquest'||q.get('start')==='nomad')(new URLSearchParams(location.search)) ? ['-skipStartScreen'] : []),
+          // [missionflow] ?start=nomad (alias ?start=nomadquest) = the REAL Nomad prologue new game (q000_nomad): only -skipStartScreen here;
+          // the engine (gameFramework preGameRequestsHandler.cpp overlay) calls the menu's own StartNewGame with the default Nomad
+          // character as soon as the main menu is up. No sandbox params, so no sandbox hooks; saves as in the real game.
+          // [nomad] ?start=nomadfree (was ?start=nomad): free roam in Night City at the Nomad prologue garage (q000 Yucca, Badlands), no quest:
+          // -world=base\worlds\03_night_city\03_night_city.world -startPosition near q000_town_garage (cooked area:
+          // archive/pc/content/basegame_zz_nomad*.archive). &startPos=x,y,z / &startYaw=deg override. The URL gets
+          // sandboxWorld/sandboxPos added (history.replaceState) so the engine's sandbox autosave gate stays OFF.
+          // &startVehicle=N (opt-in) also adds sandbox=nomad&sandboxVehicles=N&sandboxWeapons=0 -> [sandbox-spawn]/[coreplay]
+          // spawn N vehicles 10 m ahead of the player (plus their F-enter/flight helpers and the 1.2 km floor box at the origin, far away).
+          ...(()=>{const q=new URLSearchParams(location.search);
+            if(q.get('start')!=='nomadfree')return [];
+            const bs=String.fromCharCode(92);
+            const world=['base','worlds','03_night_city','03_night_city.world'].join(bs);
+            let pos=(q.get('startPos')||'-3970.5,-6503.8,78').split(',').map(Number);
+            if(!(pos.length===3&&pos.every(Number.isFinite)))pos=[-3958.0,-6488.0,77.0];
+            const yaw=Number(q.get('startYaw')||0)||0;
+            try{q.set('sandboxWorld',world.split(bs).join('/'));q.set('sandboxPos',pos.join(','));
+              const nv=parseInt(q.get('startVehicle')||'0',10);
+              if(nv>0){q.set('sandbox','nomad');q.set('sandboxVehicles',String(nv));if(!q.has('sandboxNear'))q.set('sandboxNear','1');if(!q.has('sandboxWeapons'))q.set('sandboxWeapons','0');}
+              history.replaceState(history.state,'',location.pathname+'?'+q.toString()+location.hash);}catch(e){console.warn('[nomad] replaceState failed',e);}
+            console.log('[nomad] start=nomadfree world='+world+' pos='+pos.join(',')+' yaw='+yaw);
+            return (q.has('skipStartScreen')?[]:['-skipStartScreen']).concat('-world='+world,'-startPosition={X='+pos[0]+',Y='+pos[1]+',Z='+pos[2]+'}','-startRotation={Yaw='+yaw+'}');})(),
+          // ?sandbox=1: start a session directly in the gyms\gym_plate baseplate world (1 km x 1 km flat plane with collision,
+          // archive/pc/content/basegame_zz_sandbox_plate.archive) through the engine's own command-line session path
+          // (gsm Initialization -> Session -> SessionNewGame): no start screen, no main menu, no character creation, no quest.
+          // Overrides: ?sandbox=empty (original 100 m gyms\gym_empty via its gamedef), ?sandboxGamedef=<res path .gamedef>,
+          // ?sandboxWorld=<res path .world>, ?sandboxPos=x,y,z (player start for -world, default 0,0,1).
+          // [gym-vehicles] ?sandbox=vehicles: depot vehicle test gym gyms\gym_vehicles via its gamedef (spawn tag 'spawn' + empty.quest
+          // teleport to #mount_test_spawn; archive basegame_zz_sandbox_vehicles.archive). With ?sandboxPos it uses -world + -startPosition
+          // instead (the engine ignores -startPosition when -gameDefinition is given). ?sandbox=plate = the flat gym_plate.
+          ...(()=>{const q=new URLSearchParams(location.search);
+            if(q.get('start')==='nomadfree'||(!q.has('sandbox')&&!q.has('sandboxWorld')&&!q.has('sandboxGamedef')))return [];
+            const bs=String.fromCharCode(92);
+            const res=k=>{const v=(q.get(k)||'').split('/').join(bs);return /^[A-Za-z0-9_.\\-]+$/.test(v)?v:'';};
+            const a=q.has('skipStartScreen')?[]:['-skipStartScreen'];
+            const sb=q.get('sandbox')||'';
+            const veh=sb==='vehicles'&&!res('sandboxWorld')&&!res('sandboxGamedef');
+            if(veh&&q.has('sandboxPos')){
+              let vp=q.get('sandboxPos').split(',').map(Number);if(!(vp.length===3&&vp.every(Number.isFinite)))vp=[0,0,1];
+              const yaw=Number(q.get('sandboxYaw')||0)||0;
+              return a.concat('-world='+['gyms','gym_vehicles','gym_vehicles.world'].join(bs),'-startPosition={X='+vp[0]+',Y='+vp[1]+',Z='+vp[2]+'}','-startRotation={Yaw='+yaw+'}');}
+            const gd=res('sandboxGamedef')||(sb==='empty'?['gyms','gym_empty','gym_empty.gamedef'].join(bs):veh?['gyms','gym_vehicles','gym_vehicle.gamedef'].join(bs):'');
+            if(gd)return a.concat('-gameDefinition='+gd);
+            const world=res('sandboxWorld')||['gyms','gym_plate','gym_plate.world'].join(bs);
+            let pos=(q.get('sandboxPos')||'0,0,1').split(',').map(Number);
+            if(!(pos.length===3&&pos.every(Number.isFinite)))pos=[0,0,1];
+            return a.concat('-world='+world,'-startPosition={X='+pos[0]+',Y='+pos[1]+',Z='+pos[2]+'}','-startRotation={Yaw=0}');})()],
+        cp2077RenderWidth:1280,
+        cp2077RenderHeight:720,
+        locateFile: name => new URL('/runtime/engine-versions/2942ad1a30a3f73351868818010eab00d57d051ef956081c609a3e24134dfaea/' + name, document.baseURI).href,
+        print: message => console.log(message),
+        printErr: message => {
+          if(/^CP2077 mapped upload probe:/.test(message)){if(mappedUploadDiagnostics.length>=64)mappedUploadDiagnostics.shift();mappedUploadDiagnostics.push({timestamp:new Date().toISOString(),message});}
+          if(/^CP2077 OM state rejection probe:/.test(message)&&nativeOMStateDiagnostics.length<32)nativeOMStateDiagnostics.push({timestamp:new Date().toISOString(),message});
+          if(/^CP2077 localization probe:/.test(message))nativeLocalizationDiagnostics.push({timestamp:new Date().toISOString(),message});
+          if(/^CP2077 session menu gate probe:/.test(message)){if(nativeSessionMenuDiagnostics.length>=128)nativeSessionMenuDiagnostics.shift();nativeSessionMenuDiagnostics.push({timestamp:new Date().toISOString(),message});}
+          if(/^CP2077 original GPU readback checks:/.test(message))originalReadbackChecks.push({timestamp:new Date().toISOString(),message});
+          if(/^CP2077 GPU (handoff|binding) delay probe:/.test(message) && gpuHandoffDelayDiagnostics.length<192)
+            gpuHandoffDelayDiagnostics.push({timestamp:new Date().toISOString(),message});
+          if(/^CP2077 (render (node|job) cost|frame job wait|command lock cost|draw stage cost|GPU (handoff|binding) delay|GPU allocation wait) probe:/.test(message)) {
+            if(renderWorkerDiagnostics.length===512)renderWorkerDiagnostics.shift();
+            renderWorkerDiagnostics.push({timestamp:new Date().toISOString(),message});
+          }
+          if(/^CP2077 (?:engine frame|game engine) phases probe:/.test(message)) {
+            if(engineFramePhaseDiagnostics.length>=64)engineFramePhaseDiagnostics.shift();
+            engineFramePhaseDiagnostics.push({timestamp:new Date().toISOString(),message});
+          }
+          if(/^CP2077 ((allocator (memory|range)|outer frame|segmented TLSF) probe:|segmented TLSF checks passed:)/.test(message)) {
+            if(allocatorMemoryDiagnostics.length===512) allocatorMemoryDiagnostics.shift();
+            allocatorMemoryDiagnostics.push({timestamp:new Date().toISOString(),message});
+          }
+          if(/^CP2077 (loading (stage|UI)|game state|runtime readiness|puppet (load|camera|customization|ready|demand)) probe:/.test(message)){
+            if(nativeLoadingStageDiagnostics.length>=64)nativeLoadingStageDiagnostics.shift();
+            nativeLoadingStageDiagnostics.push({timestamp:new Date().toISOString(),message});
+          }
+          if(nativeGpuRetirementDiagnostics.length<64 && /^CP2077 GPU retirement probe:/.test(message))
+            nativeGpuRetirementDiagnostics.push({timestamp:new Date().toISOString(),message});
+          if(nativeMultilayerDemandDiagnostics.length<64 && /^CP2077 multilayer demand probe:/.test(message))
+            nativeMultilayerDemandDiagnostics.push({timestamp:new Date().toISOString(),message});
+          if(/^CP2077 environment startup probe:/.test(message)) {
+            if(nativeEnvironmentStartupDiagnostics.length>=256)nativeEnvironmentStartupDiagnostics.shift();
+            nativeEnvironmentStartupDiagnostics.push({timestamp:new Date().toISOString(),message});
+          }
+          if(nativeGraphicsResourceDiagnostics.length<192 && /^CP2077 graphics resource probe:/.test(message))
+            nativeGraphicsResourceDiagnostics.push({timestamp:new Date().toISOString(),message});
+          if(nativeGameStateDiagnostics.length<96 && /^CP2077 (game (state|frame)|shadow binding) probe:/.test(message))
+            nativeGameStateDiagnostics.push({timestamp:new Date().toISOString(),message});
+          if(nativeTextureFormatDiagnostics.length<16 && /^CP2077 texture format probe:/.test(message))
+            nativeTextureFormatDiagnostics.push({timestamp:new Date().toISOString(),message});
+          if(nativeBufferDiagnostics.length<32 && /^CP2077 buffer (lock|upload) probe:/.test(message))
+            nativeBufferDiagnostics.push({timestamp:new Date().toISOString(),message});
+          if (nativeShadowShaderDiagnostics.length<32 && /name=m_shader(?:RayTraced)?GlobalShadow/.test(message))
+            nativeShadowShaderDiagnostics.push({timestamp:new Date().toISOString(),message});
+          if (nativeDepthBindingDiagnostics.length < 32 && /^CP2077 depth SRV probe:/.test(message))
+            nativeDepthBindingDiagnostics.push({timestamp:new Date().toISOString(),message});
+          if (nativeComputeDiagnostics.length < 32 && /^CP2077 compute resource probe:/.test(message))
+            nativeComputeDiagnostics.push({timestamp:new Date().toISOString(),message});
+          if (nativeHandleDiagnostics.length < 16 && /^CP2077 script handle probe:/.test(message))
+            nativeHandleDiagnostics.push({timestamp:new Date().toISOString(),message});
+          if (nativeScriptBindingDiagnostics.length < 32 && /^CP2077 script binding probe:/.test(message))
+            nativeScriptBindingDiagnostics.push({timestamp:new Date().toISOString(),message});
+          if (nativeWebGpuErrors.length < 64 && !nativeWebGpuErrorMessages.has(message) &&
+              /^CP2077 WebGPU(?:: (validation error|device lost):| (binding\/encoding|(?:compute )?shader creation|texture allocation|texture view|image upload|buffer allocation) failed:)/.test(message)) {
+            nativeWebGpuErrorMessages.add(message);
+            nativeWebGpuErrors.push({timestamp:new Date().toISOString(),message});
+          }
+          if (nativeShaderDiagnostics.length < 64 && !nativeShaderMessages.has(message) &&
+              /^CP2077 WebGPU: (graphics shader has no exact|shader requires an exact)/.test(message)) {
+            nativeShaderMessages.add(message);
+            nativeShaderDiagnostics.push({timestamp:new Date().toISOString(),message});
+          }
+          if(/^CP2077 WebGPU: graphics shader has no exact original-bytecode conversion:/.test(message)&&!nativeMaterialShaderMessages.has(message)&&nativeMaterialShaderDiagnostics.length<256){
+            nativeMaterialShaderMessages.add(message);
+            nativeMaterialShaderDiagnostics.push({timestamp:new Date().toISOString(),message});
+          }
+          const job=/^CP2077 native init job: phase=(enter|returned) name=(.+)$/.exec(message);
+          if(job){
+            const record=initializationJobs[job[2]] ||= {entered:0,returned:0};
+            record[job[1]==='enter'?'entered':'returned']++;
+            record.phase=job[1];record.timestamp=new Date().toISOString();
+          }
+          if (nativeGpuDiagnostics.length < 64 &&
+              /^CP2077 ((script call|script handle|buffer lock|blue noise|texture array|blob upload|shader identity) probe:|rejected texture binding:|original (uniform|constant).*rejection:|WebGPU: (unsupported .*descriptor:|draw state rejection:|attachment clear failed:))/.test(message)) {
+            nativeGpuDiagnostics.push({timestamp:new Date().toISOString(), message});
+          }
+          const diagnostic=/^CP2077 (reserve #|(?:dynamic-linear|segmented TLSF) checks passed:|native (resource filesystem mounted|state enter:|initializer begin:|init job:|GPU constant repack:)|[^:]+ probe:)/.test(message);
+          if(diagnostic && !/\b(failed|failure|rejected|rejection|unsupported|unavailable|invalid)\b/i.test(message))
+            console.debug(message);
+          else console.error(message);
+        }
+      });
+      globalThis.cp2077EngineModule = module;
+      module.cp2077TraceExport=async()=>{
+        if(!module.cp2077TraceExports)throw Error('Native trace exports not initialized');
+        const {createMainTrace}=await import('/runtime/wgtrace_main.js');
+        const trace=createMainTrace({module:module.cp2077TraceExports,heapProvider:module.cp2077TraceHeapProvider});
+        const result=trace.exportTrace();result.meta.integration='Existing outer frames, native job runs/counter waits, GPU proxies, resource validation groups, and canvas presentation. Worker job enqueue/dependency IDs not mapped; those waits remain unresolved.';
+        result.meta.jobNames=module.cp2077TraceReadNames();
+        result.meta.callKinds=result.meta.jobNames;
+        return result;
+      };
+      module.cp2077AllocatorMemoryDiagnostics = allocatorMemoryDiagnostics;
+      module.cp2077EngineFramePhaseDiagnostics = engineFramePhaseDiagnostics;
+      module.cp2077RenderWorkerDiagnostics = renderWorkerDiagnostics;
+      module.cp2077BrowserSchedulingDiagnostics=browserSchedulingDiagnostics;
+      module.cp2077GpuHandoffDelayDiagnostics=gpuHandoffDelayDiagnostics;
+      module.cp2077OriginalReadbackChecks=originalReadbackChecks;
+      module.cp2077NativeGpuDiagnostics = nativeGpuDiagnostics;
+      module.cp2077NativeBufferDiagnostics = nativeBufferDiagnostics;
+      module.cp2077MappedUploadDiagnostics=mappedUploadDiagnostics;
+      module.cp2077NativeTextureFormatDiagnostics = nativeTextureFormatDiagnostics;
+      module.cp2077NativeGameStateDiagnostics = nativeGameStateDiagnostics;
+      module.cp2077NativeLocalizationDiagnostics=nativeLocalizationDiagnostics;
+      module.cp2077NativeSessionMenuDiagnostics = nativeSessionMenuDiagnostics;
+      module.cp2077NativeGraphicsResourceDiagnostics = nativeGraphicsResourceDiagnostics;
+      module.cp2077NativeGpuRetirementDiagnostics = nativeGpuRetirementDiagnostics;
+      module.cp2077NativeLoadingStageDiagnostics = nativeLoadingStageDiagnostics;
+      module.cp2077NativeMultilayerDemandDiagnostics = nativeMultilayerDemandDiagnostics;
+      module.cp2077NativeEnvironmentStartupDiagnostics = nativeEnvironmentStartupDiagnostics;
+      module.cp2077NativeHandleDiagnostics = nativeHandleDiagnostics;
+      module.cp2077NativeComputeDiagnostics = nativeComputeDiagnostics;
+      module.cp2077NativeDepthBindingDiagnostics = nativeDepthBindingDiagnostics;
+      module.cp2077NativeScriptBindingDiagnostics = nativeScriptBindingDiagnostics;
+      module.cp2077NativeShaderDiagnostics = nativeShaderDiagnostics;
+      module.cp2077NativeOMStateDiagnostics=nativeOMStateDiagnostics;
+      module.cp2077NativeMaterialShaderDiagnostics=nativeMaterialShaderDiagnostics;
+      module.cp2077NativeShadowShaderDiagnostics = nativeShadowShaderDiagnostics;
+      module.cp2077NativeWebGpuErrors = nativeWebGpuErrors;
+      module.cp2077InitializationJobs = initializationJobs;
+      canvas.focus();
+    })().catch(error => console.error('CP2077 native engine launch failed:', error));
+  </script>
+</body>
+</html>

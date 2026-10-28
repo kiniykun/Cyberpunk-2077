@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>Cyberpunk 2077 — local Windows stream</title>
+<style>html,body{margin:0;width:100%;height:100%;background:#000;color:#ddd;font:14px system-ui}main{height:100%;display:flex;align-items:center;justify-content:center}img{width:100%;height:100%;object-fit:contain}aside{position:fixed;top:0;right:0;background:#111c;padding:8px}button{cursor:pointer}aside:fullscreen{display:none}</style>
+<main tabindex="0"><img id="game" src="/stream.mjpg" alt="Live Windows game capture"></main>
+<aside>Local Windows stream · <button id="fullscreen">Fullscreen</button></aside>
+<script>
+const main=document.querySelector('main'),game=document.getElementById('game');let sending=false,latestMove=null;const queue=[],heldKeys=new Set(),heldButtons=new Set();
+document.getElementById('fullscreen').onclick=()=>main.requestFullscreen();
+async function flush(){if(sending)return;const event=queue.shift()||latestMove;if(!event)return;if(event===latestMove)latestMove=null;sending=true;try{const response=await fetch('/input',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(event)});const result=await response.json();if(!result.accepted)console.error(result.error);}catch(e){console.error(e);}finally{sending=false;if(queue.length)flush();}}
+function input(event){if(event.type==='button'||event.type==='wheel')latestMove=null;queue.push(event);flush();}
+const keys=new Set(['Enter','Escape','ArrowLeft','ArrowUp','ArrowRight','ArrowDown','Space','Tab','Backspace','ShiftLeft','ShiftRight','ControlLeft','ControlRight',...Array.from({length:26},(_,i)=>'Key'+String.fromCharCode(65+i)),...Array.from({length:10},(_,i)=>'Digit'+i)]);
+document.addEventListener('keydown',e=>{if(keys.has(e.code)&&document.activeElement===main){e.preventDefault();if(!heldKeys.has(e.code)){heldKeys.add(e.code);input({type:'key',code:e.code,down:true});}}});
+document.addEventListener('keyup',e=>{if(heldKeys.delete(e.code)){e.preventDefault();input({type:'key',code:e.code,down:false});}});
+function position(e){const r=game.getBoundingClientRect();const scale=Math.min(r.width/game.naturalWidth,r.height/game.naturalHeight);const w=game.naturalWidth*scale,h=game.naturalHeight*scale;return{x:Math.max(0,Math.min(1,(e.clientX-r.left-(r.width-w)/2)/w)),y:Math.max(0,Math.min(1,(e.clientY-r.top-(r.height-h)/2)/h))};}
+game.addEventListener('pointermove',e=>{latestMove={type:'move',...position(e)};});setInterval(flush,1000/30);
+game.addEventListener('pointerdown',e=>{e.preventDefault();main.focus();game.setPointerCapture(e.pointerId);heldButtons.add(e.button);input({type:'button',button:e.button,down:true,...position(e)});});
+game.addEventListener('pointerup',e=>{e.preventDefault();heldButtons.delete(e.button);input({type:'button',button:e.button,down:false,...position(e)});});
+game.addEventListener('wheel',e=>{e.preventDefault();input({type:'wheel',delta:e.deltaY>0?-120:120,...position(e)});},{passive:false});
+game.addEventListener('contextmenu',e=>e.preventDefault());
+window.addEventListener('blur',()=>{for(const code of heldKeys)input({type:'key',code,down:false});heldKeys.clear();for(const button of heldButtons)input({type:'button',button,down:false,x:latestMove?.x??.5,y:latestMove?.y??.5});heldButtons.clear();});
+</script>
+</html>

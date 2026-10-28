@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+.secrets*
+*.pem
+*.pfx
+build/
+build-w32/
+cooked/
+cook-lab/
+.wrangler/
+*.bak
+*-bak

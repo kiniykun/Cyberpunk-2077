@@ -1,0 +1,154 @@
+// [support] "Support the project" panel on the right side of the game's main menu, styled like the native menu, while the game's MAIN MENU is up (not in-game,
+// not while loading). Opens a small menu with the Pump.fun coin and the X account, the same links as the
+// cyberpunk2077.lol home page. Main menu = the game shows its menu cursor and there is no player in a world
+// (cp2077DebugState(): no player, or the menu's placeholder puppet at the world origin with no quest).
+(function () {
+  "use strict";
+  var PUMP = "https://pump.fun/coin/3fxjycng58exb8QsBZqDFxxun5s1ggPmKSJJJjPPpump";
+  var XURL = "https://x.com/omonkeyzz";
+  var ICON = "data:image/png;base64,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";
+  var XSVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>';
+  var root = null;
+  function build() {
+    root = document.createElement("div"); root.id = "cp-support"; root.setAttribute("role", "navigation"); root.setAttribute("aria-label", "Support the project");
+    root.innerHTML = '<div class="cps-frame">' +
+      '<ul class="cps-list">' +
+      '<li><a class="cps-item" href="' + XURL + '" target="_blank" rel="noopener noreferrer"><span class="cps-lbl"><span class="cps-ic">' + XSVG + '</span>@omonkeyzz</span><span class="cps-mark"><i></i></span></a></li>' +
+      '<li><a class="cps-item" href="' + PUMP + '" target="_blank" rel="noopener noreferrer" aria-label="Support the project on Pump.fun"><span class="cps-lbl"><span class="cps-ic"><img alt="" src="' + ICON + '"></span>Support the project</span><span class="cps-mark"><i></i></span></a></li>' +
+      '</ul></div>';
+    // keep clicks/keys/touches on the panel away from the game's own input handlers
+    ["mousedown", "mouseup", "click", "pointerdown", "pointerup", "touchstart", "touchend", "wheel", "keydown"].forEach(function (t) {
+      root.addEventListener(t, function (e) { e.stopPropagation(); }, {passive: true});
+    });
+    document.body.appendChild(root);
+  }
+  function baseMenu() {
+    var de = document.documentElement;
+    if (de.classList.contains("cp-loading") || document.getElementById("cp-loader") || G.CP_UNSUPPORTED) return false;
+    var c = document.querySelector("#cp2077-canvas");
+    if (!c) return false;
+    var cursor = c.dataset.cp2077InkCursor === "1" || c.dataset.cp2077Relative !== "1";
+    if (!cursor) return false;
+    var m = G.cp2077EngineModule, s = null;
+    try { s = m && typeof m.cp2077DebugState === "function" ? m.cp2077DebugState() : null; } catch (e) {}
+    if (s && s.torn) return root && root.classList.contains("on");   // mid-write: keep the current state
+    // the main menu has a placeholder puppet at the world origin and no quest; a real game has a quest or a world position
+    var p = s && s.player;
+    return !p || (!s.quest && Math.abs(p.x) < 50 && Math.abs(p.y) < 50 && Math.abs(p.z) < 50);
+  }
+  var G = globalThis;
+  // [menu-only] user 2026-10-22: the panel stayed up on New Game / difficulty screens. The engine exposes no
+  // "which menu screen" state, so track menu depth from input while the pre-game front end is up:
+  //  - the first confirm (Enter/Space/click) passes the start screen ("press to continue") -> main menu, depth 0
+  //  - a confirm on the main menu (Enter/Space, or a click in the menu column on the left) opens a sub-screen: depth+1
+  //  - inside sub-screens a click on the content goes deeper; Esc / Backspace or a click on the footer (BACK) goes up
+  // The panel shows only at depth 0 after the start screen. Leaving the front end (loading, in-game) resets all.
+  var pastStart = false, depth = 0;
+  function frontEnd() { return baseMenu(); }
+  addEventListener("keydown", function (e) {
+    if (!frontEnd() || e.repeat) return;
+    if (e.code === "Enter" || e.code === "NumpadEnter" || e.code === "Space") { if (!pastStart) pastStart = true; else if (e.code !== "Space") depth++; }   // Space does not pick menu items
+    else if ((e.code === "Escape" || e.code === "Backspace") && depth > 0) depth--;
+  }, true);
+  addEventListener("pointerdown", function (e) {
+    var c = document.querySelector("#cp2077-canvas"); if (!c || !frontEnd() || (root && root.contains(e.target))) return;   // real clicks may land on an overlay above the canvas
+    if (!pastStart) { pastStart = true; return; }
+    var r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+    if (e.button === 2 || y > 0.88) { if (depth > 0) depth--; }
+    else if (depth > 0 || x < 0.42) depth++;
+  }, true);
+  function tick() {
+    if (!document.body) return;
+    if (!root) build();
+    var base = baseMenu();
+    if (!base && !(root && root.classList.contains("on"))) { if (document.getElementById("cp-loader") || (G.cp2077EngineModule && G.cp2077EngineModule.cp2077DebugState && (G.cp2077EngineModule.cp2077DebugState() || {}).quest)) { pastStart = false; depth = 0; } }
+    var on = base && pastStart && depth === 0;
+    if (on !== root.classList.contains("on")) {
+      root.classList.toggle("on", on);
+      if (on) requestAnimationFrame(function () { root.classList.add("vis"); }); else root.classList.remove("vis");
+    }
+  }
+  setInterval(tick, 500);
+})();
+// [vidwarm] user 2026-10-22: pre-warm the lifepath-card videos (predecoded gzip frames) into Cache Storage at the main
+// menu so hovering a card never waits on the network: manifest + first WARM_FRAMES frames of each, one range request
+// per video, stored under the keys predecoded-bink-frames-web.mjs reads. Desktop only; once per browser (marker key).
+(function () {
+  var G = globalThis, HASHES = ["e2d45bc245a1f1fb62e62f61674da70250c3fdb34338d47b076bed823190e17b",
+    "b04fc828038e4bbe1a9b269bed1b8eea533b93519bf670367ded62186e046d6f", "073a32b10641d5c9e74cfdbeff0d006724f88b7d2474f0b52e6cfac4af38af24"];
+  var WARM_FRAMES = 60, KEY = function (h, w) { return "https://video-cache.cyberpunk2077.lol/pre/" + h + "/" + w; };
+  function warmOne(c, base, h) {
+    return c.match(KEY(h, "warm-done")).then(function (done) {
+      if (done) return;
+      return fetch(base + "/runtime/codec/bink/predecoded/" + h + "/manifest.json").then(function (r) {
+        if (!r.ok) throw new Error("manifest " + r.status); return r.arrayBuffer();
+      }).then(function (mb) {
+        var m = JSON.parse(new TextDecoder().decode(mb)); if (m.assetSHA256 !== h) throw new Error("identity");
+        c.put(KEY(h, "manifest.json"), new Response(mb));
+        var rows = m.frames.slice(0, WARM_FRAMES), a = rows[0].packOffset, last = rows[rows.length - 1], b = last.packOffset + last.compressedBytes - 1;
+        return fetch(base + "/runtime/codec/bink/predecoded/" + h + "/frames.gzpack", {cache: "no-store", headers: {Range: "bytes=" + a + "-" + b}})
+          .then(function (r) { if (r.status !== 206) throw new Error("range " + r.status); return r.arrayBuffer(); })
+          .then(function (buf) {
+            if (buf.byteLength !== b - a + 1) throw new Error("short");
+            var puts = rows.map(function (row, i) {
+              var off = row.packOffset - a; return c.put(KEY(h, "f" + (i + 1)), new Response(buf.slice(off, off + row.compressedBytes)));
+            });
+            return Promise.all(puts).then(function () { return c.put(KEY(h, "warm-done"), new Response("1")); });
+          });
+      });
+    });
+  }
+  G.cp2077VideoPrewarm = function () {
+    if (G.cp2077VideoPrewarmStarted || G.CP_ENGINE_W32 || !G.CPB || typeof caches !== "object") return;
+    G.cp2077VideoPrewarmStarted = true;
+    caches.open("cp2077-video-v1").then(function (c) {
+      return HASHES.reduce(function (p, h) { return p.then(function () { return warmOne(c, G.CPB, h).catch(function (e) { console.warn("CP2077 video prewarm " + h.slice(0, 8) + ": " + e); }); }); }, Promise.resolve());
+    }).then(function () { console.log("CP2077 video prewarm done"); }, function () {});
+  };
+})();
+// [vidwarm trigger] 15 s after the loader is gone (front end up), once per page
+(function () {
+  var t = setInterval(function () {
+    if (document.getElementById("cp-loader") || document.documentElement.classList.contains("cp-loading")) return;
+    clearInterval(t); setTimeout(function () { try { globalThis.cp2077VideoPrewarm(); } catch (e) {} }, 15000);
+  }, 2000);
+})();
+// [vo] Voice-over player (opt-in ?vo=1). The port ships no Wwise VO banks; the engine overlay audioSceneUtils.cpp
+// calls cp2077VO(ruidHi, ruidLo, variant 1=f|2=m, flags 1=player|2=rewind|4=holocall|8=helmet, seekSeconds) when a
+// dialogue line starts. Files: <CPB>/runtime/vo/en_us/[rewind/]<16-hex RUID>_<f|m>.ogg (converted from the
+// source-tree .wem). One voice at a time: a new line (or a skip that starts the next one) stops the previous one.
+(function () {
+  var q = new URLSearchParams(location.search);
+  if (q.get("vo") !== "1") return;
+  var stats = globalThis.cp2077VOStats = {calls: 0, played: 0, missing: 0, errors: 0, last: null};
+  var cur = null, seq = 0, cache = new Map();
+  var ctx = function () { var m = globalThis.cp2077EngineModule, a = m && m.cp2077Audio; return a && a.context && a.context.state !== "closed" ? a.context : null; };
+  var hex8 = function (n) { return ("00000000" + (n >>> 0).toString(16)).slice(-8); };
+  var load = function (c, name, rewind) {
+    var k = (rewind ? "rewind/" : "") + name;
+    if (cache.has(k)) return cache.get(k);
+    var p = fetch(globalThis.CPB + "/runtime/vo/en_us/" + k + ".ogg")
+      .then(function (r) { return r.ok ? r.arrayBuffer() : null; })
+      .then(function (b) { return b ? c.decodeAudioData(b) : null; })
+      .catch(function () { stats.errors++; return null; });
+    cache.set(k, p);
+    if (cache.size > 48) cache.delete(cache.keys().next().value);
+    return p;
+  };
+  globalThis.cp2077VO = async function (hi, lo, variant, flags, seek) {
+    stats.calls++;
+    var c = ctx(); if (!c || !globalThis.CPB) return;
+    var my = ++seq, id = hex8(hi) + hex8(lo), v = variant === 2 ? "m" : "f", o = v === "m" ? "f" : "m", rew = !!(flags & 2);
+    var buf = await load(c, id + "_" + v, rew);
+    if (!buf && rew) buf = await load(c, id + "_" + v, false);
+    if (!buf) buf = await load(c, id + "_" + o, false);
+    if (my !== seq) return;                         // a newer line started while this one was loading
+    stats.last = id + "_" + v + (buf ? "" : " (missing)");
+    if (!buf) { stats.missing++; return; }
+    if (cur) { try { cur.stop(); } catch (e) {} }
+    var s = c.createBufferSource(); s.buffer = buf; s.connect(c.destination);
+    s.start(0, Math.max(0, Math.min(+seek || 0, buf.duration - 0.05)));
+    cur = s; stats.played++;
+    s.onended = function () { if (cur === s) cur = null; };
+  };
+})();

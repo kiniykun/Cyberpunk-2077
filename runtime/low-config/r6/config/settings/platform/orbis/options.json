@@ -1,0 +1,279 @@
+{
+    "version": 68,
+    "groups": [
+        {
+            "group_name": "/controls/fppcamerapad",
+            "display_name": "UI-Settings-Interface-CameraControls-FPP_Pad-TitlePS4",
+            "order": 1
+        },
+        {
+            "group_name": "/controls/tppcamerapad",
+            "display_name": "UI-Settings-Interface-CameraControls-TPP_Pad-TitlePS4",
+            "order": 1
+        }
+    ],
+    "options": [
+        {
+            "group_name": "/controls",
+            "options": [
+                {
+                    "name": "PadVibration",
+                    "display_name": "UI-Settings-PadVibrationPS4",
+                    "description": "UI-Settings-PadVibrationDescriptionPS4",
+                    "order": 0,
+                    "is_visible": true,
+                    "in_pre_game": true,
+                    "in_game": true,
+                    "update_policy": "immediately",
+                    "type": "int",
+                    "value": 100,
+                    "default_value": 100,
+                    "min_value": 0,
+                    "max_value": 100,
+                    "step_value": 10
+                },
+                {
+                    "name": "SteeringSensitivity",
+                    "display_name": "UI-Settings-SteeringSensitivityPS4",
+                    "description": "UI-Settings-SteeringSensitivityDescriptionPS4",
+                    "order": 1,
+                    "is_visible": true,
+                    "in_pre_game": true,
+                    "in_game": true,
+                    "update_policy": "immediately",
+                    "type": "float",
+                    "value": 100.0,
+                    "default_value": 100.0,
+                    "min_value": 1.0,
+                    "max_value": 100.0,
+                    "step_value": 5.0
+                },
+                {
+                    "name": "Axis_DeadzoneInner",
+                    "display_name": "UI-Settings-Interface-Controls-DeadzoneInnerPS4",
+                    "description": "UI-Settings-Interface-Controls-DeadzoneInnerDescriptionPS4",
+                    "is_visible": true,
+                    "in_pre_game": true,
+                    "in_game": true,
+                    "is_dynamic": false,
+                    "update_policy": "immediately",
+                    "type": "float",
+                    "value": 0.1,
+                    "default_value": 0.1,
+                    "min_value": 0.0,
+                    "max_value": 0.49,
+                    "step_value": 0.01
+                },
+                {
+                    "name": "Axis_DeadzoneOuter",
+                    "display_name": "UI-Settings-Interface-Controls-DeadzoneOuterPS4",
+                    "description": "UI-Settings-Interface-Controls-DeadzoneOuterDescriptionPS4",
+                    "is_visible": true,
+                    "in_pre_game": true,
+                    "in_game": true,
+                    "is_dynamic": false,
+                    "update_policy": "immediately",
+                    "type": "float",
+                    "value": 0.9,
+                    "default_value": 0.9,
+                    "min_value": 0.5,
+                    "max_value": 1.0,
+                    "step_value": 0.01
+                }
+            ]
+        },
+        {
+            "group_name": "/video/display",
+            "options": [
+                {
+                    "name": "HDRModes",
+                    "display_name": "UI-Settings-Video-Display-HDRModes",
+                    "description": "LocKey#77280",
+                    "order": 6,
+                    "is_visible": true,
+                    "in_pre_game": true,
+                    "in_game": true,
+                    "update_policy": "immediately",
+                    "type": "string_list",
+                    "is_dynamic": true
+                }
+            ]
+        },
+        {
+            "group_name": "/graphics/basic",
+            "options": [
+                {
+                    "name": "FilmGrain",
+                    "display_name": "UI-Settings-Video-Basic-FilmGrain",
+                    "description": "LocKey#54169",
+                    "order": 2,
+                    "is_visible": true,
+                    "in_pre_game": true,
+                    "in_game": true,
+                    "update_policy": "immediately",
+                    "type": "bool",
+                    "value": true,
+                    "default_value": true
+                },
+                {
+                    "name": "ChromaticAberration",
+                    "display_name": "UI-Settings-Video-Basic-ChromaticAberration",
+                    "description": "LocKey#54176",
+                    "order": 3,
+                    "is_visible": true,
+                    "in_pre_game": true,
+                    "in_game": true,
+                    "update_policy": "immediately",
+                    "type": "bool",
+                    "value": true,
+                    "default_value": true
+                },
+                {
+                    "name": "DepthOfField",
+                    "display_name": "UI-Settings-Video-Basic-DepthOfField",
+                    "description": "LocKey#54172",
+                    "order": 4,
+                    "is_visible": true,
+                    "in_pre_game": true,
+                    "in_game": true,
+                    "update_policy": "immediately",
+                    "type": "bool",
+                    "value": true,
+                    "default_value": true
+                },
+                {
+                    "name": "LensFlares",
+                    "display_name": "UI-Settings-Video-Basic-LensFlares",
+                    "description": "LocKey#54177",
+                    "order": 5,
+                    "is_visible": true,
+                    "in_pre_game": true,
+                    "in_game": true,
+                    "update_policy": "immediately",
+                    "type": "bool",
+                    "value": true,
+                    "default_value": true
+                },
+                {
+                    "name": "MotionBlur",
+                    "display_name": "UI-Settings-Video-Basic-MotionBlur",
+                    "description": "LocKey#54171",
+                    "order": 6,
+                    "is_visible": true,
+                    "in_pre_game": true,
+                    "in_game": true,
+                    "update_policy": "immediately",
+                    "type": "bool",
+                    "value": true,
+                    "default_value": true
+                }
+            ]
+        },
+        {
+            "group_name": "/graphics/advanced",
+            "options": [
+                {
+                    "name": "LODPreset",
+                    "display_name": "UI-Settings-Video-Basic-LODPreset",
+                    "description": "LocKey#78413",
+                    "order": 30,
+                    "is_visible": false,
+                    "in_pre_game": true,
+                    "in_game": true,
+                    "update_policy": "immediately",
+                    "type": "string_list",
+                    "index": 0,
+                    "default_index": 0,
+                    "values": [
+                        "Low",
+                        "Medium",
+                        "High"
+                    ],
+                    "display_values": [
+                        "UI-Settings-Video-QualitySetting-Low",
+                        "UI-Settings-Video-QualitySetting-Medium",
+                        "UI-Settings-Video-QualitySetting-High"
+                    ]
+                }
+            ]
+        },
+        {
+            "group_name": "/controls/fppcamerapad",
+            "options": [
+                {
+                    "name": "FPP_ResponseCurve",
+                    "order": 6,
+                    "display_name": "UI-Settings-Interface-CameraControls-FPP_Pad-ResponseCurve",
+                    "description": "UI-Settings-Interface-CameraControls-FPP_Pad-ResponseCurveDescriptionPS4",
+                    "is_visible": true,
+                    "in_pre_game": true,
+                    "in_game": true,
+                    "update_policy": "immediately",
+                    "type": "string_list",
+                    "index": 0,
+                    "default_index": 0,
+                    "display_values": [
+                        "UI-Settings-Interface-CameraControls-FPP_Pad-ResponseCurveRecommended",
+                        "UI-Settings-Interface-CameraControls-FPP_Pad-ResponseCurveRaw",
+                        "UI-Settings-Interface-CameraControls-FPP_Pad-ResponseCurveSensitive",
+                        "UI-Settings-Interface-CameraControls-FPP_Pad-ResponseCurveDynamic"
+                    ],
+                    "values": [
+                        "CameraMovementA",
+                        "CameraMovementLinear",
+                        "CameraMovementSensitive",
+                        "CameraMovementDynamic"
+                    ]
+                }
+            ]
+        },
+        {
+            "group_name": "/controls/tppcamerapad",
+            "options": [
+                {
+                    "name": "TPP_ResponseCurve",
+                    "order": 4,
+                    "display_name": "UI-Settings-Interface-CameraControls-FPP_Pad-ResponseCurve",
+                    "description": "UI-Settings-Interface-CameraControls-FPP_Pad-ResponseCurveDescriptionPS4",
+                    "is_visible": true,
+                    "in_pre_game": true,
+                    "in_game": true,
+                    "update_policy": "immediately",
+                    "type": "string_list",
+                    "index": 0,
+                    "default_index": 0,
+                    "display_values": [
+                        "UI-Settings-Interface-CameraControls-FPP_Pad-ResponseCurveRecommended",
+                        "UI-Settings-Interface-CameraControls-FPP_Pad-ResponseCurveRaw",
+                        "UI-Settings-Interface-CameraControls-FPP_Pad-ResponseCurveSensitive",
+                        "UI-Settings-Interface-CameraControls-FPP_Pad-ResponseCurveDynamic"
+                    ],
+                    "values": [
+                        "CameraMovementA",
+                        "CameraMovementLinear",
+                        "CameraMovementSensitive",
+                        "CameraMovementDynamic"
+                    ]
+                }
+            ]
+        },
+        {
+            "group_name": "/gameplay/misc",
+            "options": [
+                {
+                    "name": "EnablePhotoModeInput",
+                    "display_name": "LocKey#77677",
+                    "description": "LocKey#77678",
+                    "order": 4,
+                    "is_visible": true,
+                    "in_pre_game": true,
+                    "in_game": true,
+                    "update_policy": "immediately",
+                    "type": "bool",
+                    "value": true,
+                    "default_value": true
+                }
+            ]
+        }
+    ]
+}

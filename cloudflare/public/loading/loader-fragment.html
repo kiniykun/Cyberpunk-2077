@@ -1,0 +1,28 @@
+<div id="cp-loader" role="status" aria-live="polite">
+  <div class="cp-bg"></div><div class="cp-grid"></div><div class="cp-scan"></div><div class="cp-vign"></div>
+  <div class="cp-tip"><span>NETWATCH // SECURE LINK <span class="cp-live">● ONLINE</span></span><span id="cp-clock">EDGE · 00:00</span></div>
+  <main class="cp-wrap">
+    <div class="cp-logo" id="cp-logo" role="img" aria-label="Cyberpunk 2077 Browser"></div>
+    <p class="cp-hint" id="cp-hint"></p>
+    <div class="cp-err" id="cp-err" hidden><b>Cannot start</b><p id="cp-err-msg"></p><button type="button" onclick="location.reload()">Retry</button></div>
+    <p class="cp-slow" id="cp-slow" hidden>Still loading… (slow connection?) Keep this tab open.</p>
+  </main>
+  <section class="cp-hud">
+    <div class="cp-row">
+      <div class="cp-stage"><i class="cp-dot"></i><span id="cp-stage">Establishing link</span></div>
+      <div class="cp-pct"><span id="cp-pct">0</span><small>%</small></div>
+    </div>
+    <div class="cp-bar"><div class="cp-fill" id="cp-fill"></div></div>
+    <div class="cp-ticks"><div class="cp-steps" id="cp-steps"></div><div class="cp-meta" id="cp-meta">connecting…</div></div>
+  </section>
+</div>
+<script>
+(()=>{const $=id=>document.getElementById(id);
+const H=['Assets stream on demand: only what you see is downloaded.','First load is the slowest. The engine is <em>cached</em> for next time.',
+'Archives stream on demand, so the <em>first minutes</em> load the most.','Chrome or Edge with <em>WebGPU</em> gives the best performance.',
+'Click the game once it appears to capture the mouse.'];let hi=0;
+function hint(){const h=$('cp-hint');if(!h)return;h.style.opacity=0;setTimeout(()=>{h.innerHTML=H[hi++%H.length];h.style.opacity=1},400)}
+hint();const a=setInterval(()=>{if(!$('cp-loader'))return clearInterval(a);hint()},5200);
+const b=setInterval(()=>{const l=$('cp-logo');if(!l)return clearInterval(b);l.classList.add('glitch');setTimeout(()=>l.classList.remove('glitch'),90+Math.random()*90)},2600);
+const c=setInterval(()=>{const e=$('cp-clock');if(!e)return clearInterval(c);e.textContent='EDGE · '+new Date().toTimeString().slice(0,5)},1000);})();
+</script>

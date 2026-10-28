@@ -1,0 +1,31 @@
+{
+  "Source": "https://github.com/lexxmark/winflexbison/releases/tag/v2.5.25",
+  "Version": "2.5.25",
+  "ArchiveSHA256": "8d324b62be33604b2c45ad1dd34ab93d722534448f55a16ca7292de32b6ac135",
+  "GeneratedFiles": [
+    {
+      "Name": "bison_tokens.h",
+      "SHA256": "B199B532A3B745970643F3E215CB968A06B20F85B5C4054F4A6446EB1A413276"
+    },
+    {
+      "Name": "bison_unused.cxx",
+      "SHA256": "5CF25811CD42CDF35CC81858E191CD1E12AD471920234387B1D839AB5F9B8D1D"
+    },
+    {
+      "Name": "scriptExpressionParser_bison.cxx",
+      "SHA256": "088CB010F61890D557F8B39FC3E0C1670A443B503514A0136C1A8DEB08D870D2"
+    },
+    {
+      "Name": "scriptExpressionParser_bison.cxx.h",
+      "SHA256": "D376666BB082AA6C730760346718C69B1C4CB5110089377DD0B3BAEE8D20292C"
+    },
+    {
+      "Name": "scriptExpressionParser_bison.output",
+      "SHA256": "B2C1D3C5465FED475B4789964F8CFD0D05E2DBDBA720D23E3BEB466476521662"
+    },
+    {
+      "Name": "scripts.cxx",
+      "SHA256": "9C5673E57DFCEBD51A9BFA03692E1C8585C39AD8F28003EA7A396DED988024AD"
+    }
+  ]
+}

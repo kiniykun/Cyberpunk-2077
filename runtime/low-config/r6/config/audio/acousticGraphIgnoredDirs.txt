@@ -1,0 +1,9 @@
+base\environment\decoration
+base\environment\vegetation
+base\environment\terrain
+base\environment\architecture\common\catwalk\
+base\environment\architecture\watson\little_china\loc_q115_fancy_restaurant\
+base\environment\architecture\megabuilding\decorations\
+base\prefabs\environment\decoration
+base\prefabs\environment\vegetation
+base\prefabs\environment\terrain

@@ -1,0 +1,1515 @@
+[
+  {
+    "name": "Scripts",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Scripts Debug Overlay",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "",
+        "tab": 0,
+        "corner": 1
+      }
+    ]
+  },
+  {
+    "name": "CLS",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Scripts Debug Overlay",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "CLS",
+        "tab": 0,
+        "corner": 1
+      }
+    ]
+  },
+  {
+    "name": "Prevention",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Scripts Debug Overlay",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "Prevention",
+        "tab": 0,
+        "corner": 1
+      }
+    ]
+  },
+  {
+    "name": "Equipment System",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Scripts Debug Overlay",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "Equipment",
+        "tab": 0,
+        "corner": 1
+      }
+    ]
+  },
+  {
+    "name": "Performance Monitor",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "FPS Monitor##performanceMonitor",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "",
+        "tab": 0,
+        "corner": 1
+      },
+      {
+        "name": "PerformanceMonitor##performanceMonitor",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "",
+        "tab": 1,
+        "corner": 0
+      },
+      {
+        "name": "Memory Metrics##metricsPage_MemoryPools",
+        "posX": 1544,
+        "posY": 419,
+        "sizeX": 376,
+        "sizeY": 172,
+        "args": "",
+        "tab": 2,
+        "corner": 3
+      },
+      {
+        "name": "Memory Pools##metricsPage_MemoryPools",
+        "posX": 1270,
+        "posY": 591,
+        "sizeX": 650,
+        "sizeY": 489,
+        "args": "PoolCPU",
+        "tab": 2,
+        "corner": 3
+      },
+      {
+        "name": "IScriptable Memory Metrics##metricsPage_IScriptableMemoryPools",
+        "posX": 1270,
+        "posY": 591,
+        "sizeX": 500,
+        "sizeY": 325,
+        "args": "",
+        "tab": 2,
+        "corner": 3
+      },
+      {
+        "name": "Resource Loading Requests##metricsPage_resourceLoadingRequests",
+        "posX": 1270,
+        "posY": 591,
+        "sizeX": 500,
+        "sizeY": 325,
+        "args": "",
+        "tab": 4,
+        "corner": 3
+      },
+      {
+        "name": "Resources##metricsPage_resources",
+        "posX": 1270,
+        "posY": 591,
+        "sizeX": 500,
+        "sizeY": 325,
+        "args": "",
+        "tab": 4,
+        "corner": 3
+      },
+      {
+        "name": "Profiler##metricsPage_Profiler",
+        "posX": 1270,
+        "posY": 591,
+        "sizeX": 500,
+        "sizeY": 325,
+        "args": "",
+        "tab": 3,
+        "corner": 3
+      },
+      {
+        "name": "SystemsUpdater",
+        "posX": 0,
+        "posY": 500,
+        "sizeX": 300,
+        "sizeY": 400,
+        "args": "",
+        "tab": 1,
+        "corner": 1
+      },
+      {
+        "name": "Entities",
+        "posX": 0,
+        "posY": 100,
+        "sizeX": 300,
+        "sizeY": 600,
+        "args": "",
+        "tab": 2,
+        "corner": 0
+      },
+      {
+        "name": "ScriptableThreadSafetyMonitor",
+        "posX": 0,
+        "posY": 300,
+        "sizeX": 500,
+        "sizeY": 500,
+        "args": "",
+        "tab": 0
+      }
+    ]
+  },
+  {
+    "name": "Physics",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Physics Scene Stats##metricsPage_Physics",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "",
+        "tab": 1,
+        "corner": 0
+      },
+      {
+        "name": "Physics Control Panel##metricsPage_Physics",
+        "posX": 2,
+        "posY": 652,
+        "sizeX": 335,
+        "sizeY": 432,
+        "args": "",
+        "tab": 1,
+        "corner": 2
+      },
+      {
+        "name": "Physical System Owners##metricsPage_Physics",
+        "posX": 966,
+        "posY": 0,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "",
+        "tab": 1,
+        "corner": 1
+      },
+      {
+        "name": "Character Controller Stats##metricsPage_Physics",
+        "posX": 360,
+        "posY": 0,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "",
+        "tab": 1,
+        "corner": 0
+      },
+      {
+        "name": "BroadPhase Stats##metricsPage_Physics",
+        "posX": 500,
+        "posY": 500,
+        "sizeX": 133,
+        "sizeY": 212,
+        "args": "",
+        "tab": 1,
+        "corner": 3
+      },
+      {
+        "name": "Physics Cloth Stats##metricsPage_Physics",
+        "posX": 700,
+        "posY": 700,
+        "sizeX": 133,
+        "sizeY": 212,
+        "args": "",
+        "tab": 1,
+        "corner": 2
+      },
+      {
+        "name": "Physics Destruction Stats##metricsPage_Physics",
+        "posX": 700,
+        "posY": 700,
+        "sizeX": 700,
+        "sizeY": 500,
+        "args": "",
+        "tab": 1,
+        "corner": 1
+      },
+      {
+        "name": "Memory Pools##metricsPage_MemoryPools",
+        "posX": 1272,
+        "posY": 0,
+        "sizeX": 650,
+        "sizeY": 374,
+        "args": "PoolPhysics",
+        "tab": 2,
+        "corner": 1
+      },
+      {
+        "name": "PhysX Mesh Memory##metricsPage_Physics",
+        "posX": 1485,
+        "posY": 2,
+        "sizeX": 432,
+        "sizeY": 600,
+        "args": "",
+        "tab": 1,
+        "corner": 1
+      },
+      {
+        "name": "Physical Queries",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 32,
+        "sizeY": 32,
+        "args": "",
+        "tab": 2,
+        "corner": 0
+      },
+      {
+        "name": "PhysX Callbacks##metricsPage_Physics",
+        "posX": 1786,
+        "posY": 868,
+        "sizeX": 133,
+        "sizeY": 212,
+        "args": "",
+        "tab": 1,
+        "corner": 3
+      },
+      {
+        "name": "Collision Areas##metricsPage_Physics",
+        "posX": 1786,
+        "posY": 868,
+        "sizeX": 133,
+        "sizeY": 212,
+        "args": "",
+        "tab": 1,
+        "corner": 3
+      }
+    ]
+  },
+  {
+    "name": "UI",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "windows": [
+		{
+			"name": "UI Debug HUB##metricsPage_UI_DebugHub",
+			"posX": 15,
+			"posY": 150,
+			"sizeX": 200,
+			"sizeY": 300,
+			"args": "",
+			"tab": 1
+		}
+    ]
+  },
+  {
+    "name": "Inspector",
+    "windows": [
+      {
+        "name": "_Inspector##runtimeSystemInspector",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": ""
+      }
+    ]
+  },
+  {
+    "name": "DebugFilters",
+    "windows": [
+      {
+        "name": "Debug Filters##metricsPage_DebugFilters",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "refresh"
+      },
+      {
+        "name": "Bookmarks##Game",
+        "posX": 300,
+        "posY": 800,
+        "sizeX": 150,
+        "sizeY": 300,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "QAPresets##metricsPage",
+        "posX": 800,
+        "posY": 0,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "",
+        "tab": 0
+      }
+    ]
+  },
+  {
+    "name": "Animation System",
+    "windows": [
+      {
+        "name": "Animation System##runtimeSystemAnimation",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 600,
+        "sizeY": 400,
+        "args": ""
+      }
+    ]
+  },
+  {
+    "name": "Characters",
+    "scale": 0.8,
+    "resolutionX": 1280,
+    "resolutionY": 720,
+    "windows": [
+      {
+        "name": "Characters Settings##Game",
+        "posX": 450,
+        "posY": 100,
+        "sizeX": 200,
+        "sizeY": 200,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "Characters Info##Game",
+        "posX": 510,
+        "posY": 100,
+        "sizeX": 570,
+        "sizeY": 200,
+        "args": ""
+      },
+      {
+        "name": "Characters Coloring",
+        "posX": 350,
+        "posY": 100,
+        "sizeX": 370,
+        "sizeY": 200,
+        "args": ""
+      }
+    ]
+  },
+  {
+    "name": "NPC",
+    "scale": 0.8,
+    "resolutionX": 1280,
+    "resolutionY": 720,
+    "windows": [
+      {
+        "name": "Settings##Game",
+        "posX": 600,
+        "posY": 5,
+        "sizeX": 200,
+        "sizeY": 200,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "Effects##Game",
+        "posX": 5,
+        "posY": 5,
+        "sizeX": 300,
+        "sizeY": 500,
+        "args": ""
+      },
+      {
+        "name": "NPC Radar##Game",
+        "posX": 5,
+        "posY": 5,
+        "sizeX": 700,
+        "sizeY": 200,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "AI Navigation##AI",
+        "posX": 5,
+        "posY": 600,
+        "sizeX": 700,
+        "sizeY": 300,
+        "args": ""
+      },
+      {
+        "name": "AI Debugger##AI",
+        "posX": 5,
+        "posY": 210,
+        "sizeX": 570,
+        "sizeY": 505,
+        "args": ""
+      },
+      {
+        "name": "NPC Info##Game",
+        "posX": 710,
+        "posY": 5,
+        "sizeX": 570,
+        "sizeY": 200,
+        "args": ""
+      },
+      {
+        "name": "Failures##DebuggableAgent",
+        "posX": 705,
+        "posY": 210,
+        "sizeX": 570,
+        "sizeY": 200,
+        "args": ""
+      },
+      {
+        "name": "Signals##AI_CAgent",
+        "posX": 705,
+        "posY": 310,
+        "sizeX": 570,
+        "sizeY": 200,
+        "args": ""
+      },
+      {
+        "name": "AI Commands##AI_CAgent",
+        "posX": 705,
+        "posY": 515,
+        "sizeX": 570,
+        "sizeY": 200,
+        "args": ""
+      },
+      {
+        "name": "RMA XY##Game",
+        "posX": 925,
+        "posY": 370,
+        "sizeX": 350,
+        "sizeY": 350,
+        "args": ""
+      },
+      {
+        "name": "RMA YZ##Game",
+        "posX": 305,
+        "posY": 470,
+        "sizeX": 450,
+        "sizeY": 250,
+        "args": ""
+      },
+      {
+        "name": "RMA Options##Game",
+        "posX": 5,
+        "posY": 470,
+        "sizeX": 300,
+        "sizeY": 250,
+        "args": ""
+      },
+      {
+        "name": "Object Selection##Game",
+        "posX": 5,
+        "posY": 400,
+        "sizeX": 700,
+        "sizeY": 200,
+        "args": ""
+      }
+    ]
+  },
+  {
+    "name": "NPC_QA",
+    "resolutionX": 1400,
+    "resolutionY": 900,
+    "scale": 0.8,
+    "windows": [
+      {
+        "name": "NPC QA Debug##Game",
+        "posX": 895,
+        "posY": 5,
+        "sizeX": 500,
+        "sizeY": 890,
+        "args": "",
+        "tab": 0,
+        "corner": 1
+      },
+      {
+        "name": "AI Log##AI",
+        "posX": 5,
+        "posY": 5,
+        "sizeX": 450,
+        "sizeY": 890,
+        "args": "",
+        "tab": 0,
+        "corner": 0
+      }
+    ]
+  },
+  {
+    "name": "AI System",
+    "resolutionX": 1400,
+    "resolutionY": 900,
+    "scale": 0.8,
+    "windows": [
+      {
+        "name": "AI Debug Window Manager##AI",
+        "posX": 895,
+        "posY": 5,
+        "sizeX": 500,
+        "sizeY": 890,
+        "args": "",
+        "tab": 0,
+        "corner": 1
+      }
+    ]
+  },
+  {
+    "name": "Squads",
+    "windows": [
+      {
+        "name": "NPC Radar##Game",
+        "posX": 5,
+        "posY": 605,
+        "sizeX": 500,
+        "sizeY": 100,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "Squads##Manager",
+        "posX": 5,
+        "posY": 305,
+        "sizeX": 670,
+        "sizeY": 300,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "OffensiveRadar##ORadar",
+        "posX": 605,
+        "posY": 5,
+        "sizeX": 300,
+        "sizeY": 300,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "DefensiveRadar##DRadar",
+        "posX": 905,
+        "posY": 5,
+        "sizeX": 300,
+        "sizeY": 300,
+        "args": "",
+        "tab": 0
+      }
+    ]
+  },
+  {
+    "name": "Perception",
+    "windows": [
+      {
+        "name": "NPC Radar##Game",
+        "posX": 5,
+        "posY": 5,
+        "sizeX": 670,
+        "sizeY": 200,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "Sensors##AIDetection",
+        "posX": 5,
+        "posY": 220,
+        "sizeX": 300,
+        "sizeY": 400,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "VisibleObjects##AIDetection",
+        "posX": 310,
+        "posY": 220,
+        "sizeX": 300,
+        "sizeY": 400,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "Threats##AITrackedThreats",
+        "posX": 5,
+        "posY": 405,
+        "sizeX": 670,
+        "sizeY": 300,
+        "args": "",
+        "tab": 1
+      },
+      {
+        "name": "Trackers##AITrackingThreats",
+        "posX": 5,
+        "posY": 605,
+        "sizeX": 670,
+        "sizeY": 300,
+        "args": "",
+        "tab": 1
+      },
+      {
+        "name": "ThreatLog##AITrackingLog",
+        "posX": 5,
+        "posY": 405,
+        "sizeX": 670,
+        "sizeY": 300,
+        "args": "",
+        "tab": 1
+      }
+    ]
+  },
+  {
+    "name": "Vehicles",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Selected Vehicle##vehicleSystem",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "",
+        "tab": 1,
+        "corner": 0
+      },
+      {
+        "name": "Global Options##vehicleSystem",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 420,
+        "sizeY": 622,
+        "args": "",
+        "tab": 2,
+        "corner": 0
+      },
+      {
+        "name": "Sphere Tree Generation##stg",
+        "posX": 1634,
+        "posY": 0,
+        "sizeX": 286,
+        "sizeY": 221,
+        "args": "",
+        "tab": 2,
+        "corner": 1
+      },
+      {
+        "name": "Selected Vehicle New Physics##vehicleSystem",
+        "posX": 334,
+        "posY": 182,
+        "sizeX": 1293,
+        "sizeY": 757,
+        "args": "",
+        "tab": 3,
+        "corner": 3
+      },
+      {
+        "name": "VehicleVsCrowd##vehicleSystem",
+        "posX": 50,
+        "posY": 10,
+        "sizeX": 400,
+        "sizeY": 400,
+        "args": "",
+        "tab": 4,
+        "corner": 0
+      },
+      {
+        "name": "VehicleVsVehicle##vehicleSystem",
+        "posX": 50,
+        "posY": 500,
+        "sizeX": 400,
+        "sizeY": 400,
+        "args": "",
+        "tab": 4,
+        "corner": 0
+      },
+      {
+        "name": "Vehicle Cameras##vehicleSystem",
+        "posX": 50,
+        "posY": 500,
+        "sizeX": 400,
+        "sizeY": 400,
+        "args": "",
+        "tab": 5,
+        "corner": 0
+      }
+    ]
+  },
+  {
+    "name": "Audio",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Audio Emitter Manager",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 600,
+        "sizeY": 300,
+        "args": "",
+        "tab": 0
+      }
+    ]
+  },
+  {
+    "name": "Rendering",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Rendering",
+        "posX": 0,
+        "posY": 300,
+        "sizeX": 300,
+        "sizeY": 300,
+        "args": "",
+        "tab": 0
+      }
+    ]
+  },
+  {
+    "name": "World",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Streaming##metricsPage_World",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 450,
+        "sizeY": 200,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "World Debugging##metricsPage_World",
+        "posX": 0,
+        "posY": 200,
+        "sizeX": 450,
+        "sizeY": 150,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "Environment Monitor##metricsPage_World",
+        "posX": 0,
+        "posY": 350,
+        "sizeX": 450,
+        "sizeY": 180,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "PrefabVariants##metricsPage_World",
+        "posX": 300,
+        "posY": 300,
+        "sizeX": 500,
+        "sizeY": 300,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "Effects##metricsPage_Effects",
+        "posX": 600,
+        "posY": 300,
+        "sizeX": 500,
+        "sizeY": 300,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "Entity Spawn Service##metricsPage_World",
+        "posX": 0,
+        "posY": 250,
+        "sizeX": 1000,
+        "sizeY": 450,
+        "args": "",
+        "tab": 0,
+        "corner": 2
+      }
+    ]
+  },
+  {
+    "name": "SO/CO Radar",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "SO Radar##Game",
+        "posX": 5,
+        "posY": 5,
+        "sizeX": 350,
+        "sizeY": 350,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "SO Map##Game",
+        "posX": 1420,
+        "posY": 580,
+        "sizeX": 500,
+        "sizeY": 500,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "SO Info##Game",
+        "posX": 355,
+        "posY": 5,
+        "sizeX": 150,
+        "sizeY": 150,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "FilterByAnimset##RuntimeSystemSmartObjects",
+        "posX": 1695,
+        "posY": 5,
+        "sizeX": 220,
+        "sizeY": 200,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "Workspot Radar##Game",
+        "posX": 1695,
+        "posY": 5,
+        "sizeX": 220,
+        "sizeY": 200,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "Workspot Info##Game",
+        "posX": 1695,
+        "posY": 5,
+        "sizeX": 220,
+        "sizeY": 200,
+        "args": "",
+        "tab": 0
+      }
+    ]
+  },
+  {
+    "name": "Population System",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Population System Summary",
+        "posX": 5,
+        "posY": 110,
+        "sizeX": 360,
+        "sizeY": 360,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "Community System",
+        "posX": 390,
+        "posY": 35,
+        "sizeX": 925,
+        "sizeY": 670,
+        "args": "",
+        "tab": 1
+      },
+      {
+        "name": "Crowd System",
+        "posX": 600,
+        "posY": 0,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "",
+        "tab": 2
+      },
+      {
+        "name": "Crowd Settings",
+        "posX": 500,
+        "posY": 110,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "",
+        "tab": 2
+      },
+      {
+        "name": "Crowd Inspector",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "",
+        "tab": 2
+      },
+	  {
+		"name": "Disable Crowd Sources",
+        "posX": 500,
+        "posY": 500,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "",
+        "tab": 2
+	  },
+      {
+        "name": "Appearances",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 420,
+        "sizeY": 0,
+        "args": "",
+        "tab": 3
+      },
+      {
+        "name": "Entities",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 420,
+        "sizeY": 0,
+        "args": "",
+        "tab": 3
+      },
+	  {
+        "name": "Entity Counters",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 300,
+        "sizeY": 0,
+        "args": "",
+        "tab": 3
+      },
+      {
+        "name": "Budget",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 150,
+        "sizeY": 0,
+        "args": "",
+        "tab": 3
+      },
+      {
+        "name": "SwapStats",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 150,
+        "sizeY": 0,
+        "args": "",
+        "tab": 3
+      }
+    ]
+  },
+  {
+    "name": "Network Profiler",
+    "windows": [
+      {
+        "name": "Network Profiler - Graph##InGameNetworkProfiler",
+        "posX": 310,
+        "posY": 5,
+        "sizeX": 325,
+        "sizeY": 210,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "Network Profiler - Stats##InGameNetworkProfiler",
+        "posX": 5,
+        "posY": 5,
+        "sizeX": 300,
+        "sizeY": 355,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "Network Profiler - Latency##InGameNetworkProfiler",
+        "posX": 310,
+        "posY": 220,
+        "sizeX": 325,
+        "sizeY": 120,
+        "args": "",
+        "tab": 0
+      }
+    ]
+  },
+  {
+    "name": "Scenes",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Scene System - Configurator",
+        "posX": 5,
+        "posY": 5,
+        "sizeX": 800,
+        "sizeY": 100,
+        "args": "",
+        "tab": 0,
+        "corner": 1
+      },
+      {
+        "name": "Scene System - Scenes",
+        "posX": 5,
+        "posY": 110,
+        "sizeX": 800,
+        "sizeY": 250,
+        "args": "",
+        "tab": 0,
+        "corner": 1
+      },
+      {
+        "name": "Scene System - Scene Inspector",
+        "posX": 5,
+        "posY": 370,
+        "sizeX": 800,
+        "sizeY": 400,
+        "args": "",
+        "tab": 0,
+        "corner": 1
+      },
+      {
+        "name": "Scene System - Dialogline Monitor",
+        "posX": 810,
+        "posY": 5,
+        "sizeX": 1105,
+        "sizeY": 355,
+        "args": "",
+        "tab": 0,
+        "corner": 0
+      },
+      {
+        "name": "Scene System - Resource preloading",
+        "posX": 810,
+        "posY": 455,
+        "sizeX": 800,
+        "sizeY": 400,
+        "args": "",
+        "tab": 0,
+        "corner": 1
+      }
+    ]
+  },
+  {
+    "name": "Props",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Spawned entities",
+        "posX": 5,
+        "posY": 5,
+        "sizeX": 800,
+        "sizeY": 100,
+        "args": "",
+        "tab": 0,
+        "corner": 0
+      },
+      {
+        "name": "Attachment states",
+        "posX": 5,
+        "posY": 110,
+        "sizeX": 800,
+        "sizeY": 250,
+        "args": "",
+        "tab": 0,
+        "corner": 0
+      },
+      {
+        "name": "Carried entities",
+        "posX": 5,
+        "posY": 370,
+        "sizeX": 800,
+        "sizeY": 400,
+        "args": "",
+        "tab": 0,
+        "corner": 0
+      }
+    ]
+  },
+  {
+    "name": "Traffic",
+    "resolutionX": 1920,
+    "resolutionY": 1065,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Traffic Map##Game",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 500,
+        "sizeY": 400,
+        "args": "",
+        "tab": 0,
+        "corner": 0
+      },
+      {
+        "name": "Traffic Info##Game",
+        "posX": 355,
+        "posY": 5,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "",
+        "tab": 0,
+        "corner": 0
+      },
+      {
+        "name": "Traffic Radar##Game",
+        "posX": 0,
+        "posY": 401,
+        "sizeX": 250,
+        "sizeY": 350,
+        "args": "",
+        "tab": 0,
+        "corner": 2
+      },
+      {
+        "name": "Slot Map##Game",
+        "posX": 500,
+        "posY": 0,
+        "sizeX": 250,
+        "sizeY": 350,
+        "args": "",
+        "tab": 0,
+        "corner": 0
+      },
+      {
+        "name": "Selected Slot##Game",
+        "posX": 1563,
+        "posY": 304,
+        "sizeX": 350,
+        "sizeY": 350,
+        "args": "",
+        "tab": 0,
+        "corner": 1
+      },
+      {
+        "name": "Marbles##Game",
+        "posX": 0,
+        "posY": 752,
+        "sizeX": 300,
+        "sizeY": 250,
+        "args": "",
+        "tab": 0,
+        "corner": 0
+      },
+      {
+        "name": "CrowdNPC##Game",
+        "posX": 1450,
+        "posY": 0,
+        "sizeX": 460,
+        "sizeY": 970,
+        "args": "",
+        "tab": 0,
+        "corner": 0
+      },
+      {
+        "name": "Teleports##Game",
+        "posX": 300,
+        "posY": 752,
+        "sizeX": 300,
+        "sizeY": 250,
+        "args": "",
+        "tab": 0,
+        "corner": 0
+      },
+      {
+	"name": "FindPositionOnTraffic##Game",
+        "posX": 260,
+        "posY": 400,
+        "sizeX": 450,
+        "sizeY": 350,
+        "args": "",
+        "tab": 0,
+        "corner": 0
+      }
+      
+    ]
+  },
+  {
+    "name": "StatusEffects",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "StatusEffects##Game",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 800,
+        "sizeY": 650,
+        "args": "",
+        "tab": 0
+      }
+    ]
+  },
+  {
+    "name": "Navigation",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Navmesh Map##Game",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 800,
+        "sizeY": 650,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "Navmesh Height Filtering##Game",
+        "posX": 800,
+        "posY": 0,
+        "sizeX": 200,
+        "sizeY": 400,
+        "args": "",
+        "tab": 0
+      }
+    ]
+  },
+  {
+    "name": "AI Director",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "AI Director General Info##Game",
+        "posX": 1920,
+        "posY": 0,
+        "sizeX": 400,
+        "sizeY": 340,
+        "args": "",
+        "tab": 0,
+        "corner": 2
+      },
+      {
+        "name": "AI Director Spawner Info##Game",
+        "posX": 1920,
+        "posY": 940,
+        "sizeX": 400,
+        "sizeY": 200,
+        "args": "",
+        "tab": 0,
+        "corner": 2
+      },
+      {
+        "name": "AI Director Tension Analyzer Info##Game",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 560,
+        "sizeY": 540,
+        "args": "",
+        "tab": 0,
+        "corner": 0
+      }
+    ]
+  },
+  {
+    "name": "Traffic Runtime Debug",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Traffic Runtime Debug##Game",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 800,
+        "sizeY": 650,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "Lanes##Game",
+        "posX": 1270,
+        "posY": 0,
+        "sizeX": 280,
+        "sizeY": 150,
+        "args": "",
+        "tab": 0
+      },
+      {
+        "name": "LaneSubgraphs##Game",
+        "posX": 1270,
+        "posY": 0,
+        "sizeX": 280,
+        "sizeY": 250,
+        "args": "",
+        "tab": 0
+      },
+	  {
+        "name": "MovementControllers##Game",
+        "posX": 1270,
+        "posY": 0,
+        "sizeX": 280,
+        "sizeY": 150,
+        "args": "",
+        "tab": 0
+      },
+	  {
+        "name": "Spawning##Game",
+        "posX": 1270,
+        "posY": 0,
+        "sizeX": 280,
+        "sizeY": 150,
+        "args": "",
+        "tab": 0
+      },
+	  {
+        "name": "SpawningStats##Game",
+        "posX": 1270,
+        "posY": 0,
+        "sizeX": 280,
+        "sizeY": 150,
+        "args": "",
+        "tab": 0
+      }
+    ]
+  },
+  {
+    "name": "Drive Controller",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "DrivePIDController##Game",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 800,
+        "sizeY": 650,
+        "args": "",
+        "tab": 0
+      }
+    ]
+  },
+  {
+    "name": "Free Camera",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Free Camera##Game",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 800,
+        "sizeY": 650,
+        "args": "",
+        "tab": 0
+      }
+    ]
+  },
+  {
+    "name": "Memory",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Memory Pools##metricsPage_MemoryPools",
+        "posX": 1270,
+        "posY": 591,
+        "sizeX": 650,
+        "sizeY": 489,
+        "args": "PoolCPU",
+        "tab": 2,
+        "corner": 3
+      }
+    ]
+  },
+  {
+    "name": "Transform Animator",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Transform Animator##runtimeSystemTransformAnimator",
+        "posX": 33,
+        "posY": 162,
+        "sizeX": 633,
+        "sizeY": 299,
+        "args": "",
+        "tab": 1,
+        "corner": 2
+      },
+      {
+        "name": "Transform Animator Saves##TransformAnimatorSaveSystem",
+        "posX": 33,
+        "posY": 470,
+        "sizeX": 637,
+        "sizeY": 277,
+        "args": "",
+        "tab": 1,
+        "corner": 2
+      }
+    ]
+  },
+  {
+    "name": "NPC Ragdolls",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Scripts Debug Overlay",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 0,
+        "sizeY": 0,
+        "args": "NPCRagdolls",
+        "tab": 0,
+        "corner": 1
+      }
+    ]
+  },
+  {
+    "name": "Game Effects",
+    "resolutionX": 1920,
+    "resolutionY": 1080,
+    "scale": 1.0,
+    "windows": [
+      {
+        "name": "Game Effects Inspector##GameEffects",
+        "posX": 0,
+        "posY": 0,
+        "sizeX": 200,
+        "sizeY": 300,
+        "args": "",
+        "tab": 0,
+        "corner": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,725 @@
+﻿<?xml version="1.0"?>
+<quests>
+	<entry id="q001_miss0" name="Q000 Mission0">
+		<entry id="mission0" name="Mission 0">
+			<entry id="get_to_door" name="Go with Jackie to the door" />
+			<entry id="wait_door" name="Wait for TBug to open door" />
+			<entry id="kill_dealers" name="Get inside the room and defeat scavengers" />
+			<entry id="go_balcony" name="Get to boss through the balcony" />
+			<entry id="defeat_cyborg" name="Defeat the cyborg" />
+			<entry id="search_room" name="Rescue the girl" />
+			<entry id="help_girl_av" name="Help the girl to get to the AV" />
+			<entry id="back_to_jackie" name="Get back to Jackie" />
+			<entry id="goto_elevator" name="Go to the elevator" />
+		</entry>
+	</entry>
+
+	<entry id="q001" name="Q001 Intro">
+		<entry id="megabuilding" name="Megabuilding">
+			<entry id="explore_apartment" name="Explore the apartment" />
+			<entry id="meet_jackie" name="Meet with Jackie downstairs" />
+			<entry id="foll_jackie_dex" name="Follow Jackie to Dex" />
+			<entry id="decide_call_militech" name="Decide to call Militech agent" />
+		</entry>
+		<entry id="ripperdoc" name="Doctor Vektor">
+			<entry id="goto_ripperdoc" name="Go to ripperdoc" />
+			<entry id="instal_cyber" name="Install cyberware at ripperdoc's" />
+			<entry id="meet_jackie_rd" name="Go back to Jackie" />
+			<entry id="follow_jackie" name="Follow Jackie" />
+			<entry id="use_vehicle" name="Use the vehicle" />
+		</entry>
+		<entry id="maelstrom" name="Highway to Maelstrom">
+			<entry id="goto_factory" name="Get to Maelstrom factory" />
+		</entry>
+	</entry>
+	<entry id="q001_wilson" name="Q001 Gun from Wilson">
+		<entry id="wilson" name="Wilson">
+			<entry id="goto_wilson" name="Go to Wilson's workshop" />
+			<entry id="follow_wilson" name="Follow Wilson" />
+			<entry id="listen" name="Listen to Wilson" />
+			<entry id="shoot" name="Test the weapon" />
+		</entry>
+	</entry>
+	
+	<entry id="q003_part_02" name="The Deal.">	
+		<entry id="deal" name="Meet the crew at the food factory.">	
+			<entry id="go_maelstrom" name="Go to the All Foods factory" />
+			<entry id="militech" name="(Optional) Go to the contacts location" />
+			<entry id="militech_jackie" name="Talk to Jackie" />
+			<entry id="militech_recon" name="Scan the Drone" />
+			<entry id="militech_meet" name="Meet with the Corporate" />		
+			<entry id="maelstrom_jackie" name="Talk to Jackie" />
+			<entry id="maelstrom_intercom" name="Use the intercom to enter the factory" />
+		</entry>
+		<entry id="to_royce" name="Make the deal with Maelstrom">	
+			<entry id="way_to_royce" name="Follow Jackie to the Meeting with Royce" />
+			<entry id="get_bot" name="Aquire the spiderbot" />
+			<entry id="check_box" name="Check the spiderbot" />
+			<entry id="kill_bodyguards" name="Kill Royce's bodyguards." />
+		</entry>
+		<entry id="shootout" name="Escape from the factory">		
+			<entry id="office" name="Find a way to get out of Royce’s office" />	
+			<entry id="fight_lab" name="Fight your way out of the lab" />	
+			<entry id="escape_lab" name="Find a way out of the lab" />	
+			<entry id="fight_factory" name="Defeat the gangsters on the factory floor" />	
+			<entry id="escape_factory" name="Find a way out of the factory floor" />
+			<entry id="open_garage" name="Open the door to the garage" />
+			<entry id="into_garage" name="Exit to the garage" />	
+			<entry id="fight_garage" name="Fight your way out of the garage" />	
+			<entry id="kill_royce" name="Kill Royce" />	
+			<entry id="escape_garage" name="Find a way out of the garage" />	
+		</entry>
+		<entry id="end" name="Close the Deal">
+			<entry id="meet_dex" name="Meet Dex" />	
+			<entry id="militech" name="Optional: Call the Militech Agent" />	
+			<entry id="car" name="Go back to your bike." />
+		</entry>
+	</entry>
+	
+	<entry id="q004_braindance" name="Q004 Braindance">
+		<entry id="evelyn" name="The employer">
+			<entry id="go_to_nightclub" name="Go to Lizzies' Nightclub." />
+			<entry id="find_evelyn" name="Ask bartender about Evelyn." />
+			<entry id="find_evelyn_vip_room" name="Talk with Evelyn in the club's VIP room." />
+			<entry id="follow_evelyn" name="Follow Evelyn." />
+			<entry id="use_editor" name="Use the braindance editor." />
+		</entry>
+		<entry id="braindance" name="Braindance">
+			<entry id="scan_gate" name="Scan the hotel's security gate." />
+			<entry id="scan_badge_f_w" name="Scan an ID badge of a white female hotel employee for yourself." />
+			<entry id="scan_badge_f_b" name="Scan an ID badge of a black female hotel employee for yourself." />
+			<entry id="scan_badge_f_a" name="Scan an ID badge of an asian female hotel employee for yourself." />
+			<entry id="scan_badge_m_w" name="Scan an ID badge of a white male hotel employee for yourself." />
+			<entry id="scan_badge_m_b" name="Scan an ID badge of a black male hotel employee for yourself." />
+			<entry id="scan_badge_m_a" name="Scan an ID badge of an asian male hotel employee for yourself." />
+			<entry id="scan_badge_jackie" name="Scan an ID badge of a white male hotel employee for Jackie." />
+			<entry id="scan_badge_double_0" name="Scan ID badges of two white male hotel employees. (0/2)" />
+			<entry id="scan_badge_double_1" name="Scan ID badges of two white male hotel employees. (1/2)" />
+			<entry id="scan_badge_double_2" name="Scan ID badges of two white male hotel employees. (2/2)" />
+			<entry id="scan_badges_0" name="Scan hotel employee's ID badges. (0/3)" />
+			<entry id="scan_badges_1" name="Scan hotel employee's ID badges. (1/3)" />
+			<entry id="scan_badges_2" name="Scan hotel employee's ID badges. (2/3)" />
+			<entry id="scan_badges_3" name="Scan hotel employee's ID badges. (3/3)" />
+			<entry id="find_servers" name="Learn the location of the hotel's servers." />
+			<entry id="scan_suitcase" name="Scan the courier's suitcase." />
+			<entry id="wait_for_end" name="Wait for the recording to end." />
+			<entry id="call_dex" name="Exit nightclub and call Dex." />
+		</entry>
+	</entry>
+
+	<entry id="q005_heist" name="Q005 Layoffs">
+		<entry id="phase1" name="Plan the heist">
+			<entry id="go_diner" name="Meet Dexter at the diner" />
+			<entry id="diner_sit" name="Get a drink and sit down." />
+		</entry>
+		<entry id="phase2" name="Gear Up" >
+			<entry id="ripperdoc" name="Visit the ripperdoc" />		
+		</entry>
+		<entry id="phase3" name="Heist" >
+			<entry id="van" name="Get in the van." />
+			<entry id="lobby" name="Get up to the lobby." />
+			<entry id="lobby_02" name="Find a path through the building." />
+			<entry id="weapons_locker" name="Infiltrate the weapon's locker" />
+			<entry id="server_room" name="Infiltrate the server room." />	
+			<entry id="server_wait" name="Wait for Stash to finish." />	
+			<entry id="continue" name="Continue through the building" />	
+			<entry id="shaft" name="Get into the shaft." />	
+			<entry id="dome" name="Find a way out of the dome" />	
+			<entry id="follow_stash" name="Follow Stash's voice." />
+			<entry id="tech_open_door" name="Find a way to open the door." />
+			<entry id="wait" name="Wait for Jackie and Stash." />
+			<entry id="locate" name="Locate the courier." />
+			<entry id="sedate" name="Sedate the courier." />
+			<entry id="help_stash" name="Help Stash." />
+			<entry id="ice" name="Check the ice." />
+			<entry id="open_suitcase" name="Put the courier's hand on the suitcase." />
+			<entry id="bodyguard" name="Defeat the bodyguard." />
+			<entry id="take_chip" name="Take the chip and jack it in." />
+			<entry id="wait_jackie" name="Wait with Jackie." />
+			<entry id="combat_cab" name="Get into the combat cab." />
+			<entry id="find" name="Meet Dexter and Evelyn in the No-Tell Motel." />			
+		</entry>
+	</entry>
+	
+	
+	<entry id="q103_warhead" name="Q103 Warhead">
+		<entry id="afterlife" name="Afterlife">
+			<entry id="go_to_afterlife" name="Go to Afterlife" />
+			<entry id="talk_ape" name="Talk with Ape" />
+			<entry id="talk_barman" name="Talk to Barman" />
+			<entry id="talk_weyland" name="Talk to Weyland" />
+			<entry id="talk_ape2" name="Talk with Ape" />
+			<entry id="fight_ape" name="Fight with Ape" />
+			<entry id="talk_weyland2" name="Talk to Weyland" />
+		</entry>
+		<entry id="maelstrom_deal" name="Weapon deal">
+			<entry id="go_to_warehouse" name="Go to warehouse" />
+			<entry id="deal_maelstrom" name="Talk with Maelstrom" />
+			<entry id="kill_maelstrom" name="Kill Maelstromers" />
+			<entry id="take_emp" name="Take the EMP rockets" />
+		</entry>
+		<entry id="panam_mission" name="Panam Mission">
+			<entry id="call_panam" name="Call Panam" />
+			<entry id="meet_panam" name="Meet with Panam" />
+			<entry id="drive_with_panam" name="Drive with Panam" />
+			<entry id="deal_with_ambush" name="Deal with ambush" />
+			<entry id="open_passage" name="Make the passage for Panam's vehicle" />
+			<entry id="drive_with_panam2" name="Drive with Panam" />
+			<entry id="talk_panam_gtown" name="Talk with Panam" />
+			<entry id="prep_ghosttown" name="Use vision mode to prepare the meeting place" />
+			<entry id="tell_ready_panam" name="Tell Panam when we're ready" />
+			<entry id="defeat_ambush" name="Defeat ambush" />
+			<entry id="get_payment" name="Try to retrieve Panam's payment" />
+			<entry id="runaway_w_panam" name="Get back to Panam's car" />
+			<entry id="talk_panam_aft_ambush" name="Talk to Panam" />
+			<entry id="add_coolant" name="Add coolant" />
+			<entry id="drive_with_panam3" name="Drive with Panam" />
+			<entry id="follow_panam" name="Follow Panam" />
+			<entry id="talk_panam_garage" name="Talk with Panam" />
+			<entry id="get_to_scrapyard" name="Get to scrapyard" />
+			<entry id="look_for_scrap" name="Search for parts on scrapyard" />
+			<entry id="drive_with_panam4" name="Drive with Panam" />
+			<entry id="back_panam_fixing" name="Go back to Panam to garage" />
+			<entry id="talk_panam_garage2" name="Talk with Panam" />
+			<entry id="follow_panam2" name="Follow Panam" />
+			<entry id="talk_panam_bar" name="Talk with Panam" />
+		</entry>
+	</entry>
+	
+	<entry id="q104_courier" name="Q104 Courier">
+		<entry id="preparations" name="Preparations">
+			<entry id="q104_meet_panam" name="Meet with Panam" />
+			<entry id="q104_drive_panam" name="Drive with Panam" />
+			<entry id="q104_setup_emp_gun" name="Set up the EMP gun" />
+			<entry id="q104_ready_av" name="Tell Panam when ready" />
+		</entry>
+		<entry id="chasing_av" name="AV chase">
+			<entry id="q104_shoot_av" name="Shoot the AV" />
+			<entry id="q104_back_car" name="Go to car" />
+			<entry id="q104_chase_av" name="Chase the AV" />
+			<entry id="q104_deal_with_drones" name="Deal with the drones" />
+			<entry id="q104_kill_arasakas_av" name="Kill the Arasaka men" />
+			<entry id="q104_deal_with_av_turret" name="Deal with the AV turret" />
+		</entry>
+		<entry id="helping_panam" name="Help Panam">
+			<entry id="q104_check_panam" name="Check Panam" />
+			<entry id="q104_find_health_system" name="Find health system in AV" />
+			<entry id="q104_return_panam" name="Return to Panam" />
+			<entry id="q104_help_panam" name="Help Panam to get to the AV" />
+		</entry>
+		<entry id="tracking_arasaka" name="Tracking Arasaka">
+			<entry id="q104_scan_av_crash" name="Use scanner to find tracks of Arasaka" />
+			<entry id="q104_follow_tracks" name="Using scanner follow the tracks" />
+			<entry id="q104_kill_arasaka_addons" name="Kill Arasaka men" />
+		</entry>
+		<entry id="gas_station" name="Gas Station">
+			<entry id="q104_find_courier" name="Find courier" />
+			<entry id="q104_gas_recon" name="(optional) Do the recon on gas station" />
+			<entry id="q104_kill_brightman" name="Kill Brightman" />
+			<entry id="q104_call_sobczak" name="Call Sobczak" />
+			<entry id="q104_call_burondo" name="Call Burondo" />
+		</entry>
+	</entry>
+		
+		
+		
+		
+		
+	<entry id="q105" name="q105 Dollhouse">	
+		<entry id="lizzies" name="Gather Informations from Judy">	
+			<entry id="holocall_judy" name="(Optional) Call Judy" />			
+			<entry id="meet_judy" name="Meet with Judy at the Lizzies Nightclub" />						
+			<entry id="kill_yakuza" name="Defeat the Yakuza goons" />
+			<entry id="talk_judy" name="Talk to Judy" />	
+		</entry>
+		<entry id="dollhouse" name="Find Sophie in the Dollhouse">	
+			<entry id="enter_dollhouse" name="Go to the Yakuza Dollhouse" />
+			<entry id="find_sophie" name="Gain information about Sophie's whereabouts" />
+			<entry id="bar" name="Go to the bar" />
+			<entry id="talk_roxanne" name="Talk to Roxanne" />			
+			<entry id="trap" name="Meet the informant in her room" />
+			<entry id="defeat_woodman" name="Defeat the Yakuza forces" />
+			<entry id="interrogate_woodman" name="Gain information from Woodman" />
+			<entry id="leave_dollhouse" name="Leave the Dollhouse" />
+		</entry>
+		<entry id="fingers" name="Discover the whereabouts of Sophie">	
+			<entry id="go_jigjig" name="Go to JigJig Street" />					
+			<entry id="jigjig_doll" name="Find the doll Roxanne described" />					
+			<entry id="jigjig_follow" name="Follow the doll and gain information about Sophie" />					
+			<entry id="jigjig_chase" name="Chase and catch the doll" />
+			<entry id="jigjig_kill_goons_opt" name="(Optional) Kill the goons" />			
+			<entry id="jigjig_kill_goon_opt" name="(Optional) Kill the goon" />
+			<entry id="jigjig_kill_goons" name="Kill the goons" />
+			<entry id="jigjig_kill_goon" name="Kill the goon" />
+			<entry id="jigjig_info" name="Gain information from the doll" />
+			<entry id="jigjig_dealer" name="Find the dealer" />
+			<entry id="go_fingers" name="Go to Finger's Apartment" />
+			<entry id="enter_fingers" name="Enter the apartment" />			
+			<entry id="meet_fingers" name="Meet with Fingers" />				
+			<entry id="find_doll" name="Find the doll" />
+			<entry id="interrogate_fingers" name="Gain informations from Fingers" />			
+			<entry id="fingers_pc" name="Gain informations about Sophie and the Braindance Studio" />
+			<entry id="leave_fingers" name="Leave Fingers' apartment" />
+		</entry>
+		<entry id="braindance" name="Find Sophie">
+			<entry id="call_ripperdoc" name="Call your Ripperdoc" />	
+			<entry id="call_judy" name="Call Judy" />			
+			<entry id="braindance_studio" name="Go to the braindance studio" />			
+			<entry id="enter_studio" name="Find a way into the Studio" />
+			<entry id="search_studio" name="Search the Braindance Studio for Sophie" />			
+			<entry id="info" name="(Optional) Gather information about the braindance studio" />		
+			<entry id="free_sophie" name="Free Sophie" />	
+		</entry>
+		<entry id="sophie_save" name="Get Sophie to the Safehouse">
+			<entry id="van" name="Get to the Ripperdoc's van" />	
+			<entry id="escort" name="(Optional) Escort Sophie and Ripperdoc" />	
+			<entry id="destroy_studio" name="(Optional) Destroy the factory" />	
+		</entry>
+		<entry id="evelynn" name="Gain informations about Evelynn">	
+			<entry id="operation" name="Wait for the operation to finish" />
+			<entry id="op_techie" name="Help Judy with her devices" />
+			<entry id="check_braindance" name="Check the braindance" />
+			<entry id="braindance_01" name="Investigate the 1st Braindance section" />
+			<entry id="braindance_02" name="Investigate the 2nd Braindance section" />
+			<entry id="braindance_03" name="Investigate the 3rd Braindance section" />	
+			<entry id="braindance_04" name="Investigate the 4th Braindance section" />		
+			<entry id="exit_bd" name="Exit the braindance" />		
+			<entry id="talk_judy" name="Talk to Judy" />
+		</entry>
+	</entry>
+
+	<entry id="q107_delamain" name="q107 Delamain">	
+		<entry id="call" name="Get a Delamain Cab">	
+			<entry id="call_judy" name="Call Judy." />			
+			<entry id="talk_judy" name="Talk to Judy." />						
+			<entry id="call_delamain" name="Call a Delamain Cab" />
+			<entry id="wait_delamain" name="Go to the pickup location." />
+		</entry>
+		<entry id="delamain" name="Get information out of Delamain">	
+			<entry id="get_in" name="Get into the cab." />
+			<entry id="plug_in" name="Get info from the cab’s on-board computer." />
+			<entry id="call_judy_02" name="Call Judy for tech support." />
+			<entry id="call_judy_optional" name="(Optional) Call Judy for tech support." />
+			<entry id="follow_instructions" name="Follow Judy's instructions." />
+			<entry id="hack_delamain" name="Hack into the computer." />			
+			<entry id="rewire_delamain" name="Rewire the computer." />
+			<entry id="deal_delamain" name="Deal with Delamain." />
+		</entry>
+		<entry id="pacifica" name="Escape Pacifica">
+			<entry id="theatre" name="Escape the Theater." />
+			<entry id="escape" name="Find a way out of the mall." />			
+			<entry id="leave_area" name="Leave the area." />
+			<entry id="call_sobchak" name="Call Sobchak." />
+			<entry id="drive_delamain" name="Drive to Delamain's address." />
+		</entry>
+		<entry id="delamains_garage" name="Delamain's Garage">
+			<entry id="break_in" name="Find a way into the garage." />	
+			<entry id="go_to_office" name="Investigate the office." />			
+			<entry id="delamain_appears" name="Deal with Delamain." />
+			<entry id="survive_standoff" name="Survive the Standoff." />
+		</entry>
+		<entry id="johnny_nightmare" name="Johnny's Nightmare">	
+			<entry id="fight_arasaka" name="Defeat the Arasaka assassins." />
+			<entry id="help_alt" name="Help Alt." />
+			<entry id="merc_car" name="Get into the car." />
+			<entry id="talk_delamain" name="Talk to Delamain." />
+		</entry>
+		<entry id="lawyer" name="The Lawyer">	
+			<entry id="talk_delamain_lawyer" name="Talk to Delamain when you're ready." />	
+			<entry id="call_delamain_lawyer" name="Call Delamain." />
+			<entry id="get_in_delamain_lawyer" name="Get into the Delamain cab." />
+			<entry id="get_in_lawyer" name="Make an appointment with the lawyer." />
+			<entry id="talk_lawyer" name="Talk to the lawyer." />
+			<entry id="get_books" name="Get Delamain's items." />
+			<entry id="deal_gangers" name="Deal with the gangers." />
+			<entry id="return_delamain" name="Return to Delamain." />
+		</entry>
+	</entry>
+	
+	<entry id="q110" name="q110_voodoo">
+		<entry id="q110_1" name="Meet Placide">
+			<entry id="q110_1a" name="Go to Placide's place." />
+			<entry id="q110_1b" name="Wait for Placide." />
+			<entry id="q110_1c" name="Convince Placide to take you to Evelyn." />
+		</entry>
+		<entry id="q110_2" name="A taste of gang life">
+			<entry id="q110_2a" name="Follow Placide to Roseline's Emporium." />
+			<entry id="q110_2b" name="Optional - Help Placide defeat the Valentinos." />
+		</entry>
+		<entry id="q110_3" name="The plan">
+			<entry id="q110_3a" name="Make a battle plan." />
+		</entry>
+		<entry id="q110_4" name="Assault on the Farm">
+			<entry id="q110_4h" name="Rendezvous at night with Placide's crew." />		
+			<entry id="q110_4a" name="Infiltrate the Farm." />
+			<entry id="q110_4b" name="Place explosive in the Great Apes area." />
+			<entry id="q110_4c" name="Place explosive in the Jungle area." />
+			<entry id="q110_4d" name="Place explosive in the Aquarium area." />
+			<entry id="q110_4e" name="Place explosive in the Savannah area." />
+			<entry id="q110_4f" name="Optional - Find Jean-ki-ri's stash." />
+			<entry id="q110_4g" name="Exfiltrate the Farm." />
+		</entry>
+		<entry id="q110_5" name="Aftermath">
+			<entry id="q110_5a" name="Optional - Show the evidence about Jean-ki-ri to Placide." />
+			<entry id="q110_5b" name="Follow Placide." />
+			<entry id="q110_5c" name="Defeat Jean-ki-ri and the Arasaka commando." />
+			<entry id="q110_5f" name="Listen to the Voodoo Boys Elders." />
+			<entry id="q110_5d" name="Execute Jean-ki-ri." />
+			<entry id="q110_5e" name="Talk to the Voodoo Boys Elders." />
+		</entry>
+		<entry id="q110_6" name="Reunion">
+			<entry id="q110_6a" name="Catch up with Evelyn." />
+			<entry id="q110_6b" name="Listen to the Elders." />
+		</entry>
+		<entry id="q110_7" name="Johnny's last minute">
+			<entry id="q110_7a" name="Talk to the Elders to start the ritual." />
+			<entry id="q110_7c" name="Jack in." />
+			<entry id="q110_7b" name="Stay focused on Johnny's last minute of Earth." />
+		</entry>
+	</entry>
+	
+	<entry id="q111" name="q111 Veterans">
+		<entry id="q111_old_threads" name="Old Threads">
+			<entry id="q111_talk_to_sobczak" name="Talk to Sobczak about his investigation." />
+		</entry>
+	</entry>
+	
+	<entry id="q112" name="q112 Corpo Job">
+		<entry id="q112_burondo" name="Big Blind, Small Blind: Meeting Burondo">
+			<entry id="q112_plan_with_sobczak" name="Plan with Sobczak." />
+			<entry id="q112_meet_burondo" name="Meet the Blonde Man." />
+			<entry id="q112_bargain_burondo" name="Bargain with the Blonde Man." />
+		</entry>
+		<entry id="q112_facility" name="The Draw: Arasaka R&amp;D Division">
+			
+		</entry>
+		<entry id="q112_truck" name="The Flop: Prototype Theft">
+			
+		</entry>
+		<entry id="q112_fixer" name="The Turn: A Crooked Fixer">
+			
+		</entry>
+		<entry id="q112_data" name="The River: Getting the Data">
+			
+		</entry>
+	</entry>
+	
+	<entry id="q113" name="Q113 Mikoshi">
+		<entry id="plan" name="The Plan">
+			<entry id="call_miriam" name="Call Miriam to inform her about Mikoshi." />
+			<entry id="talk_miriam" name="Talk to Miriam to inform her about Mikoshi." />
+			<entry id="return_miriam" name="Leave Miriam's mansion and wait for her call." />
+			<entry id="go_miriam" name="Attend the meeting at Miriam Night's mansion." />
+			<entry id="ready_miriam" name="Talk to Miriam when you're ready to attack Mikoshi." />
+		</entry>
+		<entry id="compound" name="Jacking In">
+			<entry id="get_in" name="Get inside the compound." />
+			<entry id="open_gates" name="Open the gates for the Voodoo Boys." />
+			<entry id="get_through" name="Fight your way through the compound." />
+			<entry id="elevator" name="Get the elevator working." />
+			<entry id="find_node" name="Find the Mikoshi access port." />
+			<entry id="jack_in" name="Jack in." />
+		</entry>
+		<entry id="mikoshi" name="Mikoshi">
+			<entry id="enter_mikoshi" name="Find and enter the virtual entrance to Mikoshi." />
+			<entry id="talk_johnny" name="Talk to Johnny." />
+			<entry id="go_sphere" name="Go to the sphere." />
+			<entry id="find_out" name="Find out how to get inside the sphere." />
+			<entry id="enter_outer_layer" name="Enter the outer layer." />
+			<entry id="find_tbug" name="Find T-Bug." />
+			<entry id="talk_tbug" name="Break T-Bug's simulation." />
+			<entry id="enter_middle_layer" name="Enter the next layer when you're ready." />
+			<entry id="find_subject" name="Find the subject of this simulation." />
+			<entry id="break_simulation" name="Find out how to break the simulation." />
+			<entry id="follow_evelyn" name="Follow Evelyn's advice." />
+			<entry id="layer_techie" name="Rewire the system." />
+			<entry id="layer_netrunner" name="Counterhack Arasaka's security." />
+			<entry id="layer_base" name="Find a way to stop Soulkiller." />
+			<entry id="enter_last_layer" name="Enter the next layer when you're ready." />
+			<entry id="find_out" name="Find out where you are." />
+			<entry id="spacesuit" name="Get into the spacesuit." />
+			<entry id="leave_shuttle" name="Leave the shuttle and enter the space station." />
+			<entry id="fight_space" name="Fight your way through the space station." />			
+			<entry id="space_netrunner" name="Find a way to stop Soulkiller." />
+			<entry id="enter_alt" name="Enter the core of Mikoshi." />
+			<entry id="talk_alt" name="Talk to Alt." />
+		</entry>
+	</entry>
+
+	
+	<entry id="quest_sceneInitiator" name="Scene Initiation">
+		<entry id="phase1" name="Reach table">
+			<entry id="objective1" name="Reach the table on the right to initiate the scene" />
+		</entry>	
+		<entry id="phase2" name="Scene initiated">
+			<entry id="objective1" name="Scene initiated" />
+		</entry>
+		<entry id="phase3" name="Great">	
+			<entry id="objective1" name="Great!" />
+		</entry>
+	</entry>
+	
+	<entry id="mm_inv" name="Miriam's Murder Investigation">
+		<entry id="mm_main" name="Miriam tell?">
+			<entry id="mm_obj_main" name="FIND OUT WHAT MIRIAM WANTED TO TELL YOU." />
+			<entry id="mm_obj_dig" name="Check what Miriam left for you inside the pot." />
+			<entry id="mm_obj_secret" name="Find a way to open the secret doors." />
+			<entry id="mm_obj_pc" name="Use the password to unlock the PC." />
+			<entry id="mm_obj_panic" name="Carefully search the panic room." />
+			<entry id="mm_obj_push" name="Push the bookshelf to learn what's behind it." />
+		</entry>
+		<entry id="mm_optional" name="Miriam how?">
+			<entry id="mm_obj_optional" name="(Optional): FIND OUT WHAT HAPPENED TO MIRIAM." />
+		</entry>
+	</entry>
+	
+	<entry id="q205_crossroads" name="Crossroads">
+		<entry id="q205_mansion" name="Mansion">
+			<entry id="q205_to_mansion" name="VISIT MIRIAM." />
+			<entry id="q205_talk_del" name="Talk with Delamain." />
+			<entry id="q205_call_sob" name="Call Sobchak." />
+			<entry id="q205_office" name="GET TO MIRIAM'S OFFICE." />
+			<entry id="q205_attorney" name="Follow Miriam's attorney." />
+			<entry id="q205_reason" name="LEARN WHY MIRIAD DIED." />
+			<entry id="q205_robot" name="Search for the cleaning robot." />
+			<entry id="q205_fake" name="FIND MAYOR." />
+		</entry>
+		
+	</entry>
+
+	<entry id="q108_johnny" name="Q108_Johnny">
+		<entry id="q108_01_rockerboy" name="Rockerboy">
+			<entry id="q108_get_ready" name="Talk with Kerry before concert" />
+			<entry id="q108_play" name="Play Chippin In" />
+			<entry id="q108_next_song" name="Prepare for next song (optional)" />
+			<entry id="q108_ready" name="Start playing when ready" />
+			<entry id="q108_song" name="Play next song" />
+			<entry id="q108_find_your_way" name="Address the crowd" />
+			<entry id="q108_help" name="Help the Girl (optional)" />
+		</entry>
+		<entry id="q108_02_silverhand" name="Silverhand">
+			<entry id="q108_find_silverhand" name="Find the source of music" />
+			<entry id="q108_talk_silverhand" name="Convince Silverhand to help you" />
+		</entry>
+		<entry id="q108_03_kerry" name="Kerry Eurodyne">
+			<entry id="q108_talk_delamain" name="Talk with Delamain" />
+			<entry id="q108_get_delamain" name="Get into car" />
+			<entry id="q108_find_kerry" name="Find Kerry Eurodyne at his North Oak villa" />
+			<entry id="q108_talk_with_guards" name="Convince guards to grant you entry" />
+			<entry id="q108_find_another_way" name="Find another way in" />
+			<entry id="q108_talk_with_fans" name="Talk with Samurai fans (optional)" />
+			<entry id="q108_follow_guard" name="Follow Guard" />
+			<entry id="q108_follow_boyfriend" name="Follow Assistant" />
+			<entry id="q108_talk_kerry" name="Talk with Kerry" />
+			<entry id="q108_learn_more" name="Learn more on how SAMURAI broke up" />
+			<entry id="q108_look_around" name="Look around" />
+		</entry>
+		<entry id="q108_04_forlorn" name="Forlorn Hope">
+			<entry id="q108_find_forlorn" name="Find Forlorn Hope" />
+			<entry id="q108_get_into" name="Get into Forlorn Hope" />
+			<entry id="q108_find_drink" name="Find whiskey" />
+			<entry id="q108_drink_whiskey" name="Drink with Johnny" />
+			<entry id="q108_convince_punks" name="Convince punks and plan heist" />
+			<entry id="q108_get_mainframe" name="Get into mainframe" />
+		</entry>
+		
+	</entry>
+	
+	<entry id="q111_jackie" name="Jackie">
+		<entry id="phase1" name="Crime Scene">
+			<entry id="arrive" name="Meet Sobchak at the Crime Scene" />
+			<entry id="talk_sobchak" name="Talk to Sobchak" />
+			<entry id="follow_sobchak" name="Follow Sobchak" />
+			<entry id="wait_sobchak" name="Wait for Sobchak" />
+			<entry id="turn_projector" name="Turn on hologram projector" />
+			<entry id="investigate_footstamp" name="Investigate the Footstamps" />
+			<entry id="investigate_staircase" name="Investigate the staircase" />
+			<entry id="investigate_car" name="Investigate Jackie's car" />
+			<entry id="hack_cameras" name="Hack the cameras" />
+			<entry id="wait_recording" name="Wait for a recording from Police" />
+			<entry id="lower_ladder" name="Lower the ladder for Sobchak" />
+			<entry id="arrive" name="Meet Sobchak at the Crime Scene" />
+			<entry id="investigate" name="Investigate crime with Sobchak" />
+			<entry id="sum_up" name="Talk to Sobchak and sum up the investigation" />
+		</entry>
+		<entry id="phase2" name="Moto Cielo">
+			<entry id="meet_moto_cielo" name="Meet with Sobchak in Moto Cielo" />
+			<entry id="talk_sobchak" name="Talk to Sobchak" />
+			<entry id="arrive_workshop" name="Find Jackie's girlfriend workshop in Moto Cielo" />
+			<entry id="find_girl" name="Look for Jackie's girlfriend" />
+			<entry id="catch_girl" name="Chase Jackie's girlfriend" />
+			<entry id="get_girl" name="Get Jackie's girlfriend" />
+			<entry id="ask_girl" name="Ask Jackie's girlfriend where Jackie is" />
+			<entry id="contact_sobchak" name="Call Sobchak" />
+			<entry id="talk_sobchak" name="Talk to Sobchak" />
+		</entry>
+		<entry id="phase2a" name="Apartment">
+			<entry id="arrive_apartment" name="Go to Jackie's girlfriend apartment" />
+			<entry id="get_into_apartment" name="Get inside apartment" />
+			<entry id="get_girl" name="Find Jackie's Girlfriend" />
+			<entry id="ask_girl" name="Ask Jackie's girlfriend where Jackie is" />
+		</entry>
+		<entry id="phase2b" name="Mezcal Joe's">
+			<entry id="arrive_mezcal_joes" name="Go to the Mezcal Joe's" />
+			<entry id="ask_jackie" name="Ask about Jackie" />
+			<entry id="defeat" name="Beat the Gangsters" />
+			<entry id="talk_to_boss" name="Talk to Valentinos leader" />
+			<entry id="run" name="Leave the Stip Club" />
+		</entry>
+		<entry id="phase3" name="Cathedral">
+			<entry id="arrive_chapel" name="Find Jackie in his hideout" />
+			<entry id="talk_jackie" name="Talk to Jackie" />
+			<entry id="follow_jackie" name="Follow Jackie" />
+			<entry id="get_crowbar" name="Take the crowbar" />
+			<entry id="open_crates" name="Open crates" />
+			<entry id="take_ammo" name="Pick up tranqulizing ammunition" />
+			<entry id="load_turret" name="Load tranqulizing ammunition to the turret" />
+			<entry id="talk_sobchak" name="Talk to Sobchak" />
+			<entry id="inspect_brightman" name="Examine unconcious Brightman" />
+			<entry id="go_to_chapel" name="Go to the chapel" />
+			<entry id="take_fuel" name="Pick up the gas tank" />
+			<entry id="fill_generator" name="Add fuel to the power generator" />
+			<entry id="trap_belltower" name="Go to the crypt" />
+			<entry id="trap_belltower_top" name="Fix the power generator" />
+			<entry id="trap_catherdal" name="Find out what happened with Sobchak and Jackie" />
+			<entry id="bossfight" name="Defeat the Brightman's puppet" />
+			<entry id="lab_wake_up" name="Free yourself" />
+			<entry id="trap_belltower" name="Kill the Brightman's puppet" />
+			<entry id="find_sobchak" name="Help Sobchak" />
+			<entry id="wait_maxtac" name="Wait for NCPD AV" />
+		</entry>
+	</entry>
+	
+	<entry id="q201_lone_wolf" name="Q201 Lone Wolf">
+		<entry id="q201_lone_wolf" name="Lone Wolf">
+			<entry id="q201_finish_up_mercs" name="Kill the Remaining Mercs" />
+			<entry id="q201_talk_to_burondo" name="Talk to Burondo" />
+			<entry id="q201_kill_burondo" name="[OPTIONAL] Kill Burondo" />			
+			<entry id="q201_leave_the_gym" name="Leave the Gym" />
+			<entry id="q201_go_to_bar" name="Take a seat by the bar" />
+			<entry id="q201_have_a_drink" name="Have a drink" />			
+		</entry>
+	</entry>
+
+	
+	<entry id="ss_watson_nhr_02" name="Nhr_02">
+		<entry id="resources" name="Resources">
+			<entry id="start" name="Find a way to loot container" />
+		</entry>
+	</entry>
+
+	<entry id="sts_watson_nid_04" name="sts_watson_nid_04">
+		<entry id="sts_watson_nid_04" name="sts_watson_nid_04">
+			<entry id="get_recording" name="Find and loot BD recording" />
+		</entry>
+	</entry>
+	
+	<entry id="ss_watson_nid_06" name="A tough nut">
+		<entry id="A tough nut" name="A tough nut">
+			<entry id="start" name="Find a way to loot container" />
+		</entry>
+	</entry>
+	
+	<entry id="ss_watson_nhr_12" name="Nhr_12">
+		<entry id="Neighbourhood_watch" name="Neighbourhood_watch">
+			<entry id="start" name="Check why Wyatt is not responding" />
+		</entry>
+	</entry>
+	
+	<entry id="ss_watson_nhr_10" name="Bring, Cash &amp; Leave">
+		<entry id="looters" name="Looters">
+			<entry id="start" name="Help Gavin with Maelstorm gangers" />
+			<entry id="end" name="Talk with Gavin" />
+		</entry>
+	</entry>
+	
+	<entry id="sts_watson_nhr_09" name="Ragnarok Tattoos">
+		<entry id="looters" name="Looters">
+			<entry id="kill_gangers" name="Deal with Japan Claws at Ragnarok Tattoos" />
+			<entry id="talk_with_owner" name="Talk with Ragnarok Tattoos owner" />
+		</entry>
+	</entry>
+	
+	<entry id="sts_watson_jpn_01" name="Braindance storens">
+		<entry id="the_pit" name="resources">
+			<entry id="find_way" name="Find a way to reach braindancer" />
+		</entry>
+	</entry>
+	
+	<entry id="sts_watson_jpn_02" name="Tyger Claws warehouse">
+		<entry id="the_pit" name="the_pit">
+			<entry id="kill_gangers" name="Deal with Tyger Claws at the warehouse" />
+		</entry>
+	</entry>	
+	
+	<entry id="sq001_straydog" name="Straydog">
+		<entry id="hook" name="Hook">
+			<entry id="sq001_start" name="Find shop Techie told you about" />
+			<entry id="sq001_check_merch" name="Find parts for Spiderbot XS" />
+			<entry id="sq001_ask_owner" name="Ask owner about parts" />
+			<entry id="sq001_check_terminal" name="Check terminal" />
+			<entry id="sq001_help" name="Help owner" />
+			<entry id="sq001_stimpack" name="Find stimpack" />
+			<entry id="sq001_give" name="Give stimpack to the owner" />
+			<entry id="sq001_talk_owner" name="Talk to owner" />
+			<entry id="sq001_check_owner" name="Check up on owner" />
+			<entry id="sq001_hack_phone" name="Hack phone" />
+			<entry id="sq001_hack_gun" name="Hack gun" />
+			<entry id="sq001_follow_owner" name="Follow owner" />
+			<entry id="sq001_kill_gangers" name="Kill gangers" />
+		</entry>
+		
+	</entry>
+	
+	<entry id="sts_wat_kab_02" name="Wife knows best">
+		<entry id="client_in_distress" name="Wife knows best">
+			<entry id="rescue" name="Rescue Chester Walker from Maelstorm" />
+			<entry id="kill" name="Kill Maelstrom gangers" />
+			<entry id="talk" name="Talk with Chester" />
+			<entry id="drive_home" name="Drive Chester home" />
+		</entry>
+	</entry>
+	
+	<entry id="sts_watson_kab_08" name="Man Of La Mancha">
+		<entry id="bounty_hunt" name="Man Of La Mancha">
+			<entry id="talk_with_dave" name="(Optional) Convince Dave Hamill to drop his investigation" />
+			<entry id="kill_dave" name="Get rid of Dave Hamill" />
+			<entry id="find_dave" name="Find Dave Hamill" />
+			<entry id="talk_with_shopkeeper" name="Talk with people on a market about Dave Hamill" />
+		</entry>
+	</entry>
+	
+	<entry id="sts_watson_kab_09" name="Expensive Tattoo">
+		<entry id="client_in_distress" name="Expensive Tattoo">
+			<entry id="kill_gangers_and_rescue_scotty" name="Rescue British and Scotty" />
+			<entry id="open_scott_cage" name="Open Sctottie's Cage" />
+			<entry id="rescue_british" name="Rescue British" />
+			<entry id="use_elevator" name="Use elevator to exit Clinic" />
+			<entry id="eliminate_tygerclaws" name="Eliminate Tyger Claws" />
+			<entry id="take_british_body" name="Carry British Body to the Car" />
+		</entry>
+	</entry>
+
+	<entry id="sts_watson_kab_04" name="Two's company, three's a crowd.">
+		<entry id="retrieving" name="Two's company, three's a crowd">
+			<entry id="enter_penthouse" name="Enter penthouse" />
+			<entry id="extract_data" name="Extract data" />
+			<entry id="leave_penthouse" name="Leave the penthouse" />
+		</entry>
+	</entry>		
+	
+	
+	<entry id="q101" name="Q101 Resurrection">
+		<entry id="landfill" name="Landfill">
+			<entry id="free_yourself" name="Dig through the trash to free yourself" />
+		</entry>
+		<entry id="chase" name="Chase">
+			<entry id="aaa" name="Look around the new base (optional)" />
+			<entry id="bbb" name="Talk with Sobchak when you'll be ready" />
+		</entry>
+		<entry id="new_base" name="New Base">
+			<entry id="ccc" name="Talk with Delamain" />			
+		</entry>
+	</entry>	
+</quests>
+	

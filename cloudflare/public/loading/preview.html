@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cyberpunk 2077 Browser</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#050507; --yellow:#fcee0a; --cyan:#00f0ff; --red:#ff003c;
+    --dim:rgba(255,255,255,.38); --line:rgba(0,240,255,.18);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;background:var(--bg);color:#fff;overflow:hidden;font-family:Rajdhani,system-ui,sans-serif}
+
+  /* atmosphere */
+  .bg{position:fixed;inset:0;
+    background:
+      radial-gradient(1200px 600px at 50% 38%, rgba(252,238,10,.07), transparent 60%),
+      radial-gradient(900px 500px at 80% 100%, rgba(0,240,255,.08), transparent 60%),
+      var(--bg);}
+  .grid{position:fixed;inset:-50% -50% 0 -50%;height:60%;top:auto;bottom:-10%;
+    background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:60px 60px;transform:perspective(500px) rotateX(62deg);transform-origin:50% 100%;
+    mask-image:linear-gradient(to top,rgba(0,0,0,.9),transparent 80%);
+    animation:grid 6s linear infinite;opacity:.55}
+  @keyframes grid{to{background-position:0 60px,0 0}}
+  .scan{position:fixed;inset:0;pointer-events:none;
+    background:repeating-linear-gradient(to bottom,rgba(255,255,255,.025) 0 1px,transparent 1px 3px);mix-blend-mode:overlay}
+  .vign{position:fixed;inset:0;pointer-events:none;box-shadow:inset 0 0 220px 40px #000}
+
+  /* layout */
+  .wrap{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 16px 120px}
+  .logo{width:min(720px,88vw);aspect-ratio:1583/994;
+    background:url(logo.png) center/contain no-repeat;
+    filter:drop-shadow(0 0 28px rgba(252,238,10,.22));
+    -webkit-mask-image:radial-gradient(closest-side,#000 82%,transparent);
+    mask-image:radial-gradient(closest-side,#000 82%,transparent);
+    position:relative;animation:breathe 5s ease-in-out infinite}
+  .logo::before,.logo::after{content:"";position:absolute;inset:0;background:inherit;opacity:0}
+  .logo.glitch::before{opacity:.7;transform:translate(-6px,0);filter:hue-rotate(160deg) saturate(3);clip-path:inset(42% 0 44% 0)}
+  .logo.glitch::after{opacity:.7;transform:translate(7px,0);filter:hue-rotate(-60deg) saturate(4);clip-path:inset(60% 0 28% 0)}
+  @keyframes breathe{50%{filter:drop-shadow(0 0 40px rgba(252,238,10,.32))}}
+
+  /* bottom HUD */
+  .hud{position:fixed;left:0;right:0;bottom:0;z-index:3;padding:0 clamp(16px,5vw,64px) clamp(20px,5vh,48px)}
+  .row{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:12px}
+  .stage{font-weight:600;font-size:clamp(15px,1.6vw,19px);letter-spacing:.18em;text-transform:uppercase;color:var(--yellow);
+    display:flex;align-items:center;gap:12px;min-width:0}
+  .stage .dot{width:8px;height:8px;background:var(--yellow);box-shadow:0 0 12px var(--yellow);animation:blink 1.1s steps(2) infinite;flex:none}
+  @keyframes blink{50%{opacity:.15}}
+  .stage span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .pct{font-family:"JetBrains Mono",monospace;font-size:clamp(26px,3.4vw,40px);font-weight:500;color:#fff;line-height:1;letter-spacing:-.02em}
+  .pct small{font-size:.45em;color:var(--dim);margin-left:2px}
+  .bar{position:relative;height:4px;background:rgba(255,255,255,.07);overflow:hidden;
+    clip-path:polygon(0 0,100% 0,calc(100% - 6px) 100%,0 100%)}
+  .fill{position:absolute;inset:0 auto 0 0;width:0;background:linear-gradient(90deg,var(--cyan),var(--yellow));
+    box-shadow:0 0 18px rgba(252,238,10,.6);transition:width .35s cubic-bezier(.2,.7,.2,1)}
+  .fill::after{content:"";position:absolute;right:0;top:-6px;bottom:-6px;width:60px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.85));filter:blur(4px)}
+  .ticks{display:flex;justify-content:space-between;margin-top:10px;font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--dim);letter-spacing:.06em}
+  .steps{display:flex;gap:clamp(10px,2.4vw,28px);flex-wrap:wrap}
+  .steps b{font-weight:500}
+  .steps .done{color:var(--cyan)} .steps .now{color:#fff}
+  .meta{text-align:right;white-space:nowrap}
+
+  .tip{position:fixed;top:clamp(16px,4vh,36px);left:clamp(16px,5vw,64px);right:clamp(16px,5vw,64px);z-index:3;
+    display:flex;justify-content:space-between;font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--dim);letter-spacing:.08em}
+  .tip .live{color:var(--cyan)}
+  .hint{margin-top:18px;font-size:clamp(14px,1.4vw,16px);letter-spacing:.06em;color:rgba(255,255,255,.6);text-align:center;max-width:620px;min-height:1.4em;transition:opacity .4s}
+  .hint em{color:var(--yellow);font-style:normal}
+
+  .ready .stage{color:var(--cyan)} .ready .stage .dot{background:var(--cyan);box-shadow:0 0 12px var(--cyan);animation:none}
+  @media (max-width:600px){ .steps{display:none} .wrap{padding-bottom:140px} }
+  @media (prefers-reduced-motion:reduce){ .grid,.logo,.stage .dot{animation:none} }
+</style>
+</head>
+<body>
+<div class="bg"></div><div class="grid"></div><div class="scan"></div><div class="vign"></div>
+
+<div class="tip"><span>NETWATCH // SECURE LINK <span class="live">● ONLINE</span></span><span id="clock">EDGE · 00:00</span></div>
+
+<main class="wrap">
+  <div class="logo" id="logo" role="img" aria-label="Cyberpunk 2077 Browser"></div>
+  <p class="hint" id="hint"></p>
+</main>
+
+<section class="hud" id="hud">
+  <div class="row">
+    <div class="stage"><i class="dot"></i><span id="stage">Establishing link</span></div>
+    <div class="pct"><span id="pct">0</span><small>%</small></div>
+  </div>
+  <div class="bar"><div class="fill" id="fill"></div></div>
+  <div class="ticks">
+    <div class="steps" id="steps"></div>
+    <div class="meta" id="meta">0.0 / 56.5 MB · 0.0 MB/s</div>
+  </div>
+</section>
+
+<script>
+/* Preview only: simulated progress. In the real page these stages are driven by
+   the engine download (bytes), game-files.json, archive mounts and the game-state probe. */
+const STAGES=[
+  {k:'Link',     label:'Establishing link',        w:3},
+  {k:'Engine',   label:'Downloading engine',       w:45, mb:56.5},
+  {k:'Compile',  label:'Compiling engine',         w:12},
+  {k:'Archives', label:'Mounting archives',        w:8},
+  {k:'Shaders',  label:'Building shaders',         w:17},
+  {k:'World',    label:'Streaming the Badlands',   w:15},
+];
+const HINTS=[
+  'Assets stream on demand: only what you see is downloaded.',
+  'First load is the slowest. The engine is <em>cached</em> for next time.',
+  'Use <em>WASD</em> to move, <em>Mouse</em> to look, <em>Esc</em> for the menu.',
+  'Chrome or Edge with <em>WebGPU</em> gives the best performance.',
+];
+const $=id=>document.getElementById(id);
+const total=STAGES.reduce((a,s)=>a+s.w,0);
+let si=0, sp=0, hi=0, t0=performance.now();
+
+$('steps').innerHTML=STAGES.map((s,i)=>`<b data-i="${i}">${String(i+1).padStart(2,'0')} ${s.k}</b>`).join('');
+function setHint(){const h=$('hint');h.style.opacity=0;setTimeout(()=>{h.innerHTML=HINTS[hi++%HINTS.length];h.style.opacity=1},400)}
+setHint(); setInterval(setHint,5200);
+
+function render(){
+  const done=STAGES.slice(0,si).reduce((a,s)=>a+s.w,0)+(STAGES[si]?STAGES[si].w*sp:0);
+  const p=Math.min(100,done/total*100);
+  $('fill').style.width=p+'%'; $('pct').textContent=Math.floor(p);
+  document.querySelectorAll('#steps b').forEach(b=>{const i=+b.dataset.i;b.className=i<si?'done':i===si?'now':''});
+  const s=STAGES[si];
+  if(s){ $('stage').textContent=s.label+(s.mb?` · ${(s.mb*sp).toFixed(1)} MB`:'');
+    const eng=si>1?56.5:si===1?56.5*sp:0, secs=(performance.now()-t0)/1000;
+    $('meta').textContent=`${eng.toFixed(1)} / 56.5 MB · ${(eng/Math.max(secs,.1)).toFixed(1)} MB/s`; }
+}
+function tick(){
+  if(si>=STAGES.length){document.body.classList.add('ready');$('stage').textContent='Ready · Wake up, Samurai';$('fill').style.width='100%';$('pct').textContent=100;
+    setTimeout(()=>{si=0;sp=0;t0=performance.now();document.body.classList.remove('ready');tick()},3500);return}
+  sp+=0.015+Math.random()*0.03*(si===1?1.4:1);
+  if(sp>=1){sp=0;si++}
+  render(); setTimeout(tick,60+Math.random()*80);
+}
+tick();
+
+/* occasional glitch on the logo */
+setInterval(()=>{const l=$('logo');l.classList.add('glitch');setTimeout(()=>l.classList.remove('glitch'),90+Math.random()*90)},2600);
+setInterval(()=>{const d=new Date();$('clock').textContent='EDGE · '+d.toTimeString().slice(0,5)},1000);
+</script>
+</body>
+</html>

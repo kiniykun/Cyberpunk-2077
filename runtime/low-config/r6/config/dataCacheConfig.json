@@ -1,0 +1,62 @@
+{
+	"warsaw_prod": {
+		"depsServerType": "dataprvPostgresDepsServer",
+		"depsServerParams": "postgresql://cyb_cook_manifests_prod:XVgVhYRtexSKP0a+liV8kWM0P0U%3D@cdprs-build-analytics:5432/cyb_cook_manifests_prod?connect_timeout=10",
+		"fileServerType": "dataprvHttpFileServer",
+		"fileServerParams": "http://artifact-sto-waw.cdpred.com/"
+	},
+	"warsaw_prod_cifs": {
+		"depsServerType": "dataprvPostgresDepsServer",
+		"depsServerParams": "postgresql://cyb_cook_manifests_prod:XVgVhYRtexSKP0a+liV8kWM0P0U%3D@cdprs-build-analytics:5432/cyb_cook_manifests_prod?connect_timeout=10",
+		"fileServerType": "dataprvWindowsFileServer",
+		"fileServerParams": "\\\\buildstorage\\artifact_storage_data_source\\"
+	},
+	"warsaw_prod_http": {
+		"depsServerType": "dataprvWebServiceDepsServer",
+		"depsServerParams": "http://artifact-storage-api-waw.cdpred.com/storage/",
+		"fileServerType": "dataprvHttpFileServer",
+		"fileServerParams": "http://artifact-sto-waw.cdpred.com/"
+	},	
+	"warsaw_dev": {
+		"depsServerType": "dataprvPostgresDepsServer",
+		"depsServerParams": "postgresql://cyb_cook_manifests_dev:WSfkTuU3%2F7zltLeoczIv86YEaM4%3D@cdprs-build-analytics:5432/cyb_cook_manifests_dev?connect_timeout=10",
+		"fileServerType": "dataprvWindowsFileServer",
+		"fileServerParams": "\\\\buildstorage\\artifact_storage_data_source_dev\\"
+	},
+	"krakow_prod": {
+		"depsServerType": "dataprvPostgresDepsServer",
+		"depsServerParams": "postgresql://cyb_cook_manifests_prod:XVgVhYRtexSKP0a+liV8kWM0P0U%3D@artifact-postgres-krk:5432/cyb_cook_manifests_prod?connect_timeout=10",
+		"fileServerType": "dataprvWindowsFileServer",
+		"fileServerParams": "\\\\artifact-storage-krk\\ARTIFACT_STORAGE_DATA\\"
+	},
+	"wroclaw_prod": {
+		"depsServerType": "dataprvPostgresDepsServer",
+		"depsServerParams": "postgresql://cyb_cook_manifests_prod:XVgVhYRtexSKP0a+liV8kWM0P0U%3D@artifact-postgres-wro:5432/cyb_cook_manifests_prod?connect_timeout=10",
+		"fileServerType": "dataprvWindowsFileServer",
+		"fileServerParams": "\\\\artifact-storage-wro\\ARTIFACT_STORAGE_DATA\\"
+	},
+	"thn_prod": {
+		"depsServerType": "dataprvPostgresDepsServer",
+		"depsServerParams": "postgresql://cyb_cook_manifests_prod:XVgVhYRtexSKP0a+liV8kWM0P0U%3D@postgres-cdp-db.treehouseninjas.local:5432/cyb_cook_manifests_prod?connect_timeout=10",
+		"fileServerType": "dataprvWindowsFileServer",
+		"fileServerParams": "\\\\cdprs-thn1\\ARTIFACT_STORAGE_DATA\\"
+	},
+	"vancouver_prod": {
+		"depsServerType": "dataprvPostgresDepsServer",
+		"depsServerParams": "postgresql://cyb_cook_manifests_prod:XVgVhYRtexSKP0a+liV8kWM0P0U%3D@192.168.181.109:5432/cyb_cook_manifests_prod?connect_timeout=10",
+		"fileServerType": "dataprvWindowsFileServer",
+		"fileServerParams": "\\\\cdprs-vanc1\\ARTIFACT_STORAGE_DATA\\"
+	},
+	"nvidia_prod": {
+		"depsServerType": "dataprvPostgresDepsServer",
+		"depsServerParams": "postgresql://cyb_cook_manifests_prod:XVgVhYRtexSKP0a+liV8kWM0P0U%3D@10.125.146.140:5432/cyb_cook_manifests_prod?connect_timeout=10",
+		"fileServerType": "dataprvWindowsFileServer",
+		"fileServerParams": "\\\\10.125.146.139\\ARTIFACT_STORAGE_DATA\\"
+	},
+	"local_benchmark": {
+		"depsServerType": "dataprvDebugDepsServer",
+		"depsServerParams": "Z:\\Temp\\Benchmark\\dependencies.binary_deps",
+		"fileServerType": "dataprvDebugFileServer",
+		"fileServerParams": "Z:\\Temp\\Benchmark\\Main"
+	}
+}

@@ -1,0 +1,689 @@
+{
+  "GPUMetrics": [
+    {
+		"shortName": "MLib",
+		"longName": "ML lib",
+		"filter": "surfaces",
+		"secFilter": "materials",
+		"resType": "Texture",
+		"team": "",
+		"limitMB": 210,
+		"subCategories": 
+		[
+			{
+			  "name": "Fabric",
+			  "filter": "fabric",
+			  "secFilter": ""
+			},
+			{
+			  "name": "Custom",
+			  "filter": "custom",
+			  "secFilter": ""
+			},
+			{
+			  "name": "Graphic Logos",
+              "filter": "graphics_logos",
+			  "secFilter": ""
+			},
+			{
+			  "name": "Blood",
+			  "filter": "grunge",
+			  "secFilter": "blood"
+			}
+		]
+	},
+	{
+		"shortName": "MBl",
+		"longName": "Microblends",
+		"filter": "surfaces",
+		"secFilter": "microblends",
+		"resType": "Texture",
+		"team": "",
+		"limitMB": 50
+	},
+	{
+		"shortName": "SrfTex",
+		"longName": "Surface textures",
+		"filter": "surfaces",
+		"secFilter": "",
+		"resType": "Texture",
+		"team": "Enviro",
+		"limitMB": 72,
+		"subCategories": 
+		[
+			{
+			"name": "Decals",
+			"filter": "decal",
+			"secFilter": ""
+			},
+			{
+			"name": "Screens",
+			"filter": "screens",
+			"secFilter": ""
+			},
+			{
+			"name": "Other",
+			"filter": "",
+			"secFilter": ""
+			}
+		]	
+	},
+	{
+      "shortName": "FXMsh",
+      "longName": "FX Meshes",
+      "filter": "fx",
+      "secFilter": "",
+      "resType": "Mesh",
+      "team": "FX",
+      "limitMB": 10
+    },
+    {
+      "shortName": "FXMlm",
+      "longName": "FX MLMasks",
+      "filter": "fx",
+      "secFilter": "",
+      "resType": "Material",
+      "team": "FX",
+      "limitMB": 5
+    },
+    {
+      "shortName": "FXTex",
+      "longName": "FX Textures",
+      "filter": "fx",
+      "secFilter": "",
+      "resType": "Texture",
+      "team": "FX",
+      "limitMB": 35
+    },
+   
+    {
+      "shortName": "CMsh",
+      "longName": "Char Meshes",
+      "filter": "characters",
+      "secFilter": "",
+      "resType": "Mesh",
+      "team": "Characters",
+      "limitMB": 57,
+	  "subCategories": 
+	  [
+		{
+          "name": "MainNPC Meshes",
+          "filter": "main_npc",
+          "secFilter": ""
+        },
+		{
+          "name": "Boss Meshes",
+          "filter": "boss",
+		  "secFilter": ""
+        },
+        {
+          "name": "Player Equipment Meshes",
+          "filter": "player_equipment",
+          "secFilter": ""
+        },
+		{
+          "name": "Player Cyberware Meshes",
+          "filter": "cyberware",
+          "secFilter": "player"
+        },
+		{
+		  "name": "Light Crowd Meshes",
+          "filter": "garment",
+		  "secFilter": "light_crowd"
+		},
+		{
+          "name": "Crowd Garment Meshes",
+          "filter": "garment",
+		  "secFilter": ""
+        },
+		{
+		  "name": "Crowd Head Meshes",
+		  "filter": "head",
+		  "secFilter": ""
+		},
+		{
+		  "name": "Hair Meshes",
+          "filter": "common",
+		  "secFilter": "hair"
+		},
+		{
+		  "name": "Proxy Meshes",
+          "filter": "appearances",
+		  "secFilter": "proxy"
+		},
+		{
+		  "name": "Other Meshes",
+          "filter": "",
+		  "secFilter": ""
+		}
+	  ]
+    },
+    {
+      "shortName": "CMlm",
+      "longName": "Char MLMasks",
+      "filter": "characters",
+      "secFilter": "",
+      "resType": "Material",
+      "team": "Characters",
+      "limitMB": 27,
+	  "subCategories": 
+	  [
+		{
+          "name": "MainNPC MLMasks",
+          "filter": "main_npc",
+          "secFilter": ""
+        },
+		{
+          "name": "Boss MLMasks",
+          "filter": "boss",
+		  "secFilter": ""
+        },
+        {
+          "name": "Player Equipment MLMasks",
+          "filter": "player_equipment",
+          "secFilter": ""
+        },
+		{
+          "name": "Player Cyberware MLMasks",
+          "filter": "cyberware",
+          "secFilter": "player"
+        },
+		{
+		  "name": "Light Crowd MLMasks",
+          "filter": "garment",
+		  "secFilter": "light_crowd"
+		},
+		{
+          "name": "Crowd Garment MLMasks",
+          "filter": "garment",
+		  "secFilter": ""
+        },
+		{
+		  "name": "Crowd Head MLMasks",
+		  "filter": "head",
+		  "secFilter": ""
+		},
+		{
+		  "name": "Other MLMasks",
+          "filter": "",
+		  "secFilter": ""
+		}
+	  ]
+    },
+    {
+      "shortName": "CTex",
+      "longName": "Char Textures",
+      "filter": "characters",
+      "secFilter": "",
+      "resType": "Texture",
+      "team": "Characters",
+      "limitMB": 217,
+	  "subCategories": 
+	  [
+		{
+          "name": "MainNPC Textures",
+          "filter": "main_npc",
+          "secFilter": ""
+        },
+		{
+          "name": "Boss Textures",
+          "filter": "boss",
+		  "secFilter": ""
+        },
+        {
+          "name": "Player Equipment Textures",
+          "filter": "player_equipment",
+          "secFilter": ""
+        },
+		{
+          "name": "Player Cyberware Textures",
+          "filter": "cyberware",
+          "secFilter": "player"
+        },
+		{
+		  "name": "Light Crowd Textures",
+          "filter": "garment",
+		  "secFilter": "light_crowd"
+		},
+		{
+          "name": "Crowd Garment Textures",
+          "filter": "garment",
+		  "secFilter": ""
+        },
+		{
+		  "name": "Crowd Head Textures",
+		  "filter": "head",
+		  "secFilter": ""
+		},
+		{
+		  "name": "Hair Textures",
+		  "filter": "common",
+		  "secFilter": "hair"
+		},
+		{
+		  "name": "Skin Textures",
+		  "filter": "common",
+		  "secFilter": ""
+		},
+		{
+		  "name": "Proxy Textures",
+		  "filter": "appearances",
+		  "secFilter": "proxy"
+		},
+		{
+		  "name": "Other Textures",
+          "filter": "",
+		  "secFilter": ""
+		}
+	  ]
+    },	  
+    {
+      "shortName": "VMsh",
+      "longName": "Veh Meshes",
+      "filter": "vehicles",
+      "secFilter": "",
+      "resType": "Mesh",
+      "team": "Vehicles",
+      "limitMB": 50
+    },
+    {
+      "shortName": "VMlm",
+      "longName": "Veh MLMasks",
+      "filter": "vehicles",
+      "secFilter": "",
+      "resType": "Material",
+      "team": "Vehicles",
+      "limitMB": 20
+    },
+    {
+      "shortName": "VPrx",
+      "longName": "Veh Proxies",
+      "filter": "vehicles",
+      "secFilter": "proxy",
+      "resType": "Texture",
+      "team": "Vehicles",
+      "limitMB": 30
+    },
+    {
+      "shortName": "VTex",
+      "longName": "Veh Textures",
+      "filter": "vehicles",
+      "secFilter": "",
+      "resType": "Texture",
+      "team": "Vehicles",
+      "limitMB": 33
+    },
+    {
+      "shortName": "WMsh",
+      "longName": "Wpn Meshes",
+      "filter": "weapons",
+      "secFilter": "",
+      "resType": "Mesh",
+      "team": "Weapons",
+      "limitMB": 50
+    },
+    {
+      "shortName": "WMlm",
+      "longName": "Wpn MLMasks",
+      "filter": "weapons",
+      "secFilter": "",
+      "resType": "Material",
+      "team": "Weapons",
+      "limitMB": 10
+    },
+    {
+      "shortName": "WTex",
+      "longName": "Wpn Textures",
+      "filter": "weapons",
+      "secFilter": "",
+      "resType": "Texture",
+      "team": "Weapons",
+      "limitMB": 33
+    },
+		
+	{
+      "shortName": "UIAds",
+      "longName": "UI Advertisements",
+      "filter": "gui",
+      "secFilter": "adverts",
+      "resType": "Texture",
+      "team": "UI",
+      "limitMB": 50
+    },	
+    {
+      "shortName": "UITex",
+      "longName": "UI Textures",
+      "filter": "gameplay",
+      "secFilter": "gui",
+      "resType": "Texture",
+      "team": "UI",
+      "limitMB": 30
+    },
+	{
+      "shortName": "EMsh",
+      "longName": "Env meshes",
+      "filter": "environment",
+      "secFilter": "",
+      "resType": "Mesh",
+      "team": "Enviro",
+      "limitMB": 107,
+	  "subCategories": 
+	  [
+	  	{
+          "name": "Destructible Meshes",
+          "filter": "environment",
+          "secFilter": "_dst"
+        },
+		{
+          "name": "Decoration Meshes",
+          "filter": "environment",
+          "secFilter": "decoration"
+        },
+		{
+          "name": "Architecture Meshes",
+          "filter": "environment",
+		  "secFilter": "architecture"
+        },
+        {
+          "name": "SpeedTree Meshes",
+          "filter": "vegetation",
+		  "secFilter": ""
+        },
+		{
+		  "name": "Other Meshes",
+          "filter": "environment",
+		  "secFilter": ""
+		}
+	  ]
+    },
+    {
+      "shortName": "EMlm",
+      "longName": "Env MLMasks",
+      "filter": "environment",
+      "secFilter": "",
+      "resType": "Material",
+      "team": "Enviro",
+      "limitMB": 42,
+	  "subCategories": 
+	  [
+		{
+          "name": "Decoration MLMasks",
+          "filter": "environment",
+          "secFilter": "decoration"
+        },
+		{
+          "name": "Architecture MLMasks",
+          "filter": "environment",
+		  "secFilter": "architecture"
+        },
+		{
+          "name": "SpeedTree MLMasks",
+          "filter": "vegetation",
+		  "secFilter": ""
+        },
+		{
+		  "name": "Other MLMasks",
+          "filter": "environment",
+		  "secFilter": ""
+		}
+	  ]
+    },
+    {
+      "shortName": "ETex",
+      "longName": "Env Textures",
+      "filter": "environment",
+      "secFilter": "",
+      "resType": "Texture",
+      "team": "Enviro",
+      "limitMB": 194,
+	  "subCategories": 
+	  [
+		{
+          "name": "Decoration Textures",
+          "filter": "environment",
+          "secFilter": "decoration"
+        },
+		{
+          "name": "Architecture Textures",
+          "filter": "environment",
+		  "secFilter": "architecture"
+        },
+        {
+          "name": "SpeedTree Textures",
+          "filter": "vegetation",
+		  "secFilter": ""
+        },		
+		{
+		  "name": "Other Textures",
+          "filter": "environment",
+		  "secFilter": ""
+		}
+	  ]
+    },
+	{
+      "shortName": "CBMsh",
+      "longName": "Code Based meshes",
+      "filter": "",
+      "secFilter": "",
+      "resType": "Mesh",
+      "team": "Code",
+      "limitMB": 151,
+	  "subCategories": 
+	  [
+		{
+          "name": "Terrain Meshes",
+          "filter": "_global",
+          "secFilter": "terrain"
+        },
+		{
+          "name": "Ocean Meshes",
+          "filter": "ocean",
+          "secFilter": ""
+        },
+		{
+		  "name": "Road Meshes",
+		  "filter": "road_meshes",
+		  "secFilter": ""
+		},
+		{
+		  "name": "Proxy Meshes",
+          "filter": "_external",
+		  "secFilter": "proxy"
+		},
+		{
+          "name": "Cable Meshes",
+          "filter": "sectors",
+		  "secFilter": "cables"
+        },
+		{
+          "name": "Device Meshes",
+          "filter": "devices",
+          "secFilter": ""
+        },
+		{
+          "name": "Item Meshes",
+          "filter": "items",
+          "secFilter": ""
+        },
+		{
+          "name": "Mechanical Meshes",
+          "filter": "mechanical",
+		  "secFilter": ""
+        },
+        {
+          "name": "Lighting Meshes",
+          "filter": "lighting",
+		  "secFilter": ""
+        },
+		{
+          "name": "Junk Meshes",
+          "filter": "",
+		  "secFilter": ""
+        }
+
+		
+	  ]
+    },
+
+	{
+      "shortName": "CBMLmask",
+      "longName": "Code Based MLMasks",
+      "filter": "",
+      "secFilter": "",
+      "resType": "Material",
+      "team": "Code",
+      "limitMB": 36,
+	  "subCategories": 
+	  [
+		{
+          "name": "Terrain MLMasks",
+          "filter": "_global",
+          "secFilter": "terrain"
+        },
+		{
+          "name": "Ocean MLMasks",
+          "filter": "ocean",
+          "secFilter": ""
+        },
+		{
+		  "name": "Road MLMasks",
+		  "filter": "road_meshes",
+		  "secFilter": ""
+		},
+		{
+		  "name": "Proxy MLMasks",
+          "filter": "_external",
+		  "secFilter": "proxy"
+		},
+		{
+          "name": "Cable MLMasks",
+          "filter": "sectors",
+		  "secFilter": "cables"
+        },
+		{
+          "name": "Device MLMasks",
+          "filter": "devices",
+          "secFilter": ""
+        },
+		{
+          "name": "Item MLMasks",
+          "filter": "items",
+          "secFilter": ""
+        },
+		{
+          "name": "Mechanical MLMasks",
+          "filter": "mechanical",
+		  "secFilter": ""
+        },
+        {
+          "name": "Lighting MLMasks",
+          "filter": "lighting",
+		  "secFilter": ""
+        },
+		{
+          "name": "Junk MLMasks",
+          "filter": "",
+		  "secFilter": ""
+        }		
+	  ]
+    },	
+	{
+      "shortName": "CBTex",
+      "longName": "Code Based Textures",
+      "filter": "",
+      "secFilter": "",
+      "resType": "Texture",
+      "team": "Code",
+      "limitMB": 221,
+	  "subCategories": 
+	  [
+      {
+        "name": "Terrain Textures",
+        "filter": "_global",
+        "secFilter": "terrain"
+      },
+		{
+          "name": "Ocean Textures",
+          "filter": "ocean",
+          "secFilter": ""
+        },
+		{
+		  "name": "Road Textures",
+		  "filter": "road_meshes",
+		  "secFilter": ""
+		},
+		{
+		  "name": "Proxy Textures",
+          "filter": "_external",
+		  "secFilter": "proxy"
+		},
+		{
+          "name": "Cable Textures",
+          "filter": "sectors",
+		  "secFilter": "cables"
+        },
+		{
+          "name": "Device Textures",
+          "filter": "devices",
+          "secFilter": ""
+        },
+		{
+          "name": "Item Textures",
+          "filter": "items",
+          "secFilter": ""
+        },
+		{
+          "name": "Mechanical Textures",
+          "filter": "mechanical",
+		  "secFilter": ""
+        },
+        {
+          "name": "Lighting Textures",
+          "filter": "lighting",
+		  "secFilter": ""
+        },
+		{
+          "name": "Gameplay Textures",
+          "filter": "gameplay",
+		  "secFilter": ""
+        },
+		{
+          "name": "Ink Textures",
+          "filter": "engine",
+		  "secFilter": "ink"
+        },		
+		{
+          "name": "Weather Textures",
+          "filter": "weather",
+		  "secFilter": ""
+        },		
+		{
+          "name": "Engine Textures",
+          "filter": "engine",
+		  "secFilter": ""
+        },
+		{
+          "name": "Special Textures",
+          "filter": "textures",
+		  "secFilter": ""
+        },
+		{
+          "name": "Junk Textures",
+          "filter": "",
+		  "secFilter": ""
+        }		
+	  ]
+    },	
+	{
+    "shortName": "Vid",
+    "longName": "Videos",
+    "filter": "",
+    "secFilter": "",
+    "resType": "Video",
+    "team": "",
+    "limitMB": 10
+	}
+  ],
+  "Streaming": 20000,
+  "PhysicalShapes": 35000
+}

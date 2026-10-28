@@ -1,0 +1,3332 @@
+{
+ "version": 0,
+ "case-sensitive": false,
+ "use-external-names": false,
+ "roots": [
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/games/cpLauncher/src/mainRed.cpp",
+   "external-contents": "D:/2077/engine-overlay/games/cpLauncher/src/mainRed.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/engine/src/gameApp.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/engine/src/gameApp.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/include/architecture.h",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/include/architecture.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/include/os.h",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/include/os.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/include/crt.hpp",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/include/crt.hpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/include/threads.h",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/include/threads.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/include/dbgUtils.h",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/include/dbgUtils.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/include/compilerExtensions.h",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/include/compilerExtensions.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/include/bitUtils.h",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/include/bitUtils.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/include/redThreadsRedSystem.h",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/include/redThreadsRedSystem.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/include/redThreadsPlatform.h",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/include/redThreadsPlatform.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/include/redThreadsTypes.h",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/include/redThreadsTypes.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/include/redThreadsAtomic.h",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/include/redThreadsAtomic.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/include/redThreadsAtomicLinuxAPI.inl",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/include/redThreadsAtomicLinuxAPI.inl"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/include/timer.h",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/include/timer.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/include/crashData.inl",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/include/crashData.inl"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/include/redThreadsThread.inl",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/include/redThreadsThread.inl"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/include/redMemoryInternal.h",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/include/redMemoryInternal.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/include/threadIdProvider.hpp",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/include/threadIdProvider.hpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redIO/include/redIOCommon.h",
+   "external-contents": "D:/2077/engine-overlay/common/redIO/include/redIOCommon.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redIO/include/redIOFile.h",
+   "external-contents": "D:/2077/engine-overlay/common/redIO/include/redIOFile.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redIO/include/redIOSystemFileLinuxAPI.h",
+   "external-contents": "D:/2077/engine-overlay/common/redIO/include/redIOSystemFileLinuxAPI.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redNetwork/include/redNetworkPublic.h",
+   "external-contents": "D:/2077/engine-overlay/common/redNetwork/include/redNetworkPublic.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/src/crt.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/src/crt.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/src/file.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/src/file.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/src/log.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/src/log.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/src/logger.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/src/logger.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/src/errorHandler.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/src/errorHandler.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/src/redThreadsThreadLinuxAPI.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/src/redThreadsThreadLinuxAPI.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/engine/src/gameAppBaseInitializationState.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/engine/src/gameAppBaseInitializationState.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/engine/src/baseEngineInit.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/engine/src/baseEngineInit.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/external/wwise/source/StreamManager/Common/AkDeviceBase.cpp",
+   "external-contents": "D:/2077/engine-overlay/external/wwise/source/StreamManager/Common/AkDeviceBase.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderShaderMap.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderShaderMap.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderInterface.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderInterface.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/fontCache.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/fontCache.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/shaderCache/src/staticShaderCache.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/shaderCache/src/staticShaderCache.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/engine/src/engineWatchdog.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/engine/src/engineWatchdog.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redCore/src/absolutePath.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redCore/src/absolutePath.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redCore/src/languageRegion.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redCore/src/languageRegion.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redCore/src/redProfiler.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redCore/src/redProfiler.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redNetwork/include/network.h",
+   "external-contents": "D:/2077/engine-overlay/common/redNetwork/include/network.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redNetwork/include/redNetworkPublic.h",
+   "external-contents": "D:/2077/engine-overlay/common/redNetwork/include/redNetworkPublic.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderData/include/renderSimpleTypes.h",
+   "external-contents": "D:/2077/engine-overlay/common/renderData/include/renderSimpleTypes.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderData/include/gpuApiMemory.h",
+   "external-contents": "D:/2077/engine-overlay/common/renderData/include/gpuApiMemory.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderData/src/gpuApiMemory.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderData/src/gpuApiMemory.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderData/src/renderMultilayerMaskBlob.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderData/src/renderMultilayerMaskBlob.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderData/src/renderTextureBlob.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderData/src/renderTextureBlob.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderData/include/renderTextureBlob.h",
+   "external-contents": "D:/2077/engine-overlay/common/renderData/include/renderTextureBlob.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderData/include/renderMultilayerMaskBlob.h",
+   "external-contents": "D:/2077/engine-overlay/common/renderData/include/renderMultilayerMaskBlob.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderData/include/speedTreeV8Sdk.h",
+   "external-contents": "D:/2077/engine-overlay/common/renderData/include/speedTreeV8Sdk.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderData/src/speedTreeV8Sdk.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderData/src/speedTreeV8Sdk.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/src/threadMonitor.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/src/threadMonitor.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/src/systemAllocatorType.h",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/src/systemAllocatorType.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/src/systemPageAllocatorType.h",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/src/systemPageAllocatorType.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/src/callstackCollector.h",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/src/callstackCollector.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/src/metricsCapture.h",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/src/metricsCapture.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/src/defaultAllocator.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/src/defaultAllocator.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/src/dynamicLinearAllocator.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/src/dynamicLinearAllocator.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/src/legacyGpuAllocator.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/src/legacyGpuAllocator.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/src/mutex.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/src/mutex.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/src/mutex.h",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/src/mutex.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redConfig/src/configVarSystem.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redConfig/src/configVarSystem.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/datetime.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/datetime.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/resourceLoaderScheduler.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/resourceLoaderScheduler.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/resourceMetricsBank.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/resourceMetricsBank.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/scriptDataObject.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/scriptDataObject.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/scriptExpressionParser.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/scriptExpressionParser.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameTweakDB/src/tweakDBLexer.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameTweakDB/src/tweakDBLexer.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/game/include/influenceLayer.h",
+   "external-contents": "D:/2077/engine-overlay/common/game/include/influenceLayer.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameStateMachine/include/validator.h",
+   "external-contents": "D:/2077/engine-overlay/common/gameStateMachine/include/validator.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/external/bink2/include/radtypes.h",
+   "external-contents": "D:/2077/engine-overlay/../external/bink2/include/radtypes.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderReflectionProbeManager.h",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderReflectionProbeManager.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderProxyLightVolume.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderProxyLightVolume.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderMaterialModifiers.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderMaterialModifiers.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderGeometryBatcher.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderGeometryBatcher.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderNode_Lighting.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderNode_Lighting.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderData/include/renderInGameSettings.h",
+   "external-contents": "D:/2077/engine-overlay/common/renderData/include/renderInGameSettings.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderData/src/renderInGameSettings.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderData/src/renderInGameSettings.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/scriptExpressionParserPath.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/scriptExpressionParserPath.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/scriptExpressionParserInternal.h",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/scriptExpressionParserInternal.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMath/include/mathUtils.h",
+   "external-contents": "D:/2077/engine-overlay/common/redMath/include/mathUtils.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/internal/RedLexer/native/src/flexSupplimentary.h",
+   "external-contents": "D:/2077/engine-overlay/../internal/RedLexer/native/src/flexSupplimentary.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redFileSystem/include/system.h",
+   "external-contents": "D:/2077/engine-overlay/common/redFileSystem/include/system.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redFileSystem/src/systemLinux.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redFileSystem/src/systemLinux.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redFileSystem/src/filePathsLinux.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redFileSystem/src/filePathsLinux.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redFileSystem/src/fileUtils.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redFileSystem/src/fileUtils.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redIO/src/serializationMemoryAllocator.h",
+   "external-contents": "D:/2077/engine-overlay/common/redIO/src/serializationMemoryAllocator.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redIO/src/redIOWorkerGeneric.h",
+   "external-contents": "D:/2077/engine-overlay/common/redIO/src/redIOWorkerGeneric.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redIO/src/redIOWorkerWin32.h",
+   "external-contents": "D:/2077/engine-overlay/common/redIO/src/redIOWorkerWin32.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redIO/src/serializationMemoryAllocator.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redIO/src/serializationMemoryAllocator.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redIO/src/redIOSettings.h",
+   "external-contents": "D:/2077/engine-overlay/common/redIO/src/redIOSettings.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redJobs2/src/jobDispatcher.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redJobs2/src/jobDispatcher.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redJobs2/src/jobDebugger.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redJobs2/src/jobDebugger.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/core/include/cacheFilenames.h",
+   "external-contents": "D:/2077/engine-overlay/common/core/include/cacheFilenames.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameFramework/src/gameEngine.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameFramework/src/gameEngine.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/core/include/platform.h",
+   "external-contents": "D:/2077/engine-overlay/common/core/include/platform.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameServices/src/gameServices.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameServices/src/gameServices.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redConfig/include/inGameConfigSystem.h",
+   "external-contents": "D:/2077/engine-overlay/common/redConfig/include/inGameConfigSystem.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redConfig/src/inGameConfigSystem.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redConfig/src/inGameConfigSystem.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/inkRendering/src/inkRenderingInit.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/inkRendering/src/inkRenderingInit.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/external/harfbuzz_new/src/hb-ft.cc",
+   "external-contents": "D:/2077/engine-overlay/../external/harfbuzz_new/src/hb-ft.cc"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/world/include/worldPersistencyCache.h",
+   "external-contents": "D:/2077/engine-overlay/common/world/include/worldPersistencyCache.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMath/include/numericalUtils.h",
+   "external-contents": "D:/2077/engine-overlay/common/redMath/include/numericalUtils.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/textSystem/src/icuInternationalization.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/textSystem/src/icuInternationalization.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/physics/src/physXNatives.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/physics/src/physXNatives.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redHTTP/src/httpImplementation.h",
+   "external-contents": "D:/2077/engine-overlay/common/redHTTP/src/httpImplementation.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/galaxy/src/galaxyInit.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/galaxy/src/galaxyInit.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/triggers/src/clipper.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/triggers/src/clipper.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/textSystem/include/settings.h",
+   "external-contents": "D:/2077/engine-overlay/common/textSystem/include/settings.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/inkCore/src/animationUtils.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/inkCore/src/animationUtils.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/interop/src/interopInterpreter.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/interop/src/interopInterpreter.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redCompression/src/wrapperKraken.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redCompression/src/wrapperKraken.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/external/oodle/include/oodle2.h",
+   "external-contents": "D:/2077/engine-overlay/../external/oodle/include/oodle2.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/app/src/appPlatformLinux.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/app/src/appPlatformLinux.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/app/src/appPath.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/app/src/appPath.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/external/rapidjson/include/rapidjson/document.h",
+   "external-contents": "D:/2077/engine-overlay/../external/rapidjson/include/rapidjson/document.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/src/buddyAllocatorUtils.h",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/src/buddyAllocatorUtils.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/src/reporter.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/src/reporter.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/src/documentation.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/src/documentation.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/external/PhysX342/PxShared/src/foundation/include/PsHash.h",
+   "external-contents": "D:/2077/engine-overlay/../external/PhysX342/PxShared/src/foundation/include/PsHash.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/external/PhysX342/PhysX_3.4/Source/GeomUtils/src/gjk/GuGJKType.h",
+   "external-contents": "D:/2077/engine-overlay/../external/PhysX342/PhysX_3.4/Source/GeomUtils/src/gjk/GuGJKType.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/external/PhysX342/PxShared/include/foundation/PxPreprocessor.h",
+   "external-contents": "D:/2077/engine-overlay/../external/PhysX342/PxShared/include/foundation/PxPreprocessor.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redCore/include/absolutePath.hpp",
+   "external-contents": "D:/2077/engine-overlay/common/redCore/include/absolutePath.hpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/include/engineTime.h",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/include/engineTime.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/engineTime.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/engineTime.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redContainers/include/hashMap.hpp",
+   "external-contents": "D:/2077/engine-overlay/common/redContainers/include/hashMap.hpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redIO/src/redIOSystemFileLinuxAPI.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redIO/src/redIOSystemFileLinuxAPI.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redIO/src/redIOWorkerGeneric.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redIO/src/redIOWorkerGeneric.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redContainers/src/dynamicBuffer.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redContainers/src/dynamicBuffer.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redContainers/src/string/stringLocale.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redContainers/src/string/stringLocale.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/include/timerWeb.h",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/include/timerWeb.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/functionalTestsEngine/src/functionalTestsEngineInit.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/functionalTestsEngine/src/functionalTestsEngineInit.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/functionalTestsService/src/functionalTestsServiceInit.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/functionalTestsService/src/functionalTestsServiceInit.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/functionalTestsService/src/memoryStats.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/functionalTestsService/src/memoryStats.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/soundEngine/src/soundEngine.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/soundEngine/src/soundEngine.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/soundEngine/src/wwiseLowLevelIO.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/soundEngine/src/wwiseLowLevelIO.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/soundEngine/src/wwiseContainerStreaming.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/soundEngine/src/wwiseContainerStreaming.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/external/wwise/include/AK/Tools/Common/AkString.h",
+   "external-contents": "D:/2077/engine-overlay/../external/wwise/include/AK/Tools/Common/AkString.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/external/wwise/include/AK/Tools/POSIX/AkPlatformFuncs.h",
+   "external-contents": "D:/2077/engine-overlay/../external/wwise/include/AK/Tools/POSIX/AkPlatformFuncs.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameAudio/src/dynamicReverbSystem.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameAudio/src/dynamicReverbSystem.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/sound/src/advertSystem.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/sound/src/advertSystem.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/network/src/networkConfig.h",
+   "external-contents": "D:/2077/engine-overlay/common/network/src/networkConfig.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/network/src/sockets.h",
+   "external-contents": "D:/2077/engine-overlay/common/network/src/sockets.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/network/src/selector.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/network/src/selector.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/sessionRecordingTool/src/common/recordingToolCoreWrapper/platform/recordingToolCoreLoader.h",
+   "external-contents": "D:/2077/engine-overlay/common/sessionRecordingTool/src/common/recordingToolCoreWrapper/platform/recordingToolCoreLoader.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/internal/RecordingToolCore/include/recCore_recApi.h",
+   "external-contents": "D:/2077/engine-overlay/../internal/RecordingToolCore/include/recCore_recApi.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/internal/RecordingToolCore/src/ioLayer/asyncIO/platform/platformSelector.h",
+   "external-contents": "D:/2077/engine-overlay/../internal/RecordingToolCore/src/ioLayer/asyncIO/platform/platformSelector.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/internal/RecordingToolCore/src/common/platformMacros.h",
+   "external-contents": "D:/2077/engine-overlay/../internal/RecordingToolCore/src/common/platformMacros.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/internal/RecordingToolCore/src/ioLayer/deprecated/io.cpp",
+   "external-contents": "D:/2077/engine-overlay/../internal/RecordingToolCore/src/ioLayer/deprecated/io.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/ai/rtti/ai/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/ai/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/animation/rtti/animation/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/animation/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/core/rtti/core/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/core/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/games/cp/rtti/cp/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/cp/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/debugPages/rtti/debugPages/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/debugPages/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/engine/rtti/engine/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/engine/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/functionalTestsData/rtti/functionalTestsData/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/functionalTestsData/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/functionalTestsEngine/rtti/functionalTestsEngine/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/functionalTestsEngine/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/functionalTestsService/rtti/functionalTestsService/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/functionalTestsService/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/galaxy/rtti/galaxy/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/galaxy/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/game/rtti/game/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/game/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameAI/rtti/gameAI/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameAI/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameAsserts/rtti/gameAsserts/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameAsserts/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameAudio/rtti/gameAudio/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameAudio/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameCore/rtti/gameCore/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameCore/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameCpo/rtti/gameCpo/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameCpo/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameDebug/rtti/gameDebug/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameDebug/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameDebugVisualizer/rtti/gameDebugVisualizer/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameDebugVisualizer/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameEffectSystem/rtti/gameEffectSystem/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameEffectSystem/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameFramework/rtti/gameFramework/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameFramework/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameGraph/rtti/gameGraph/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameGraph/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameInput/rtti/gameInput/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameInput/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameInteractions/rtti/gameInteractions/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameInteractions/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameJournalManager/rtti/gameJournalManager/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameJournalManager/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameMappins/rtti/gameMappins/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameMappins/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gamePersistencySystem/rtti/gamePersistencySystem/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gamePersistencySystem/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gamePhotoMode/rtti/gamePhotoMode/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gamePhotoMode/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gamePopulation/rtti/gamePopulation/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gamePopulation/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gamePSM/rtti/gamePSM/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gamePSM/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameQuest/rtti/gameQuest/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameQuest/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameRulesSystem/rtti/gameRulesSystem/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameRulesSystem/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameSceneCore/rtti/gameSceneCore/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameSceneCore/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameSceneSystem/rtti/gameSceneSystem/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameSceneSystem/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameServices/rtti/gameServices/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameServices/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameSmartObjects/rtti/gameSmartObjects/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameSmartObjects/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameSpatialQueries/rtti/gameSpatialQueries/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameSpatialQueries/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameSpawn/rtti/gameSpawn/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameSpawn/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameStateMachine/rtti/gameStateMachine/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameStateMachine/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameTelemetry/rtti/gameTelemetry/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameTelemetry/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameTweakDB/rtti/gameTweakDB/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameTweakDB/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameUI/rtti/gameUI/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameUI/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameVehicles/rtti/gameVehicles/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameVehicles/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameVisionModeSystem/rtti/gameVisionModeSystem/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameVisionModeSystem/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameWatchdog/rtti/gameWatchdog/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameWatchdog/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameWorkspots/rtti/gameWorkspots/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gameWorkspots/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gpuApi/rtti/gpuApi/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/gpuApi/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/imgui/rtti/imgui/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/imgui/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/inkCore/rtti/inkCore/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/inkCore/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/inkRendering/rtti/inkRendering/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/inkRendering/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/input/rtti/input/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/input/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/interop/rtti/interop/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/interop/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/interopServices/rtti/interopServices/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/interopServices/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/libTree/rtti/libTree/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/libTree/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/localization/rtti/localization/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/localization/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/localizationPersistence/rtti/localizationPersistence/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/localizationPersistence/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/multiplayerFramework/rtti/multiplayerFramework/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/multiplayerFramework/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/multiplayerGame/rtti/multiplayerGame/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/multiplayerGame/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/navmeshGeneration/rtti/navmeshGeneration/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/navmeshGeneration/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/network/rtti/network/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/network/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/networkCore/rtti/networkCore/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/networkCore/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/particles/rtti/particles/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/particles/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/physics/rtti/physics/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/physics/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/rtti/redReflection/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/redReflection/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/rtti/render/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/render/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderData/rtti/renderData/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/renderData/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderDraw/rtti/renderDraw/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/renderDraw/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/replication/rtti/replication/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/replication/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/resource/rtti/resource/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/resource/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/resourceInk/rtti/resourceInk/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/resourceInk/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/resourceMaterial/rtti/resourceMaterial/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/resourceMaterial/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/resourceMesh/rtti/resourceMesh/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/resourceMesh/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/resourceSVG/rtti/resourceSVG/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/resourceSVG/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/sessionRecordingTool/rtti/sessionRecordingTool/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/sessionRecordingTool/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/shaderCache/rtti/shaderCache/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/shaderCache/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/sound/rtti/sound/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/sound/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/soundEngine/rtti/soundEngine/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/soundEngine/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/soundMetadata/rtti/soundMetadata/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/soundMetadata/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/spacePartitioning/rtti/spacePartitioning/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/spacePartitioning/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/spline/rtti/spline/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/spline/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/textSystem/rtti/textSystem/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/textSystem/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/triggers/rtti/triggers/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/triggers/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/videoPlayer/rtti/videoPlayer/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/videoPlayer/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/visibility/rtti/visibility/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/visibility/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/world/rtti/world/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/world/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldAnimation/rtti/worldAnimation/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/worldAnimation/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldBlackboardSystem/rtti/worldBlackboardSystem/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/worldBlackboardSystem/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldEntities/rtti/worldEntities/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/worldEntities/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldEnvironment/rtti/worldEnvironment/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/worldEnvironment/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldGame/rtti/worldGame/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/worldGame/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldNavigation/rtti/worldNavigation/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/worldNavigation/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldPhysics/rtti/worldPhysics/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/worldPhysics/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldPrecomputedLight/rtti/worldPrecomputedLight/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/worldPrecomputedLight/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldStatic/rtti/worldStatic/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/worldStatic/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldStreaming/rtti/worldStreaming/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/worldStreaming/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldTerrain/rtti/worldTerrain/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/worldTerrain/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldUserInterface/rtti/worldUserInterface/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/worldUserInterface/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldVisibility/rtti/worldVisibility/typeRegistryFuncImpl.h",
+   "external-contents": "D:/2077/generated/rtti/worldVisibility/typeRegistryFuncImpl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/internal/RedLexer/native/gen/scripts.cxx",
+   "external-contents": "D:/2077/generated/redReflection/scripts.cxx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/temp/gen/gameTweakDB/tdb_flex.cxx",
+   "external-contents": "D:/2077/generated/gameTweakDB/tdb_flex.cxx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/allocateParticleTiles.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/allocateParticleTiles.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/ambientBRDF.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/ambientBRDF.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/ambientOcclusionFiltering.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/ambientOcclusionFiltering.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/aoblurandupsamplecs.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/aoblurandupsamplecs.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/aolinearizedepthcs.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/aolinearizedepthcs.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/aopreparedepthbuffers1cs.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/aopreparedepthbuffers1cs.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/aopreparedepthbuffers2cs.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/aopreparedepthbuffers2cs.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/aorendercs.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/aorendercs.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/applyGlobalFog.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/applyGlobalFog.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/applyMorph.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/applyMorph.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/binkRGB.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/binkRGB.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/bitonicSort.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/bitonicSort.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/blitAccumRefraction.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/blitAccumRefraction.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/buildMaterialTileLists.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/buildMaterialTileLists.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/classifyMaterials.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/classifyMaterials.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/clusteredInitCull.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/clusteredInitCull.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/colorLutGenerate.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/colorLutGenerate.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/computeDPLIndirectArgs.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/computeDPLIndirectArgs.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/computeDPLTexCoord.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/computeDPLTexCoord.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/computeTileOffset.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/computeTileOffset.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/coneaocs.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/coneaocs.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/debugSingleColor.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/debugSingleColor.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/debugTexture.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/debugTexture.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/debugTexturePreview.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/debugTexturePreview.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/debug_gpuCrasher.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/debug_gpuCrasher.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/decoupledParticleLighting.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/decoupledParticleLighting.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/diffuseIlluminationFiltering.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/diffuseIlluminationFiltering.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/diffusion2D.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/diffusion2D.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/dilateHudTiles.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/dilateHudTiles.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/distantIrradiance.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/distantIrradiance.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/distantLight.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/distantLight.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/distantShadows.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/distantShadows.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/downsample.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/downsample.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/dualParaboloidGen.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/dualParaboloidGen.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/dynamicDecalGen.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/dynamicDecalGen.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/envProbeFilterAmbientMerge.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/envProbeFilterAmbientMerge.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/envProbeFilterBlur.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/envProbeFilterBlur.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/envProbeFilterCopy.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/envProbeFilterCopy.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/envProbeFilterDownscale.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/envProbeFilterDownscale.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/fft.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/fft.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/filmGrainGen.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/filmGrainGen.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/gameplayCharacterOutline.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/gameplayCharacterOutline.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/gameplayPostFXCatView.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/gameplayPostFXCatView.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/gameplayPostFXCatViewObjects.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/gameplayPostFXCatViewObjects.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/gameplayPostFXDrunk.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/gameplayPostFXDrunk.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/gameplayPostFXFocus.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/gameplayPostFXFocus.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/gameplayPostFXSepia.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/gameplayPostFXSepia.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/gameplayPostFXSurface.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/gameplayPostFXSurface.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/gaussianBlurSeparable.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/gaussianBlurSeparable.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/globalIlluminationCalculate.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/globalIlluminationCalculate.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/globalShadow.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/globalShadow.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/gpuParticlesEmitCS.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/gpuParticlesEmitCS.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/gpuParticlesUpdateCS.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/gpuParticlesUpdateCS.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/gpuPerlinNoiseGen.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/gpuPerlinNoiseGen.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/hair.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/hair.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/hierarchicalZ.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/hierarchicalZ.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/histogramCompute.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/histogramCompute.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/hud.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/hud.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/interior_combine.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/interior_combine.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/interior_compute.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/interior_compute.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/lightChannelVolumes.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/lightChannelVolumes.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/lightIntegrate.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/lightIntegrate.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/lights_compute.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/lights_compute.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/lights_cull.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/lights_cull.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/morphTargetApply.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/morphTargetApply.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/normalsFlattening.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/normalsFlattening.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/OnTerrainAutoSpawn.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/OnTerrainAutoSpawn.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/persistentDataCompute.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/persistentDataCompute.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_bloom.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_bloom.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_cas.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_cas.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_combinedBlursCS.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_combinedBlursCS.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_copyDepth.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_copyDepth.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_copyScale.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_copyScale.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_CPCyberspacePixelsort.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_CPCyberspacePixelsort.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_CPFocusMode.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_CPFocusMode.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_CPSandevistan.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_CPSandevistan.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_debug.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_debug.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_deprojectDepth.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_deprojectDepth.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_distortion.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_distortion.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_dlss.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_dlss.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_dlssCS.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_dlssCS.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_dofBlurCS.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_dofBlurCS.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_dofMergeCS.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_dofMergeCS.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_dofSeparable.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_dofSeparable.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_downsampleDepthVelocity.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_downsampleDepthVelocity.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_downscale.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_downscale.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_fillWithClamp.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_fillWithClamp.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_fxaa.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_fxaa.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_lensDistortion.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_lensDistortion.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_motionBlur.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_motionBlur.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_particlePositionsFromDepth.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_particlePositionsFromDepth.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_present.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_present.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_presentBaseColor.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_presentBaseColor.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_screenSpaceHeatHaze.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_screenSpaceHeatHaze.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_screenSpaceRain.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_screenSpaceRain.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_screenSpaceUnderwater.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_screenSpaceUnderwater.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_SSR.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_SSR.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_subsurfaceScattering.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_subsurfaceScattering.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_surfaceFlow.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_surfaceFlow.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_temporalInvalidationMask.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_temporalInvalidationMask.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_toneMapping.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_toneMapping.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_txaa.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_txaa.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postfx_weaponPlaneBlur.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postfx_weaponPlaneBlur.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postprocess_Heatmap.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postprocess_Heatmap.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postprocess_HeatmapCrossSection.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postprocess_HeatmapCrossSection.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/postprocess_Selection.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/postprocess_Selection.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/prefilterAmbient.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/prefilterAmbient.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/prefilterReflection.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/prefilterReflection.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/prepareHudTiles.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/prepareHudTiles.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/rayTracedAmbientOcclusion.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/rayTracedAmbientOcclusion.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/rayTracedDirectionalShadow.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/rayTracedDirectionalShadow.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/rayTracedReflection.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/rayTracedReflection.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/rayTracedRenderDebug.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/rayTracedRenderDebug.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/reflectionProbe.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/reflectionProbe.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/reflectionsFiltering.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/reflectionsFiltering.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/separateBlur.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/separateBlur.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/shaderTable.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/shaderTable.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/simpleCopy.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/simpleCopy.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/simpleTemporal.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/simpleTemporal.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/skinningCompute.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/skinningCompute.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/skinningComputePositions.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/skinningComputePositions.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/skinningComputeSpeedTree.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/skinningComputeSpeedTree.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/skinningComputeVehicle.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/skinningComputeVehicle.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/skyColor.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/skyColor.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/skyPermuteLUT.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/skyPermuteLUT.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/smallTextureUpdate.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/smallTextureUpdate.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/staticShaders.xml",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/staticShaders.xml"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/surfaceCache.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/surfaceCache.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/surfelDebug.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/surfelDebug.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/surfelLit.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/surfelLit.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/tangentUpdateCompute.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/tangentUpdateCompute.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/textureCompress.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/textureCompress.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/thumbnailPrepare.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/thumbnailPrepare.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/velocityBuffer.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/velocityBuffer.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/volumetricClouds.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/volumetricClouds.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/volumetricFog.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/volumetricFog.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/vsmFilter.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/vsmFilter.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/windImpulseVolumeUpdate.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/windImpulseVolumeUpdate.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/aodepthdecompressutility.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/aodepthdecompressutility.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/areaLightsShared.h",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/areaLightsShared.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/blurSamples.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/blurSamples.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/bokehSamples.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/bokehSamples.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/common.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/common.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/commonCS.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/commonCS.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/commonPS.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/commonPS.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/commonVS.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/commonVS.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/GFSDK_HairWorks_ShaderCommon.h",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/GFSDK_HairWorks_ShaderCommon.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/globalBindings.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/globalBindings.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/globalConstantBuffers.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/globalConstantBuffers.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/globalConstants.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/globalConstants.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/globalConstantsCS.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/globalConstantsCS.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/globalConstantsPS.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/globalConstantsPS.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/globalConstantsVS.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/globalConstantsVS.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/gpuParticlesGlobals.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/gpuParticlesGlobals.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/gpuSimpleParticle.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/gpuSimpleParticle.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/hiResShadows.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/hiResShadows.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/hud_common.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/hud_common.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_areaLights.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_areaLights.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_autoSpawn.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_autoSpawn.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_bakedSimulation.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_bakedSimulation.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_bink.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_bink.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_blendable.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_blendable.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_blurredGlass.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_blurredGlass.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_braindance.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_braindance.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_classifyMaterials.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_classifyMaterials.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_clustered.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_clustered.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_colorGradingOperators.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_colorGradingOperators.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_commonEffects.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_commonEffects.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_constants.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_constants.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_cpp_common.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_cpp_common.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_curves.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_curves.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_decal.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_decal.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_dimmers.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_dimmers.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_dismemberment.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_dismemberment.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_dismembermentStruct.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_dismembermentStruct.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_distortion.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_distortion.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_downsample.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_downsample.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_dpl.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_dpl.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_edgedetect.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_edgedetect.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_envProbe.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_envProbe.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_fullscreen.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_fullscreen.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_galactic.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_galactic.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_gi.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_gi.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_giConstants.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_giConstants.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_glass.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_glass.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_glitch.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_glitch.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_globalFog.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_globalFog.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_gmpl_pp_visionmode.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_gmpl_pp_visionmode.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_gradient.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_gradient.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_hair.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_hair.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_hairLighting.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_hairLighting.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_hash.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_hash.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_heatHaze.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_heatHaze.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_hiz.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_hiz.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_hosekSky.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_hosekSky.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_hud.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_hud.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_interiorMap.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_interiorMap.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_interpolators.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_interpolators.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_lightingHelpers.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_lightingHelpers.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_lightingModel.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_lightingModel.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_lightingStructures.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_lightingStructures.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_lightIntegrateCommonCB.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_lightIntegrateCommonCB.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_lightParams.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_lightParams.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_localReflection.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_localReflection.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_materialId.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_materialId.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_materialOutputs.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_materialOutputs.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_motionVectors.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_motionVectors.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_multilayer.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_multilayer.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_noise3d.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_noise3d.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_pack.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_pack.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_parallax.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_parallax.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_pcf.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_pcf.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_perlinNoise.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_perlinNoise.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_pointcloud.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_pointcloud.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_pointCloudCubes.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_pointCloudCubes.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_postfxDebug.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_postfxDebug.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_present.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_present.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_proxyEmissive.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_proxyEmissive.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_rain.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_rain.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_rainMap.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_rainMap.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_reflectionProbes.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_reflectionProbes.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_shadows.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_shadows.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_signage.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_signage.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_simplexNoise.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_simplexNoise.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_skin.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_skin.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_skinning.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_skinning.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_speedtreeShading.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_speedtreeShading.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_ssr.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_ssr.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_templateUtilities.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_templateUtilities.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_textDisplay.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_textDisplay.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_toneMappingACES.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_toneMappingACES.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_toneMappingLottes.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_toneMappingLottes.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_tonemappingOperators.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_tonemappingOperators.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_topDownCarMap.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_topDownCarMap.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_ui.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_ui.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_utilities.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_utilities.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_vehicleDamage.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_vehicleDamage.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_volumetricClouds.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_volumetricClouds.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_volumetricFog.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_volumetricFog.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_waterMap.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_waterMap.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_waterPatch.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_waterPatch.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_windImpulse.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_windImpulse.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/include_windowsParallax.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/include_windowsParallax.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/inc_bestfitnormals.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/inc_bestfitnormals.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/inc_nvidiaAA.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/inc_nvidiaAA.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/inc_speedTreeUtilsV8.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/inc_speedTreeUtilsV8.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/indirectTextures.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/indirectTextures.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/materialModifiersConstantBuffers.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/materialModifiersConstantBuffers.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/multiLayerSelection.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/multiLayerSelection.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/NRD.hlsl",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/NRD.hlsl"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/nvHLSLExtns.h",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/nvHLSLExtns.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/nvHLSLExtnsInternal.h",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/nvHLSLExtnsInternal.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/nvShaderExtnEnums.h",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/nvShaderExtnEnums.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/postfx_common.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/postfx_common.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/rayTracingLightSampling.h",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/rayTracingLightSampling.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/rayTracingMaterials.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/rayTracingMaterials.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/rayTracingShared.h",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/rayTracingShared.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/txaa_common.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/txaa_common.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactory.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactory.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryCyberparticles.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryCyberparticles.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryDebug.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryDebug.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryDecal.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryDecal.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryFullscreen.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryFullscreen.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryGarmentMeshExtSkinned.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryGarmentMeshExtSkinned.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryGarmentMeshExtSkinnedLightBlockers.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryGarmentMeshExtSkinnedLightBlockers.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryGarmentMeshSkinned.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryGarmentMeshSkinned.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryGarmentMeshSkinnedLightBlockers.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryGarmentMeshSkinnedLightBlockers.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryGarmentMesh_Base.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryGarmentMesh_Base.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryInclude.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryInclude.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryMeshDestructibleSkinned.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryMeshDestructibleSkinned.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryMeshExtSkinned.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryMeshExtSkinned.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryMeshExtSkinnedLightBlockers.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryMeshExtSkinnedLightBlockers.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryMeshProxy.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryMeshProxy.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryMeshSkinned.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryMeshSkinned.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryMeshSkinnedLightBlockers.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryMeshSkinnedLightBlockers.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryMeshSkinnedSingleBone.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryMeshSkinnedSingleBone.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryMeshSpeedTree.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryMeshSpeedTree.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryMeshStatic.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryMeshStatic.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryMesh_Base.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryMesh_Base.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryParticleBeam.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryParticleBeam.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryParticleBillboards.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryParticleBillboards.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryParticleEmitterOrientation.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryParticleEmitterOrientation.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryParticleFacingBeam.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryParticleFacingBeam.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryParticleFacingTrail.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryParticleFacingTrail.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryParticleMotionBlur.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryParticleMotionBlur.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryParticleScreen.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryParticleScreen.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryParticleSphereAligned.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryParticleSphereAligned.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryParticleTrail.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryParticleTrail.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryParticleVerticalFixed.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryParticleVerticalFixed.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactoryTerrain.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactoryTerrain.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactory_FatVertex.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactory_FatVertex.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/vertexFactory_Utilities.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/vertexFactory_Utilities.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/FidelityFX/ffx_a.h",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/FidelityFX/ffx_a.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/FidelityFX/ffx_cas.h",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/FidelityFX/ffx_cas.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/FidelityFX/ffx_spd.h",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/FidelityFX/ffx_spd.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/decal_scaffold.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/decal_scaffold.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/decal_scaffold_vs.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/decal_scaffold_vs.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/fullscreen_scaffold.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/fullscreen_scaffold.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/fullscreen_scaffold_ps.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/fullscreen_scaffold_ps.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/fullscreen_scaffold_vs.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/fullscreen_scaffold_vs.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/hair_material_scaffold.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/hair_material_scaffold.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/hair_material_scaffold_ps.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/hair_material_scaffold_ps.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/hair_material_scaffold_vs.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/hair_material_scaffold_vs.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/metal_base_forward_scaffold.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/metal_base_forward_scaffold.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/metal_base_forward_scaffold_ps.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/metal_base_forward_scaffold_ps.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/metal_base_forward_scaffold_vs.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/metal_base_forward_scaffold_vs.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/metal_base_gbuffer_scaffold.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/metal_base_gbuffer_scaffold.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/metal_base_gbuffer_scaffold_ps.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/metal_base_gbuffer_scaffold_ps.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/metal_base_gbuffer_scaffold_vs.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/metal_base_gbuffer_scaffold_vs.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/pointcloud_scaffold.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/pointcloud_scaffold.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/transparent_lit_material_scaffold.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/transparent_lit_material_scaffold.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/transparent_lit_material_scaffold_ps.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/transparent_lit_material_scaffold_ps.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/transparent_lit_material_scaffold_vs.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/transparent_lit_material_scaffold_vs.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/transparent_material_scaffold.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/transparent_material_scaffold.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/transparent_material_scaffold_ps.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/transparent_material_scaffold_ps.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/transparent_material_scaffold_vs.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/transparent_material_scaffold_vs.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/ui_effect_scaffold.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/ui_effect_scaffold.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/ui_element_scaffold.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/ui_element_scaffold.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/ui_element_scaffold_vs.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/ui_element_scaffold_vs.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/unlit_material_scaffold.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/unlit_material_scaffold.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/scaffolds/unlit_material_scaffold_ps.fx",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/scaffolds/unlit_material_scaffold_ps.fx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/speedtree/UnifyCpuAndGpu.h",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/speedtree/UnifyCpuAndGpu.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/speedtree/UnifyHlslAndGlsl.h",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/speedtree/UnifyHlslAndGlsl.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/speedtree/WindShaders_All.h",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/speedtree/WindShaders_All.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/speedtree/WindShader_Games8.h",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/speedtree/WindShader_Games8.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/engine/shaders/include/speedtree/WindTypes.h",
+   "external-contents": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/engine/shaders/include/speedtree/WindTypes.h"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/engine/src/baseEngine.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/engine/src/baseEngine.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/engine/src/renderEngineHandler.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/engine/src/renderEngineHandler.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/game/src/baseGameEngine.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/game/src/baseGameEngine.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameCore/src/baseGameSession.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameCore/src/baseGameSession.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameFramework/src/gameFrameworkImpl.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameFramework/src/gameFrameworkImpl.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameFramework/src/gameState_SessionActive.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameFramework/src/gameState_SessionActive.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameFramework/src/gameState_SessionLoading.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameFramework/src/gameState_SessionLoading.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameFramework/src/gameStateMachineImpl.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameFramework/src/gameStateMachineImpl.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameFramework/src/preGameRequestsHandler.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameFramework/src/preGameRequestsHandler.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameUI/src/baseMenuGameController.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameUI/src/baseMenuGameController.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameUI/src/initialLoadingScreenLogicController.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameUI/src/initialLoadingScreenLogicController.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameUI/src/puppetPreviewController.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameUI/src/puppetPreviewController.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameUI/src/splashScreenLoadingScreenLogicController.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameUI/src/splashScreenLoadingScreenLogicController.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameUI/src/uiObjectsLoaderSystem.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameUI/src/uiObjectsLoaderSystem.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/inkCore/src/inkSystem.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/inkCore/src/inkSystem.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/localization/src/localizationManager.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/localization/src/localizationManager.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/localizationPersistence/src/locRepositoryVariants.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/localizationPersistence/src/locRepositoryVariants.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/localizationPersistence/src/onScreensRepositoryBase.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/localizationPersistence/src/onScreensRepositoryBase.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redJobs2/src/jobDispatcherCounterValue.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redJobs2/src/jobDispatcherCounterValue.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/src/bigSizeAllocator.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/src/bigSizeAllocator.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redMemory/src/dynamicTlsfAllocator.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redMemory/src/dynamicTlsfAllocator.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/deferredDataBuffer.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/deferredDataBuffer.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/rttiFunction.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/rttiFunction.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/scriptDataBinder.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/scriptDataBinder.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/scriptOpcodes.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/scriptOpcodes.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderBinkVideo.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderBinkVideo.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderMultilayerSetup.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderMultilayerSetup.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderGraphNodes.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderGraphNodes.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderNodeGraphFactory.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderNodeGraphFactory.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderRenderFrame.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderRenderFrame.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderTextureBase.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderTextureBase.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/resourceLoaderThrottler.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/resourceLoaderThrottler.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderNode_AntyAliasing.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderNode_AntyAliasing.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderRainMap.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderRainMap.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderDistantShadows.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderDistantShadows.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/resourceMaterial/src/textureArray.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/resourceMaterial/src/textureArray.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/world/src/worldRuntimeScene.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/world/src/worldRuntimeScene.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderSkinManager.cxx",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderSkinManager.cxx"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderProxyMesh.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderProxyMesh.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/visibilityQuerySingleFrustum.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/visibilityQuerySingleFrustum.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/visibilityQueryMultiFrustum.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/visibilityQueryMultiFrustum.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderCollector.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderCollector.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderProxyDecal.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderProxyDecal.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/inkCore/src/viewportWrapper.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/inkCore/src/viewportWrapper.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldUserInterface/src/runtimeSystemUI.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/worldUserInterface/src/runtimeSystemUI.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/game/src/scriptableSystemsContainer.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/game/src/scriptableSystemsContainer.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldStreaming/src/runtimeSystemStreamingQuery.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/worldStreaming/src/runtimeSystemStreamingQuery.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameSmartObjects/src/runtimeSystemSmartObjects.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameSmartObjects/src/runtimeSystemSmartObjects.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldPhysics/src/runtimeSystemPhysics.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/worldPhysics/src/runtimeSystemPhysics.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldNavigation/src/runtimeSystemTraffic.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/worldNavigation/src/runtimeSystemTraffic.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/packageReadStream.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/packageReadStream.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/packageObjectSerializer.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/packageObjectSerializer.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/game/src/gameAutoSaveSystem.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/game/src/gameAutoSaveSystem.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameFramework/src/gameState_Session.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameFramework/src/gameState_Session.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/game/src/targetingLookAtHelper.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/game/src/targetingLookAtHelper.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/game/src/damageSystem.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/game/src/damageSystem.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/game/src/weaponObject.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/game/src/weaponObject.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/game/src/projectileController.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/game/src/projectileController.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameInteractions/src/interactionActivator.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameInteractions/src/interactionActivator.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/resourceMesh/src/mesh.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/resourceMesh/src/mesh.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldEntities/src/appearanceResource.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/worldEntities/src/appearanceResource.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameTweakDB/src/tweakDBInterface.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameTweakDB/src/tweakDBInterface.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameTweakDB/src/tweakDBRecords_28.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameTweakDB/src/tweakDBRecords_28.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameUI/src/characterCustomizationSystem.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameUI/src/characterCustomizationSystem.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameQuest/src/phaseInstance.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameQuest/src/phaseInstance.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameQuest/src/questsSystem.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameQuest/src/questsSystem.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameSceneSystem/src/scnsSceneEntitiesManager.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameSceneSystem/src/scnsSceneEntitiesManager.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameSceneSystem/src/scnsStateRun.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameSceneSystem/src/scnsStateRun.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameQuest/src/triggerCondition.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameQuest/src/triggerCondition.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/packageTableCompiler.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/packageTableCompiler.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gamePopulation/src/communityTimePeriodsManager.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gamePopulation/src/communityTimePeriodsManager.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameSceneSystem/src/scnChoiceHubSystem.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameSceneSystem/src/scnChoiceHubSystem.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/textSystem/src/icuRegex.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/textSystem/src/icuRegex.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/textSystem/src/richTextMarkupParser.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/textSystem/src/richTextMarkupParser.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/textSystem/src/icuConversions.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/textSystem/src/icuConversions.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/inkCore/src/inputKeyIconManager.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/inkCore/src/inputKeyIconManager.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/textSystem/src/icuRegexCache.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/textSystem/src/icuRegexCache.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/packageBuilder.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/packageBuilder.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/packageWriteStream.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/packageWriteStream.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/world/src/runtimeSystemNodeStreaming.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/world/src/runtimeSystemNodeStreaming.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderCommandHandler.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderCommandHandler.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/worldUserInterface/src/uiElementManager.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/worldUserInterface/src/uiElementManager.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/renderer/src/renderNode_Shadows.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/renderer/src/renderNode_Shadows.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/engine/src/systemsUpdater.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/engine/src/systemsUpdater.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redSystem/src/clock.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redSystem/src/clock.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameServices/src/gameServicesSaveSlots.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameServices/src/gameServicesSaveSlots.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameInput/src/inputManager.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameInput/src/inputManager.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameInteractions/src/interactionVisualizerController.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameInteractions/src/interactionVisualizerController.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/gameUI/src/inputHintManagerController.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/gameUI/src/inputHintManagerController.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/sound/src/audioSceneUtils.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/sound/src/audioSceneUtils.cpp"
+  },
+  {
+   "type": "file",
+   "name": "D:/cp2077SourceCode/extracted/root/R6.Root/Mainline/dev/src/common/redReflection/src/resourceLoader.cpp",
+   "external-contents": "D:/2077/engine-overlay/common/redReflection/src/resourceLoader.cpp"
+  }
+ ]
+}

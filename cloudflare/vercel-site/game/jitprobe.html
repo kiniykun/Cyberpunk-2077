@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JIT Memory Probe</title>
+<style>
+:root{--bg:#0d0f12;--fg:#e6e6e6;--mut:#9aa0a6;--acc:#f3e600}
+body{background:var(--bg);color:var(--fg);font:14px/1.45 system-ui,-apple-system,sans-serif;margin:0;padding:16px}
+h1{font-size:18px;margin:0 0 8px}p{color:var(--mut);margin:0 0 12px}
+button{background:var(--acc);color:#000;border:0;border-radius:6px;padding:10px 14px;font-weight:600;margin:0 8px 8px 0}
+pre{white-space:pre-wrap;font-size:12px;background:#15181c;padding:10px;border-radius:6px;max-height:60vh;overflow:auto}
+</style></head><body>
+<h1>WebAssembly JIT memory probe</h1>
+<p>Builds a large synthetic wasm module in the browser, then runs more and more of its functions on the page and in
+workers, posting progress after every step. If the tab is killed, the last report shows how far it got. No personal data
+is sent.</p>
+<div id="btns"></div>
+<pre id="out">Pick a test. Each run sends progress reports automatically.</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search), out = document.getElementById("out");
+  var id = "j" + (Math.random().toString(36) + Math.random().toString(36)).replace(/[^a-z0-9]/g, "").slice(0, 11);
+  var URL_ = "https://cp2077-port.fn-web-worker.workers.dev/__probe?id=" + id;
+  var R = {v: 1, kind: "jitprobe", id: id, ua: navigator.userAgent, t: Date.now(), coi: !!self.crossOriginIsolated,
+    cores: navigator.hardwareConcurrency || 0, test: null, steps: []};
+  function post() { var b = JSON.stringify(R); try { if (!navigator.sendBeacon || !navigator.sendBeacon(URL_, b)) fetch(URL_, {method: "POST", mode: "no-cors", body: b, keepalive: true}); } catch (e) {} }
+  function step(k, d) { var s = {k: k, ms: Math.round(performance.now())}; if (d) s.d = d; R.steps.push(s); out.textContent = "report id " + id + "\n" + R.steps.map(function (x) { return x.ms + " " + x.k + " " + (x.d ? JSON.stringify(x.d) : ""); }).join("\n"); post(); }
+
+  // ---- synthetic module: F functions (i32)->i32, each a 40-iteration loop over B add/xor/rotl ops; a table and an
+  // exported "call(i, x)" dispatcher; imports a shared memory (like the engine) and touches it from every function.
+  function leb(x) { var o = []; do { var b = x & 127; x = Math.floor(x / 128); o.push(x ? b | 128 : b); } while (x); return o; }
+  function sleb(x) { var o = [], more = true; while (more) { var b = x & 127; x >>= 7; if ((x === 0 && !(b & 64)) || (x === -1 && (b & 64))) more = false; else b |= 128; o.push(b); } return o; }
+  function sec(id, body) { return [id].concat(leb(body.length), body); }
+  function str(s) { var b = []; for (var i = 0; i < s.length; i++) b.push(s.charCodeAt(i)); return leb(b.length).concat(b); }
+  function build(mb, opsPerFn) {
+    // body: local1 = 40; loop { local0 = rotl(local0 ^ c, 3) + c' ... B times; i32.store(mem[(local0&0xffc)], local0); local1--; br_if }
+    var ops = [];
+    for (var j = 0; j < opsPerFn; j++) ops = ops.concat([0x20, 0, 0x41].concat(sleb((j * 2654435761) | 0 & 0x3fffffff), [0x73, 0x41, 3, 0x77, 0x41], sleb(j * 7 + 1), [0x6a, 0x21, 0]));
+    var body = [1, 1, 0x7f,                                   // 1 local i32
+      0x41, 40, 0x21, 1,                                      // local1 = 40
+      0x03, 0x40].concat(ops, [
+      0x20, 0, 0x41, 0xfc, 0x1f, 0x71, 0x20, 0, 0x36, 2, 0,   // i32.store (local0 & 0xffc), local0
+      0x20, 1, 0x41, 1, 0x6b, 0x22, 1, 0x0d, 0, 0x0b,         // local1 = local1-1 (tee); br_if 0; end loop
+      0x20, 0, 0x0b]);
+    var fnBytes = leb(body.length).concat(body);
+    var F = Math.max(16, Math.floor(mb * 1048576 / fnBytes.length));
+    var head = [0, 0x61, 0x73, 0x6d, 1, 0, 0, 0];
+    var types = sec(1, [2, 0x60, 1, 0x7f, 1, 0x7f, 0x60, 2, 0x7f, 0x7f, 1, 0x7f]);
+    var imports = sec(2, [1].concat(str("e"), str("m"), [2, 3], leb(1), leb(65536)));   // shared memory 1..65536 pages
+    var funcsHead = [0x03].concat(leb(leb(F + 1).length + F + 1), leb(F + 1));
+    var tableSec = sec(4, [1, 0x70, 0].concat(leb(F)));
+    var exportsSec = sec(7, [1].concat(str("call"), [0], leb(F)));
+    var eb = [1, 0, 0x41, 0, 0x0b].concat(leb(F)), ebLen = eb.length, i;
+    for (i = 0; i < F; i++) ebLen += leb(i).length;
+    var elemSec = new Uint8Array(1 + leb(ebLen).length + ebLen), ep = 0;
+    [9].concat(leb(ebLen), eb).forEach(function (v) { elemSec[ep++] = v; });
+    for (i = 0; i < F; i++) { var li = leb(i); for (var z = 0; z < li.length; z++) elemSec[ep++] = li[z]; }
+    var disp = [0, 0x20, 1, 0x20, 0, 0x11, 0, 0, 0x0b];       // call_indirect type0 table0 (x, i)
+    var dispBytes = leb(disp.length).concat(disp);
+    var codeLen = leb(F + 1).length + F * fnBytes.length + dispBytes.length;
+    var total = head.length + types.length + imports.length + funcsHead.length + F + 1 + tableSec.length + exportsSec.length + elemSec.length + 1 + leb(codeLen).length + codeLen;
+    var u = new Uint8Array(total), p = 0;
+    function put(a) { u.set(a, p); p += a.length; }
+    put(head); put(types); put(imports); put(funcsHead);
+    for (var n = 0; n < F; n++) u[p++] = 0; u[p++] = 1;
+    put(tableSec); put(exportsSec); put(elemSec);
+    put([10]); put(leb(codeLen)); put(leb(F + 1));
+    var fb = new Uint8Array(fnBytes); for (n = 0; n < F; n++) { u.set(fb, p); p += fb.length; }
+    put(dispBytes);
+    return {bytes: u, F: F, fnBytes: fnBytes.length};
+  }
+  var workerSrc = "onmessage=function(e){var d=e.data;if(d.mod){self.inst=new WebAssembly.Instance(d.mod,{e:{m:d.mem}});postMessage({ok:'inst'});return;}" +
+    "var c=self.inst.exports.call,x=0;for(var i=d.from;i<d.to;i++){x=c(i,x|0);x=c(i,x|0);}postMessage({ok:'ran',to:d.to,x:x});};";
+  var wurl = URL.createObjectURL(new Blob([workerSrc], {type: "text/javascript"}));
+  function ask(w, msg) { return new Promise(function (res) { w.onmessage = function (e) { res(e.data); }; w.onerror = function (e) { res({err: String(e.message)}); }; w.postMessage(msg); }); }
+  var sleep = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
+
+  async function run(mb, workerCount, opsPerFn) {
+    R.test = {mb: mb, workers: workerCount, ops: opsPerFn}; R.steps = [];
+    step("build:start");
+    var m = build(mb, opsPerFn);
+    step("build:done", {MB: Math.round(m.bytes.length / 1048576), functions: m.F, fnBytes: m.fnBytes});
+    var mem = new WebAssembly.Memory({initial: 256, maximum: 65536, shared: true});
+    var mod = await WebAssembly.compile(m.bytes); m.bytes = null;
+    step("compiled");
+    var inst = await WebAssembly.instantiate(mod, {e: {m: mem}}); step("instantiated:main");
+    var call = inst.exports.call, x = 0, chunk = Math.max(1, Math.floor(m.F / 20));
+    for (var a = 0; a < m.F; a += chunk) {       // main thread: run 5% slices, report after each
+      var b = Math.min(m.F, a + chunk);
+      for (var i = a; i < b; i++) { x = call(i, x | 0); x = call(i, x | 0); }
+      step("main:ran", {pct: Math.round(b / m.F * 100)}); await sleep(30);
+    }
+    var ws = [];
+    for (var k = 0; k < workerCount; k++) {
+      var w = new Worker(wurl); ws.push(w);
+      var r = await ask(w, {mod: mod, mem: mem}); step("worker:inst", {n: k + 1, r: r.ok || r.err});
+      for (a = 0; a < m.F; a += chunk * 4) {
+        r = await ask(w, {from: a, to: Math.min(m.F, a + chunk * 4)});
+        step("worker:ran", {n: k + 1, pct: Math.round(Math.min(m.F, a + chunk * 4) / m.F * 100), r: r.ok || r.err});
+      }
+    }
+    step("done", {x: x});
+  }
+  var tests = [[32, 0], [64, 0], [128, 0], [64, 4], [128, 4], [200, 4]];
+  var btns = document.getElementById("btns");
+  tests.forEach(function (t) {
+    var bt = document.createElement("button"); bt.textContent = t[0] + " MB code" + (t[1] ? " + " + t[1] + " workers" : "");
+    bt.onclick = function () { btns.querySelectorAll("button").forEach(function (x) { x.disabled = true; }); run(t[0], t[1], +(q.get("ops") || 60)).catch(function (e) { step("error", String(e && e.message || e)); }); };
+    btns.appendChild(bt);
+  });
+  if (q.get("mb")) run(+q.get("mb"), +(q.get("workers") || 0), +(q.get("ops") || 60)).catch(function (e) { step("error", String(e && e.message || e)); });
+})();
+</script>
+</body></html>

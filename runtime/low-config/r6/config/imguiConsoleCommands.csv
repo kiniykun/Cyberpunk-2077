@@ -1,0 +1,6 @@
+# NPCs
+GameDebug.SpawnChRec(Character.NPC_Melee)
+
+# Items
+player.inventory.addItem( Items.Lexington, 1 )
+player.inventory.removeAllItems()

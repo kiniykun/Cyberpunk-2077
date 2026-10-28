@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<bindings>
+
+	<!--  F KEYS  -->	
+	<mapping name="F1" type="Button" >
+        <button id="IK_F1" />
+    </mapping>
+	
+	<mapping name="F2" type="Button" >
+        <button id="IK_F2" />
+    </mapping>
+	
+	<mapping name="F3" type="Button" >
+        <button id="IK_F3" />
+    </mapping>
+	
+	<mapping name="F4" type="Button" >
+        <button id="IK_F4" />
+    </mapping>
+	
+	<mapping name="F5" type="Button" >
+        <button id="IK_F5" />
+    </mapping>
+	
+	<mapping name="F6" type="Button" >
+        <button id="IK_F6" />
+    </mapping>
+	
+	<mapping name="F7" type="Button" >
+        <button id="IK_F7" />
+    </mapping>
+	
+	<mapping name="F8" type="Button" >
+        <button id="IK_F8" />
+    </mapping>
+	
+	<mapping name="F9" type="Button" >
+        <button id="IK_F9" />
+    </mapping>
+	
+	<mapping name="F10" type="Button" >
+        <button id="IK_F10" />
+    </mapping>
+	
+	<mapping name="F11" type="Button" >
+        <button id="IK_F11" />
+    </mapping>
+	
+	<mapping name="F12" type="Button" >
+        <button id="IK_F12" />
+	</mapping>
+	
+	<mapping name="LeftX_Axis" type="Axis" >
+        <button id="IK_Pad_LeftAxisX" />
+        <button id="IK_D" val="1.0" />
+        <button id="IK_A" val="-1.0" />
+    </mapping>
+	
+	<mapping name="LeftY_Axis" type="Axis" >
+        <button id="IK_Pad_LeftAxisY" />
+        <button id="IK_W" val="1.0" />
+        <button id="IK_S" val="-1.0" />
+    </mapping>
+	
+	<mapping name="RightX_Axis" type="Axis" >
+        <button id="IK_Pad_RightAxisX" />
+        <button id="IK_Right" val="1.0" />
+        <button id="IK_Left" val="-1.0" />
+    </mapping>
+	
+	<mapping name="RightY_Axis" type="Axis" >
+        <button id="IK_Pad_RightAxisY" />
+        <button id="IK_Up" val="1.0" />
+        <button id="IK_Down" val="-1.0" />
+    </mapping>
+	
+	<mapping name="UpDown_Axis" type="Axis" >
+        <button id="IK_Q" val="-1.0" />
+        <button id="IK_E" val="1.0" />
+        <button id="IK_Space" val="1.0" />
+		<button id="IK_Pad_B_CIRCLE" val="-1.0" />
+		<button id="IK_Pad_A_CROSS" val="1.0" />
+		<button id="IK_Pad_LeftShoulder" val="-1.0" />
+		<button id="IK_Pad_RightShoulder" val="1.0" />
+    </mapping>
+	
+	<mapping name="MouseX" type="Relative" >
+        <button id="IK_MouseX" />
+    </mapping>
+	
+    <mapping name="MouseY" type="Relative" preset="invertRelative" >
+        <button id="IK_MouseY" />
+    </mapping>
+	
+    <mapping name="Tab_Button" type="Button" >
+        <button id="IK_Tab" />
+    </mapping>
+
+	<!--  NUMERIC  -->	
+	<mapping name="IK_0" type="Button" >
+		<button id="IK_0" />
+	</mapping>
+	
+	<mapping name="IK_1" type="Button" >
+		<button id="IK_1" />
+	</mapping>
+	
+	<mapping name="IK_2" type="Button" >
+		<button id="IK_2" />
+	</mapping>
+	
+	<mapping name="IK_3"	type="Button" >
+		<button id="IK_3" />
+	</mapping>
+	
+	<mapping name="IK_4" type="Button" >
+		<button id="IK_4" />
+	</mapping>
+	
+	<mapping name="IK_5" type="Button" >
+		<button id="IK_5" />
+	</mapping>
+	
+	<mapping name="IK_6" type="Button" >
+		<button id="IK_6" />
+	</mapping>
+	
+	<mapping name="IK_7" type="Button" >
+		<button id="IK_7" />
+	</mapping>
+	
+	<mapping name="IK_8" type="Button" >
+		<button id="IK_8" />
+	</mapping>
+	
+	<mapping name="IK_9" type="Button" >
+		<button id="IK_9" />
+	</mapping>
+	
+	<!--  NUM PAD  -->	
+	<mapping name="NumPad0" type="Button" >
+		<button id="IK_NumPad0" />
+	</mapping>
+	
+	<mapping name="NumPad1" type="Button" >
+		<button id="IK_NumPad1" />
+	</mapping>
+	
+	<mapping name="NumPad2" type="Button" >
+		<button id="IK_NumPad2" />
+	</mapping>
+	
+	<mapping name="NumPad3" type="Button" >
+		<button id="IK_NumPad3" />
+	</mapping>
+	
+	<mapping name="NumPad4" type="Button" >
+		<button id="IK_NumPad4" />
+	</mapping>
+	
+	<mapping name="NumPad5" type="Button" >
+		<button id="IK_NumPad5" />
+	</mapping>
+	
+	<mapping name="NumPad6" type="Button" >
+		<button id="IK_NumPad6" />
+	</mapping>
+	
+	<mapping name="NumPad7" type="Button" >
+		<button id="IK_NumPad7" />
+	</mapping>
+	
+	<mapping name="NumPad8" type="Button" >
+		<button id="IK_NumPad8" />
+	</mapping>
+	
+	<mapping name="NumPad9" type="Button" >
+		<button id="IK_NumPad9" />
+	</mapping>
+	
+	<!-- FREE CAMERA CUSTOMS -->
+	<buttonGroup id="BothThumbs" >
+        <button id="IK_Pad_LeftThumb" />
+        <button id="IK_Pad_RightThumb" />
+    </buttonGroup>
+	
+	<mapping name="ActivateFreeCam" type="Button" >
+		<button id="IK_F3" />
+		<button id="BothThumbs" />
+	</mapping >
+	
+	<mapping name="SwitchFreeCamControl" type="Button" >
+		<button id="IK_F4" />
+	</mapping>>
+
+	<mapping name="CameraClipboardC" type="Button" >
+		<button id="IK_C" />
+	</mapping>
+	
+	<mapping name="CameraClipboardV" type="Button" >
+		<button id="IK_V" />
+	</mapping>
+	
+	<mapping name="CameraMultSpeed" type="Button" >
+		<button id="IK_LShift" />
+		 <button id="IK_Pad_LeftTrigger" thresholdPress="0.5" thresholdRelease="0.55" />
+		 <button id="IK_Pad_RightTrigger" thresholdPress="0.5" thresholdRelease="0.55" />
+	</mapping>
+
+	<mapping name="CameraReduceSpeed" type="Button" >
+		<button id="IK_Alt" />
+	</mapping>
+	
+	<mapping name="CameraToggleStep" type="Button" >
+		<button id="IK_T" />
+	</mapping>
+	
+	<mapping name="CameraResetPitch" type="Button" >
+		<button id="IK_Y" />
+	</mapping>
+	
+	<mapping name="CameraStepForward" type="Button" >
+        <button id="IK_W" />
+    </mapping>
+	
+	<mapping name="CameraStepBack" type="Button" >
+        <button id="IK_S" />
+    </mapping>
+	
+	<mapping name="CameraStepLeft" type="Button" >
+        <button id="IK_A" />
+    </mapping>
+	
+	<mapping name="CameraStepRight" type="Button" >
+        <button id="IK_D" />
+    </mapping>
+	
+	<mapping name="CameraStepUp" type="Button" >
+        <button id="IK_E" />
+    </mapping>
+	
+	<mapping name="CameraStepDown" type="Button" >
+        <button id="IK_Q" />
+    </mapping>
+	
+	<mapping name="CameraStepPitchUp" type="Button" >
+        <button id="IK_Up" />
+    </mapping>
+	
+	<mapping name="CameraStepPitchDown" type="Button" >
+        <button id="IK_Down" />
+    </mapping>
+	
+	<mapping name="CameraStepYawLeft" type="Button" >
+        <button id="IK_Left" />
+    </mapping>
+	
+	<mapping name="CameraStepYawRight" type="Button" >
+        <button id="IK_Right" />
+    </mapping>
+	
+	<mapping name="CameraIncreaseFOV" type="Button" >
+        <button id="IK_O" />
+    </mapping>
+	
+	<mapping name="CameraDecreaseFOV" type="Button" >
+        <button id="IK_P" />
+    </mapping>
+
+	<mapping name="CameraDebugStepFrame" type="Axis" >
+        <button id="IK_NumPad9" val="1.0" />
+        <button id="IK_NumPad8" val="-1.0" />
+    </mapping>
+	
+	<mapping name="CameraDebugStepTrack" type="Axis" >
+        <button id="IK_NumPad4" val="1.0" />
+        <button id="IK_NumPad1" val="-1.0" />
+    </mapping>
+	
+	<mapping name="CameraDebugToggleRewindMode" type="Button" >
+        <button id="IK_NumPad7" />
+    </mapping>
+	
+	<mapping name="CameraDebugJumpToSelected" type="Button" >
+        <button id="IK_NumPad5" />
+    </mapping>
+
+	<!-- SCENES DEV MODE CUSTOMS -->
+	<buttonGroup id="ShouldersAndTriggers" >
+        <button id="IK_Pad_LeftShoulder" />
+		<button id="IK_Pad_RightShoulder" />
+    </buttonGroup>
+	
+	<mapping name="DevMode_Toggle" type="Button" >
+		<button id="ShouldersAndTriggers" />
+	</mapping >
+	
+	<mapping name="DevMode_Resume" type="Button" >
+		<button id="IK_Pad_A_CROSS" />
+	</mapping >
+	
+	<preset 		name="invertRelative" 
+					invertRealAxis="false"
+					invertFakeAxis="false"
+					invertRelative="true" />
+	
+</bindings>

@@ -16,7 +16,7 @@ The Cloudflare Worker serves engine bundles and game assets from R2. The reposit
 
 A few large current generated source headers and website files have an extra .gz extension. Run `node restore-compressed.cjs` after cloning to restore their original filenames and verify their hashes. This does not download game assets.
 
-SOURCE-MANIFEST.json records the preserved files and original SHA-256 hashes. The historical README and handoff notes contain older measurements; they do not establish current runtime behavior.
+PORT-SNAPSHOT.json records the preserved files and original SHA-256 hashes. The historical README and handoff notes contain older measurements; they do not establish current runtime behavior.
 
 ## Preservation and provenance
 
